@@ -156,6 +156,13 @@ function ResponsiveDesign() {
           </div>
         </div>
       </div>
+
+      {/* five */}
+      <div className="w-full gap-2 items-center flex flex-col">
+        <h2 className=" text-[medium] font-bold rounded-full bg-sky-600/30 outline-1 outline-sky-500  px-4">
+          4 :Max-width container queries
+        </h2>
+      </div>
     </div>
   );
 }

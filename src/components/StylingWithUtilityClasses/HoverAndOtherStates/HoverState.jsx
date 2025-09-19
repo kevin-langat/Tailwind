@@ -8,13 +8,19 @@ import {
 } from '../../../Config/config';
 
 import imageOne from '../../../assets/faces/uifaces-human-image (48).jpg';
+import imageTwo from '../../../assets/faces/uifaces-popular-image (1).jpg';
 import {
   Check,
   Cigarette,
+  CircleCheck,
   Cloud,
   CloudUpload,
+  FileWarning,
   FolderDown,
+  MessageCircleWarning,
   Search,
+  Stars,
+  XIcon,
 } from 'lucide-react';
 function HoverState() {
   let count = 0;
@@ -321,11 +327,11 @@ function HoverState() {
               className=" group-hover/childOne:outline-2 outline-green-500 w-16 h-16 rounded-full"
               alt=""
             />
-            <h2 className="group-hover/childOne:text-green-500 group-active/main:text-orange-600">
+            <h2 className="group-hover/childOne:text-green-500 group-hover/childOne:animate-bounce group-active/main:text-orange-600">
               Jecinta Wilson
             </h2>
           </div>
-          <h2 className=" group-hover/main:underline decoration-sky-400 group-hover/main:text-blue-600 cursor-pointer text-gray-300">
+          <h2 className=" group-hover/main:underline group-hover/main:animate-pulse decoration-sky-400 group-hover/main:text-blue-600 cursor-pointer text-gray-300">
             Create a new project of variety of starting templates
           </h2>
         </div>
@@ -642,27 +648,166 @@ function HoverState() {
           19 :prefers-reduced-motion
         </h2>
 
-        <div className=" flex flex-row items-center justify-between w-40 px-2 rounded-[0.3em] py-1 bg-sky-500 h-full">
+        <div className=" flex flex-row items-center justify-center gap-3 w-40 px-2 rounded-[0.3em] py-1 bg-sky-500 h-full">
           <span className="w-6 h-6 motion-reduce:hidden  bg-transparent border-b-gray-400 border-r-white rounded-full border-l-gray-400 border-t-gray-400 border-4 animate-spin "></span>{' '}
           <button className=" text-gray-100"> Proccessing...</button>
         </div>
       </div>
 
       {/* Twenty */}
-      <div className="  flex flex-col w-full items-center gap-2">
+      <div className="flex flex-col w-full items-center gap-2">
         <h2 className=" text-[medium] font-bold rounded-full bg-gray-300 px-4">
           20 :prefers-contrast
         </h2>
-        <div className="flex flex-col py-3 gap-1 items-center w-1/2 bg-gray-800 rounded-2xl">
-          <h2 className="text-gray-300">Social Security Number</h2>
+        <div className="contrast-more:bg-gray-200 flex flex-col py-3 gap-1 items-center w-1/2 bg-gray-800 rounded-2xl">
+          <h2 className=" contrast-more:text-gray-900 text-gray-300">
+            Social Security Number
+          </h2>
           <input
             type="text"
             placeholder="ssn"
-            className="pl-4 bg-gray-700 contrast-more:outline-white contrast-more:outline-2 text-gray-300 rounded-full outline-1 outline-gray-300"
+            className="pl-4 bg-gray-700 contrast-more:bg-gray-500 contrast-more:outline-gray-900 contrast-more:outline-1 text-gray-300 rounded-full outline-1 outline-gray-300"
           />
-          <h2 className="text-gray-700 contrast-more:text-gray-300">
+          <h2 className="contrast-more:text-gray-950 text-gray-700">
             we need this number to steal your money
           </h2>
+        </div>
+      </div>
+      {/* Twenty One */}
+      <div className="flex flex-col w-full items-center gap-2">
+        <h2 className=" text-[medium] font-bold rounded-full bg-gray-300 px-4">
+          21 :Pointer and any-pointer
+        </h2>
+        <div className="flex w-1/2 flex-col items-center py-2 rounded-2xl bg-gray-800 ">
+          <h2 className="text-gray-300">Random Access Memory (RAM)</h2>
+          <div className="flex flex-row items-center gap-3 ">
+            <button className="cursor-pointer font-bold focus:bg-orange-500  text-gray-200 py-0.5 px-4 outline-1 outline-gray-500 rounded-[0.3em] bg-gray-800 flex flex-row items-center justify-center">
+              4GB
+            </button>
+            <button className="cursor-pointer font-bold focus:bg-orange-500  text-gray-200 py-0.5 px-4 outline-1 outline-gray-500 rounded-[0.3em] bg-gray-800 flex flex-row items-center justify-center">
+              16GB
+            </button>
+            <button className="cursor-pointer font-bold focus:bg-orange-500  text-gray-200 py-0.5 px-4 outline-1 outline-gray-500 rounded-[0.3em] bg-gray-800 flex flex-row items-center justify-center">
+              32GB
+            </button>
+            <button className="cursor-pointer font-bold focus:bg-orange-500  text-gray-200 py-0.5 px-4 outline-1 outline-gray-500 rounded-[0.3em] bg-gray-800 flex flex-row items-center justify-center">
+              64GB
+            </button>
+            <button className="cursor-pointer pointer-fine:bg-sky-400 font-bold focus:bg-orange-500  text-gray-200 py-0.5 px-4 outline-1 outline-gray-500 rounded-[0.3em] bg-gray-800 flex flex-row items-center justify-center">
+              128GB
+            </button>
+          </div>
+        </div>
+      </div>
+      {/* Twenty Two */}
+      <div className="flex flex-col w-full items-center gap-2">
+        <h2 className=" text-[medium] font-bold rounded-full bg-gray-300 px-4">
+          22 :Orientation
+        </h2>
+        <div className="portrait:hidden landscape:flex flex-row items-center justify-center gap-4 py-2 px-6 bg-gray-800 w-1/2 rounded-[0.3em] ">
+          <h2 className=" text-gray-300">This is only for landscape view</h2>
+          <CircleCheck className="w-6 h-6 text-green-500 font-bold" />
+        </div>
+      </div>
+
+      {/* Twenty three */}
+
+      <div className="flex flex-col w-full items-center gap-2">
+        <h2 className=" text-[medium] font-bold rounded-full bg-gray-300 px-4">
+          23 :Print
+        </h2>
+        <div className="portrait:outline-1 portrait:outline-red-600 landscape:flex flex-row items-center justify-center gap-4 py-2 px-6 bg-gray-800 w-1/2 rounded-[0.3em] ">
+          <article className="print:hidden text-gray-200">
+            <h1>My Secret Pizza Recipe</h1>
+            <p>This recipe is a secret, and must not be shared with anyone</p>
+          </article>
+          <div className="text-gray-200 hidden print:block">
+            Are you seriously trying to print this? It's secret!
+          </div>
+        </div>
+      </div>
+
+      {/* Twenty four */}
+      <div className="flex flex-col w-full items-center gap-2">
+        <h2 className=" text-[medium] font-bold rounded-full bg-gray-300 px-4">
+          24 :@starting-style
+        </h2>
+        <div className="flex flex-col items-center justify-center gap-4 py-4 px-8 bg-gray-800 w-1/2 rounded-[0.3em] ">
+          <button
+            popoverTarget="updatePop"
+            className="bg-orange-500 px-3 text-gray-300 rounded-[0.4em] py-0.5"
+          >
+            Check Updates
+          </button>
+          <div
+            id="updatePop"
+            className="flex opacity-70 starting:opacity:1  flex-col items-center justify-center bg-gray-700 outline-1 outline-gray-400 rounded-[0.3em] py-2 px-3"
+          >
+            <MessageCircleWarning className="text-indigo-400" />
+
+            <h2 className="text-gray-300 flex">
+              v24.19.00 is now available{' '}
+              <Stars className="text-indigo-400 w-4 h-4" />{' '}
+            </h2>
+            <h2 className="text-gray-300">Click to update</h2>
+            <button className="bg-indigo-500 px-3 text-gray-300 rounded-[0.4em] py-0.5">
+              Update Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Twenty five */}
+      <div className="flex flex-col w-full items-center gap-2">
+        <h2 className=" text-[medium] font-bold rounded-full bg-gray-300 px-4">
+          25 :Open/closed state
+        </h2>
+        <details
+          className=" border border-gray-900 open:border-indigo-500/50 rounded-[0.4em] px-3 p-1 open:bg-gray-100"
+          open
+        >
+          <summary className="text-sm leading-6 font-semibold text-gray-900 select-none">
+            Why do they call it Ovaltine?
+          </summary>
+          <div className="mt-1 text-sm leading-6 text-gray-600">
+            <p>
+              The mug is round. The jar is round. They should call it Roundtine.
+            </p>
+          </div>
+        </details>
+      </div>
+
+      {/* Twenty six */}
+      <div className="flex flex-col w-full items-center gap-2 ">
+        <h2 className=" text-[medium] font-bold rounded-full bg-gray-300 px-4">
+          26 :Styling Direct Children with :*
+        </h2>
+        <div className=" py-4 w-1/2 bg-gray-800 rounded-[0.4em] items-center flex flex-col ">
+          <ul className="  *:text-sky-300 *:outline-1 *:outline-gray-500 *:bg-sky-800/40 *:rounded-full *:px-3 *:w-11/12  w-11/12 items-center place-items-center justify-center h-full  grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 ">
+            <li>Python</li>
+            <li>Php</li>
+            <li>Ruby</li>
+            <li>Perl</li>
+            <li>Java</li>
+            <li>Ada</li>
+            <li>Go</li>
+            <li>FortRan</li>
+            <li>Kotlin</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Twenty six */}
+      <div className="flex flex-col w-full items-center gap-2 ">
+        <h2 className=" text-[medium] font-bold rounded-full bg-gray-300 px-4">
+          26 :Styling Direct Children with :*
+        </h2>
+        <div className="flex **:data-origin:text-sky-400 **:data-avatar:w-16 **:data-avatar:h-16 **:data-avatar:rounded-full **:data-avatar:outline-1 **:data-avatar:outline-gray-100 items-center py-3  justify-center flex-row gap-2 bg-gray-800 w-1/2 rounded-[0.4em] outline-1 outline-gray-300">
+          <img src={imageTwo} data-avatar alt="" />
+          <ul className=" flex flex-col items-center ">
+            <li className="text-gray-200">Iryana Zarutska</li>
+            <li data-origin>from Ukraine</li>
+          </ul>
         </div>
       </div>
     </div>

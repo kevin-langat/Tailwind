@@ -100,58 +100,58 @@ function ResponsiveDesign() {
               01
             </button>
             <button className=" py-2 px-4 rounded-[0.3em] bg-gray-800 text-gray-500 outline-1 outline-gray-400 focus:bg-orange-500 active:bg-gray-500">
-              01
+              02
+            </button>
+            <button className=" py-2 px-4 rounded-[0.3em] bg-gray-800 text-gray-500 outline-1 outline-gray-400 focus:bg-orange-500 active:bg-gray-500">
+              03
+            </button>
+            <button className=" py-2 px-4 rounded-[0.3em] bg-gray-800 text-gray-500 outline-1 outline-gray-400 focus:bg-orange-500 active:bg-gray-500">
+              04
+            </button>
+            <button className=" py-2 px-4 rounded-[0.3em] bg-gray-800 text-gray-500 outline-1 outline-gray-400 focus:bg-orange-500 active:bg-gray-500">
+              05
+            </button>
+            <button className=" py-2 px-4 rounded-[0.3em] bg-gray-800 text-gray-500 outline-1 outline-gray-400 focus:bg-orange-500 active:bg-gray-500">
+              06
+            </button>
+            <button className=" py-2 px-4 rounded-[0.3em] bg-gray-800 text-gray-500 outline-1 outline-gray-400 focus:bg-orange-500 active:bg-gray-500">
+              07
             </button>
             <button className=" py-2 px-4 rounded-[0.3em] bg-gray-800 text-gray-500 outline-1 outline-gray-400 focus:bg-orange-500 active:bg-gray-500">
               01
             </button>
             <button className=" py-2 px-4 rounded-[0.3em] bg-gray-800 text-gray-500 outline-1 outline-gray-400 focus:bg-orange-500 active:bg-gray-500">
-              01
+              08
+            </button>
+            <button className=" py-2 px-4 rounded-[0.3em] bg-gray-800 text-gray-500 outline-1 outline-gray-400 focus:bg-orange-500 active:bg-gray-500">
+              08
+            </button>
+            <button className=" py-2 px-4 rounded-[0.3em] bg-gray-800 text-gray-500 outline-1 outline-gray-400 focus:bg-orange-500 active:bg-gray-500">
+              09
+            </button>
+            <button className=" py-2 px-4 rounded-[0.3em] bg-gray-800 text-gray-500 outline-1 outline-gray-400 focus:bg-orange-500 active:bg-gray-500">
+              10
             </button>
             <button className=" py-2 px-4 rounded-[0.3em] bg-gray-800 text-gray-500 outline-1 outline-gray-400 focus:bg-orange-500 active:bg-gray-500">
               01
             </button>
             <button className=" py-2 px-4 rounded-[0.3em] bg-gray-800 text-gray-500 outline-1 outline-gray-400 focus:bg-orange-500 active:bg-gray-500">
-              01
+              11
             </button>
             <button className=" py-2 px-4 rounded-[0.3em] bg-gray-800 text-gray-500 outline-1 outline-gray-400 focus:bg-orange-500 active:bg-gray-500">
-              01
+              12
             </button>
             <button className=" py-2 px-4 rounded-[0.3em] bg-gray-800 text-gray-500 outline-1 outline-gray-400 focus:bg-orange-500 active:bg-gray-500">
-              01
+              13
             </button>
             <button className=" py-2 px-4 rounded-[0.3em] bg-gray-800 text-gray-500 outline-1 outline-gray-400 focus:bg-orange-500 active:bg-gray-500">
-              01
+              14
             </button>
             <button className=" py-2 px-4 rounded-[0.3em] bg-gray-800 text-gray-500 outline-1 outline-gray-400 focus:bg-orange-500 active:bg-gray-500">
-              01
+              15
             </button>
             <button className=" py-2 px-4 rounded-[0.3em] bg-gray-800 text-gray-500 outline-1 outline-gray-400 focus:bg-orange-500 active:bg-gray-500">
-              01
-            </button>
-            <button className=" py-2 px-4 rounded-[0.3em] bg-gray-800 text-gray-500 outline-1 outline-gray-400 focus:bg-orange-500 active:bg-gray-500">
-              01
-            </button>
-            <button className=" py-2 px-4 rounded-[0.3em] bg-gray-800 text-gray-500 outline-1 outline-gray-400 focus:bg-orange-500 active:bg-gray-500">
-              01
-            </button>
-            <button className=" py-2 px-4 rounded-[0.3em] bg-gray-800 text-gray-500 outline-1 outline-gray-400 focus:bg-orange-500 active:bg-gray-500">
-              01
-            </button>
-            <button className=" py-2 px-4 rounded-[0.3em] bg-gray-800 text-gray-500 outline-1 outline-gray-400 focus:bg-orange-500 active:bg-gray-500">
-              01
-            </button>
-            <button className=" py-2 px-4 rounded-[0.3em] bg-gray-800 text-gray-500 outline-1 outline-gray-400 focus:bg-orange-500 active:bg-gray-500">
-              01
-            </button>
-            <button className=" py-2 px-4 rounded-[0.3em] bg-gray-800 text-gray-500 outline-1 outline-gray-400 focus:bg-orange-500 active:bg-gray-500">
-              01
-            </button>
-            <button className=" py-2 px-4 rounded-[0.3em] bg-gray-800 text-gray-500 outline-1 outline-gray-400 focus:bg-orange-500 active:bg-gray-500">
-              01
-            </button>
-            <button className=" py-2 px-4 rounded-[0.3em] bg-gray-800 text-gray-500 outline-1 outline-gray-400 focus:bg-orange-500 active:bg-gray-500">
-              01
+              16
             </button>
           </div>
         </div>

@@ -1,9 +1,11 @@
 
 @import "tailwindcss";
 
-/* @theme{
-  --breakpoint-s
-} */
+@theme {
+  --breakpoint-xm: 53rem;
+  /* --breakpoint-xl:initial; --> removing a default breakpoint  */
+  /* --breakpoint-*:initial;   --> removing all the default breakpoints  */
+}
 
 :root {
   font-family: cursive;

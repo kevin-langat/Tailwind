@@ -9,6 +9,7 @@ import {
 
 import imageOne from '../../../assets/faces/uifaces-human-image (48).jpg';
 import imageTwo from '../../../assets/faces/uifaces-popular-image (1).jpg';
+import '../../../index.css';
 import {
   Check,
   Cigarette,
@@ -121,7 +122,7 @@ function HoverState() {
       {/* second patch of utility classes */}
 
       <div className=" w-full flex flex-col items-center gap-4">
-        <h2 className=" text-[medium] font-bold rounded-full bg-gray-300 px-4">
+        <h2 className=" text-[medium] font-bold rounded-full bg-green-500 px-4">
           2 :first, :last, :odd, and :even
         </h2>
         <div className="w-1/2 gap-4 first:bg-amber-500 odd:border-amber-400 bg-gray-800 rounded-2xl outline-1 outline-white flex flex-col items-center">
@@ -797,10 +798,10 @@ function HoverState() {
         </div>
       </div>
 
-      {/* Twenty six */}
+      {/* Twenty seven */}
       <div className="flex flex-col w-full items-center gap-2 ">
         <h2 className=" text-[medium] font-bold rounded-full bg-gray-300 px-4">
-          26 :Styling Direct Children with :*
+          27 :Styling Direct Children with **:
         </h2>
         <div className="flex **:data-origin:text-sky-400 **:data-avatar:w-16 **:data-avatar:h-16 **:data-avatar:rounded-full **:data-avatar:outline-1 **:data-avatar:outline-gray-100 items-center py-3  justify-center flex-row gap-2 bg-gray-800 w-1/2 rounded-[0.4em] outline-1 outline-gray-300">
           <img src={imageTwo} data-avatar alt="" />

@@ -1,6 +1,7 @@
+import '../../../index.css';
 function ResponsiveDesign() {
   return (
-    <div className="w-full mb-5 flex flex-col items-center justify-center gap-8">
+    <div className=" w-full mb-5 flex flex-col items-center justify-center gap-8">
       {/* One */}
       <div className="  flex flex-col w-full items-center gap-2">
         <h2 className=" text-[medium] font-bold rounded-full bg-sky-600/30 outline-1 outline-sky-500  px-4">
@@ -69,9 +70,12 @@ function ResponsiveDesign() {
         <h2 className=" text-[medium] font-bold rounded-full bg-sky-600/30 outline-1 outline-sky-500  px-4">
           2 :Targeting a breakpoint range
         </h2>
-        <div className="w-1/2 *:text-gray-300 bg-gray-800 outline-1 md:max-lg:outline-black md:max-lg:bg-gray-600 flex flex-col items-center rounded-[0.4em]">
+        <div className="w-1/2 *:text-gray-300 bg-gray-800 outline-1 md:max-lg:outline-black md:max-lg:bg-orange-600 flex flex-col items-center rounded-[0.4em]">
           <h2>Tailwind css</h2>
           <h3>Welcome to tailwind css documentation course</h3>
+          <h3 className="md:max-lg:block hidden">
+            This shows in medium to large(maximum) break point{' '}
+          </h3>
         </div>
       </div>
       {/* Three */}
@@ -84,8 +88,8 @@ function ResponsiveDesign() {
           point between md and lg{' '}
         </h2>
         <h2 className="hidden w-1/2 bg-orange-500 rounded-[0.4em] p-3 xm:max-lg:block">
-          This text appears between the custom breakpoint 'xm' which is between
-          53rem and lg breakpoint at 64rem
+          This text appears at the custom breakpoint 'xm' which is between 53rem
+          and lg breakpoint at 64rem
         </h2>
       </div>
 
@@ -94,8 +98,8 @@ function ResponsiveDesign() {
         <h2 className=" text-[medium] font-bold rounded-full bg-sky-600/30 outline-1 outline-sky-500  px-4">
           4 :Container Queries
         </h2>
-        <div className=" @container rounded-[0.5em] bg-gray-400  flex flex-col items-center h-full gap-2 w-1/2">
-          <div className=" p-1 w-full grid grid-cols-2 @sm:grid-cols-3 @md:grid-cols-4 @lg:grid-cols-6">
+        <div className=" resizable @container max-w-3/4 rounded-[0.5em] bg-gray-400  flex flex-col items-center h-full gap-2 w-1/2">
+          <div className=" p-1 w-full grid grid-cols-1 @xs:grid-cols-2 @sm:grid-cols-3 @md:grid-cols-4 @lg:grid-cols-5 @xl:grid-cols-7 @2xl:grid-cols-8">
             <button className=" py-2 px-4 rounded-[0.3em] bg-gray-800 text-gray-500 outline-1 outline-gray-400 focus:bg-orange-500 active:bg-gray-500">
               01
             </button>
@@ -162,6 +166,39 @@ function ResponsiveDesign() {
         <h2 className=" text-[medium] font-bold rounded-full bg-sky-600/30 outline-1 outline-sky-500  px-4">
           4 :Max-width container queries
         </h2>
+        <div className="resizable @container flex flex-col items-center gap-2 py-3.5 bg-gray-900  w-1/2">
+          <h2 className=" w-11/12 p-3.5 outline-1 outline-gray-200 @max-md:outline-sky-400 @max-md:bg-sky-700/30 bg-gray-700/80  text-gray-200 rounded-[0.4em]">
+            This text changes background at @md from sky-400 to gray-700. This
+            means that bg-sky-400 applies upto medium container breakpoint
+          </h2>
+        </div>
+      </div>
+
+      {/* five */}
+      <div className="w-full gap-2 items-center flex flex-col">
+        <h2 className=" text-[medium] font-bold rounded-full bg-sky-600/30 outline-1 outline-sky-500  px-4">
+          5 :Container query ranges
+        </h2>
+        <div className="resizable @container flex flex-col items-center gap-2 py-3.5 bg-gray-900  w-1/2">
+          <h2 className=" w-11/12 p-3.5  @sm:@max-lg:bg-sky-500/30 outline-1 outline-gray-20 bg-orange-500 text-gray-200 rounded-[0.4em]">
+            This text has a sky background in the ranges between the @sm to
+            @lg.Both at below sm and at greater than @lg the background will be
+            orange
+          </h2>
+        </div>
+      </div>
+      {/* Six */}
+      <div className="w-full gap-2 items-center flex flex-col">
+        <h2 className=" text-[medium] font-bold rounded-full bg-sky-600/30 outline-1 outline-sky-500  px-4">
+          5 :Named Containers
+        </h2>
+        <div className=" flex flex-col items-center gap-2 py-3.5 bg-gray-900  w-1/2">
+          <h2 className=" w-11/12 p-3.5 outline-1 outline-gray-500 bg-sky-400/20 text-gray-200 rounded-[0.4em]">
+            For complex designs that contains nested containers you can name the
+            containers using '@container/{name}' and target specific containers
+            with variants like '@sm/{name}'
+          </h2>
+        </div>
       </div>
     </div>
   );

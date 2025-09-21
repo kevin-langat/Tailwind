@@ -5,8 +5,11 @@
   --breakpoint-xm: 53rem;
   /* --breakpoint-xl:initial; --> removing a default breakpoint  */
   /* --breakpoint-*:initial;   --> removing all the default breakpoints  */
+  /* customising the breakpoint for container queries */
+    --container--xl: 82rem;
 }
 
+/* @custom-variant dark (&:where(.dark, .dark *)) */
 :root {
   font-family: cursive;
   line-height: 1.5;
@@ -19,4 +22,9 @@
 
 body {
   margin: 0;
+}
+.resizable {
+  resize: horizontal;
+  overflow: hidden;
+  border: 1px dashed #e80e0e;
 }

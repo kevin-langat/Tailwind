@@ -1,4 +1,3 @@
-
 @import "tailwindcss";
 
 @theme {
@@ -6,7 +5,27 @@
   /* --breakpoint-xl:initial; --> removing a default breakpoint  */
   /* --breakpoint-*:initial;   --> removing all the default breakpoints  */
   /* customising the breakpoint for container queries */
-    --container--xl: 82rem;
+  --container--xl: 82rem;
+  --color-mint-500: oklch(0.72 0.11 178);
+    --font-popins: Poppins, sans-serif;
+    --breakpoint-alg: 72rem;
+  
+    --animate-fade-in: fade-in-scale 0.3s ease-out;
+  
+  
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+        tranform: scale(0.95);
+  
+      }
+  
+      `100% {
+        opacity: 100%;
+        tranform: scale(1)
+      }
+  
+    }
 }
 
 /* @custom-variant dark (&:where(.dark, .dark *)) */

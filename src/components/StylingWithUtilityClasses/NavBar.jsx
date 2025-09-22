@@ -1,10 +1,13 @@
 import { Link } from 'react-router-dom';
 import image from '../../assets/react.svg';
 import { useState } from 'react';
+import {
+  ArrowLeftCircle,
+  ArrowRightCircleIcon,
+  ArrowUpRight,
+} from 'lucide-react';
 
 function NavBar() {
-  const [activeNavbar, setActiveNavbar] = useState(1);
-
   return (
     <div className=" w-full shadow px-4 h-12 flex flex-row items-center justify-between">
       <img src={image} alt="react" />
@@ -53,8 +56,11 @@ function NavBar() {
           Theme Variables
         </Link>
       </div>
-      <button className=" bg-orange-700 h-3/5  py-4 flex flex-col items-center justify-center px-2 text-white outline-gray-200 shadow-gray-500 rounded-full">
-        All Documentation
+      <button className=" group cursor-pointer bg-orange-700 h-3/5  py-4 flex flex-row items-center justify-center px-2 gap-2 text-white  outline-gray-200 shadow-gray-500 rounded-full">
+        <h2 className="hidden group-has-hover:block"> All Documentation</h2>
+        <h2>
+          <ArrowUpRight className=" outline-1 outline-gray-400 rounded-full text-black  bg-sky-400 w-6 h-6" />
+        </h2>
       </button>
     </div>
   );

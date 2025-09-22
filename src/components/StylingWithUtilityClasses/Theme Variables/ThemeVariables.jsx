@@ -1,4 +1,9 @@
+import { useEffect } from 'react';
+
 function ThemeVariables() {
+  useEffect(() => {
+    console.log(getComputedStyle(document.documentElement));
+  }, []);
   return (
     <div className=" w-full mb-5 flex flex-col items-center justify-center gap-8">
       <div className="  flex flex-col w-full items-center gap-2">
@@ -37,7 +42,7 @@ function ThemeVariables() {
         <h2 className=" text-[medium] font-bold rounded-full bg-sky-600/30 outline-1 outline-sky-500  px-4">
           Customizing your theme
         </h2>
-        <h2 className=" w-1/2 text-sm bg-gray-800 rounded-[0.4em] p-4  text-gray-400">
+        <h2 className=" w-1/2 text-sm bg-gray-800 rounded-[0.4em] p-4  text-gray-400 anima">
           Overriding you default theme: override the default theme by redefining
           it within '@theme'.For example '--breakpoint-sm:30rem;'. To completely
           override the entire namespace set the entire namespace to 'initial'

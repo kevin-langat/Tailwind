@@ -45,7 +45,6 @@ function NavBar() {
         </Link>
         {/* <Link to="">Focus</Link> */}
         <Link
-          onClick={() => setActiveNavbar(4)}
           className={` ${
             location.pathname.endsWith('theme-variables')
               ? 'bg-sky-800/20 outline-1 outline-gray-400 '
@@ -54,6 +53,16 @@ function NavBar() {
           to="theme-variables"
         >
           Theme Variables
+        </Link>
+        <Link
+          className={` ${
+            location.pathname.endsWith('colors')
+              ? 'bg-sky-800/20 outline-1 outline-gray-400 '
+              : ''
+          } focus:bg-sky-600/30 focus:outline-1 rounded-full px-2 `}
+          to="colors"
+        >
+          Colors
         </Link>
       </div>
       <button className=" group cursor-pointer bg-orange-700 h-3/5  py-4 flex flex-row items-center justify-center px-2 gap-2 text-white  outline-gray-200 shadow-gray-500 rounded-full">

@@ -11,6 +11,10 @@
     --breakpoint-alg: 72rem;
 
 }
+
+@utility content-auto {
+  content-visibilty: auto;
+}
 /* @custom-variant dark (&:where(.dark, .dark *)) */
 :root {
   font-family: cursive;

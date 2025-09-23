@@ -1,76 +1,114 @@
 import { Link } from 'react-router-dom';
 import image from '../../assets/react.svg';
-import { useState } from 'react';
-import {
-  ArrowLeftCircle,
-  ArrowRightCircleIcon,
-  ArrowUpRight,
-} from 'lucide-react';
+import { ArrowUpRight, X } from 'lucide-react';
+import { useEffect, useState } from 'react';
 
 function NavBar() {
-  return (
-    <div className=" w-full shadow px-4 h-12 flex flex-row items-center justify-between">
-      <img src={image} alt="react" />
-      <div className=" hidden group md:flex lg:w-1/2 sm:w-3/4 font-light h-3/4 rounded-full px-3 bg-gray-200 *:py-0.5 text-[0.77em]  flex-row  items-center justify-around">
-        <Link
-          className={` ${
-            location.pathname.endsWith('hover-state')
-              ? 'bg-sky-800/20 outline-1 outline-gray-400 '
-              : ''
-          } focus:bg-sky-600/30 focus:outline-1 rounded-full px-2 `}
-          to="/hover-state"
-        >
-          Hover and Other states
-        </Link>
-        <Link
-          className={` ${
-            location.pathname.endsWith('responsive-design')
-              ? 'bg-sky-800/20 outline-1 outline-gray-400 '
-              : ''
-          } focus:bg-sky-600/30 focus:outline-1 rounded-full px-2 `}
-          to="/responsive-design"
-        >
-          Responsive Design
-        </Link>
+  const [sideBar, setSideBar] = useState(false);
 
-        <Link
-          className={` ${
-            location.pathname.endsWith('dark-mode')
-              ? 'bg-sky-800/20 outline-1 outline-gray-400 '
-              : ''
-          } focus:bg-sky-600/30 focus:outline-1 rounded-full px-2 `}
-          to="/dark-mode"
+  window.addEventListener('click', (e) => {
+    if (e.target.classList.contains('sideBar')) {
+    } else {
+      setSideBar(false);
+    }
+  });
+  useEffect(() => {
+    console.log();
+    if (sideBar) {
+      document.documentElement.style.overflow = 'hidden';
+    } else if (sideBar === false) {
+      document.documentElement.style.overflow = 'scroll';
+    }
+  }, [sideBar]);
+
+  return (
+    <div className=" flex flex-row h-full relative w-full">
+      <div className=" w-full shadow px-4 h-12 flex flex-row items-center justify-between">
+        <img src={image} alt="react" />
+        <div className=" hidden group md:flex lg:w-1/2 sm:w-3/4 font-light h-3/4 rounded-full px-3 bg-gray-200 *:py-0.5 text-[0.77em]  flex-row  items-center justify-around *:hover:underline decoration-1 decoration-blue-500 *:hover:text-blue-600">
+          <Link
+            className={` ${
+              location.pathname.endsWith('hover-state')
+                ? 'bg-sky-800/20 outline-1 outline-gray-400 '
+                : ''
+            } focus:bg-sky-600/30 focus:outline-1 rounded-full px-2 `}
+            to="/hover-state"
+          >
+            Hover $ states
+          </Link>
+          <Link
+            className={` ${
+              location.pathname.endsWith('responsive-design')
+                ? 'bg-sky-800/20 outline-1 outline-gray-400 '
+                : ''
+            } focus:bg-sky-600/30 focus:outline-1 rounded-full px-2 `}
+            to="/responsive-design"
+          >
+            Responsive Design
+          </Link>
+
+          <Link
+            className={` ${
+              location.pathname.endsWith('dark-mode')
+                ? 'bg-sky-800/20 outline-1 outline-gray-400 '
+                : ''
+            } focus:bg-sky-600/30 focus:outline-1 rounded-full px-2 `}
+            to="/dark-mode"
+          >
+            Dark Mode
+          </Link>
+          {/* <Link to="">Focus</Link> */}
+          <Link
+            className={` ${
+              location.pathname.endsWith('theme-variables')
+                ? 'bg-sky-800/20 outline-1 outline-gray-400 '
+                : ''
+            } focus:bg-sky-600/30 focus:outline-1 rounded-full px-2 `}
+            to="theme-variables"
+          >
+            Theme Variables
+          </Link>
+          <Link
+            className={` ${
+              location.pathname.endsWith('colors')
+                ? 'bg-sky-800/20 outline-1 outline-gray-400 '
+                : ''
+            } focus:bg-sky-600/30 focus:outline-1 rounded-full px-2 `}
+            to="colors"
+          >
+            Colors
+          </Link>
+        </div>
+        <button
+          onClick={() => setSideBar(true)}
+          className="sideBar group cursor-pointer bg-orange-700 h-3/5  py-4 flex flex-row items-center justify-center px-2 gap-2 text-white  outline-gray-200 shadow-8xl rounded-full shadow-black"
         >
-          Dark Mode
-        </Link>
-        {/* <Link to="">Focus</Link> */}
+          <h2 className="sideBar text-sm"> All Documentation</h2>
+          <h2>
+            <ArrowUpRight className="sideBar outline-1 outline-gray-400 rounded-full text-black  bg-sky-400 w-6 h-6" />
+          </h2>
+        </button>
+      </div>
+      <div
+        className={` ${
+          sideBar ? 'flex' : 'hidden'
+        } sideBar flex-col gap-3 pl-4 py-3  absolute bg-gray-900 outline-1 rounded-tl-[0.5em] rounded-bl-[0.5em] outline-gray-400 w-3/4 sm:w-1/2 md:w-1/3 lg:1/4 right-0 h-[100vh]`}
+      >
+        <div className="sideBar flex flex-row items-center w-full h-6 rounded-2xl justify-between px-3">
+          <h2 className="sideBar text-gray-300 underline">All topics</h2>
+          <X
+            onClick={() => setSideBar(false)}
+            className="cursor-pointer w-5 h-5 hover:outline-1 hover:outline-gray-600 hover:bg-gray-700/30 rounded-full text-gray-200"
+          />
+        </div>
         <Link
-          className={` ${
-            location.pathname.endsWith('theme-variables')
-              ? 'bg-sky-800/20 outline-1 outline-gray-400 '
-              : ''
-          } focus:bg-sky-600/30 focus:outline-1 rounded-full px-2 `}
-          to="theme-variables"
+          onClick={() => setSideBar(false)}
+          className=" hover:text-sky-500 text-gray-400 hover:underline"
+          to={'/custom-styles'}
         >
-          Theme Variables
-        </Link>
-        <Link
-          className={` ${
-            location.pathname.endsWith('colors')
-              ? 'bg-sky-800/20 outline-1 outline-gray-400 '
-              : ''
-          } focus:bg-sky-600/30 focus:outline-1 rounded-full px-2 `}
-          to="colors"
-        >
-          Colors
+          Adding custom styles
         </Link>
       </div>
-      <button className=" group cursor-pointer bg-orange-700 h-3/5  py-4 flex flex-row items-center justify-center px-2 gap-2 text-white  outline-gray-200 shadow-gray-500 rounded-full">
-        <h2 className="hidden group-has-hover:block"> All Documentation</h2>
-        <h2>
-          <ArrowUpRight className=" outline-1 outline-gray-400 rounded-full text-black  bg-sky-400 w-6 h-6" />
-        </h2>
-      </button>
     </div>
   );
 }

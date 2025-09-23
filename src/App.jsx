@@ -5,7 +5,8 @@ import { useEffect } from 'react';
 import ResponsiveDesign from './components/StylingWithUtilityClasses/Responsive Design/ResponsiveDesign';
 import Darkmode from './components/StylingWithUtilityClasses/DarkMode/Darkmode';
 import ThemeVariables from './components/StylingWithUtilityClasses/Theme Variables/ThemeVariables';
-import Test from './components/Test';
+import Colors from './components/StylingWithUtilityClasses/Colors/Colors';
+import CustomStyles from './components/StylingWithUtilityClasses/CustomStyles/CustomStyles';
 
 function App() {
   const location = useLocation();
@@ -24,8 +25,10 @@ function App() {
         <Route path="responsive-design" element={<ResponsiveDesign />} />
         <Route path="dark-mode" element={<Darkmode />} />
         <Route path="theme-variables" element={<ThemeVariables />} />
+        <Route path="theme-variables" element={<ThemeVariables />} />
+        <Route path="colors" element={<Colors />} />
+        <Route path="custom-styles" element={<CustomStyles />} />
       </Route>
-      <Route path="/test" element={<Test />} />
     </Routes>
   );
 }

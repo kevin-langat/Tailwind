@@ -9,11 +9,58 @@
   --color-mint-500: oklch(0.72 0.11 178);
   --font-popins: Poppins, sans-serif;
     --breakpoint-alg: 72rem;
+    --tab-size-github: 8;
 
+}
+@utility tab-* {
+  tab-size: --value((--tab-size-*))
 }
 
 @utility content-auto {
   content-visibilty: auto;
+}
+/* @utility scrollbar-hide {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+} */
+
+/* using variants */
+.prefDark {
+  @variant dark {
+    background-color: black;
+    color: white;
+    /* if u need multiple variants at the same time use nesting */
+    /* @variant hover {
+      border: 2px solid green;
+    } */
+  }
+}
+
+/* addding a custom variants */
+@custom-variant theme-midnight {
+  &:where([data-theme="midnight"]*) {
+    @slot
+  }
+}
+
+/* adding base styles */
+@layer base {
+  h1 {
+    font-size: var(--text-2xl);
+    color: gray;
+
+  }
+}
+
+/* adding components styles  */
+@layer components {
+  .text-hello {
+    background-color: var(--color-gray-700);
+    border-radius: var((--radius-lg));
+    padding: --spacing(2);
+    box-shadow: var((--shadow-full));
+  }
 }
 /* @custom-variant dark (&:where(.dark, .dark *)) */
 :root {
@@ -24,6 +71,11 @@
 
 
 }
+/* .test2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.4em;
+} */
 
 
 body {
@@ -34,4 +86,11 @@ body {
   resize: horizontal;
   overflow: hidden;
   border: 1px dashed #e80e0e;
+  min-width: 300px;
+    max-width: 900px;
+  
+    @media(prefers-color-scheme: dark) {
+      background-color: rgb(30, 29, 29);
+  
+    }
 }

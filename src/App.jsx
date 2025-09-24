@@ -7,6 +7,7 @@ import Darkmode from './components/StylingWithUtilityClasses/DarkMode/Darkmode';
 import ThemeVariables from './components/StylingWithUtilityClasses/Theme Variables/ThemeVariables';
 import Colors from './components/StylingWithUtilityClasses/Colors/Colors';
 import CustomStyles from './components/StylingWithUtilityClasses/CustomStyles/CustomStyles';
+import DetectingClasses from './components/StylingWithUtilityClasses/DetectingClasses/DetectingClasses';
 
 function App() {
   const location = useLocation();
@@ -28,6 +29,7 @@ function App() {
         <Route path="theme-variables" element={<ThemeVariables />} />
         <Route path="colors" element={<Colors />} />
         <Route path="custom-styles" element={<CustomStyles />} />
+        <Route path="detecting-classes" element={<DetectingClasses />} />
       </Route>
     </Routes>
   );

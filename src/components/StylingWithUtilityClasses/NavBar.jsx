@@ -103,10 +103,17 @@ function NavBar() {
         </div>
         <Link
           onClick={() => setSideBar(false)}
-          className=" hover:text-sky-500 text-gray-400 hover:underline"
+          className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
           to={'/custom-styles'}
         >
           Adding custom styles
+        </Link>
+        <Link
+          onClick={() => setSideBar(false)}
+          className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+          to={'/detecting-classes'}
+        >
+          Detecting Classes In Source Files
         </Link>
       </div>
     </div>

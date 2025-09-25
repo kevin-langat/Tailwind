@@ -8,6 +8,9 @@ import ThemeVariables from './components/StylingWithUtilityClasses/Theme Variabl
 import Colors from './components/StylingWithUtilityClasses/Colors/Colors';
 import CustomStyles from './components/StylingWithUtilityClasses/CustomStyles/CustomStyles';
 import DetectingClasses from './components/StylingWithUtilityClasses/DetectingClasses/DetectingClasses';
+import FunctionsAndDirectives from './components/StylingWithUtilityClasses/FunctionsAndDirectives/FunctionsAndDirectives';
+import AspectRatio from './components/StylingWithUtilityClasses/AspectRatio/AspectRatio';
+import Columns from './components/StylingWithUtilityClasses/Columns/Columns';
 
 function App() {
   const location = useLocation();
@@ -30,6 +33,12 @@ function App() {
         <Route path="colors" element={<Colors />} />
         <Route path="custom-styles" element={<CustomStyles />} />
         <Route path="detecting-classes" element={<DetectingClasses />} />
+        <Route
+          path="functions-directives"
+          element={<FunctionsAndDirectives />}
+        />
+        <Route path="aspect-ratio" element={<AspectRatio />} />
+        <Route path="columns" element={<Columns />} />
       </Route>
     </Routes>
   );

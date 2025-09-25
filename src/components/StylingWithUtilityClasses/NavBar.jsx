@@ -94,8 +94,10 @@ function NavBar() {
           sideBar ? 'flex' : 'hidden'
         } sideBar flex-col gap-3 pl-4 py-3  absolute bg-gray-900 outline-1 rounded-tl-[0.5em] rounded-bl-[0.5em] outline-gray-400 w-3/4 sm:w-1/2 md:w-1/3 lg:1/4 right-0 h-[100vh]`}
       >
-        <div className="sideBar flex flex-row items-center w-full h-6 rounded-2xl justify-between px-3">
-          <h2 className="sideBar text-gray-300 underline">All topics</h2>
+        <div className="sideBar flex flex-row items-center w-full h-6 rounded-2xl justify-between px-0">
+          <h2 className="sideBar  text-orange-500 rounded-full underline">
+            Core Concepts{' '}
+          </h2>
           <X
             onClick={() => setSideBar(false)}
             className="cursor-pointer w-5 h-5 hover:outline-1 hover:outline-gray-600 hover:bg-gray-700/30 rounded-full text-gray-200"
@@ -114,6 +116,29 @@ function NavBar() {
           to={'/detecting-classes'}
         >
           Detecting Classes In Source Files
+        </Link>
+        <Link
+          onClick={() => setSideBar(false)}
+          className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+          to={'/functions-directives'}
+        >
+          Functions and Directives{' '}
+        </Link>
+        <hr className=" w-full text-gray-500" />
+        <h2 className=" text-orange-500 rounded-full underline">Layout</h2>
+        <Link
+          onClick={() => setSideBar(false)}
+          className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+          to={'/aspect-ratio'}
+        >
+          Aspect Ratio
+        </Link>
+        <Link
+          onClick={() => setSideBar(false)}
+          className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+          to={'/columns'}
+        >
+          Colums
         </Link>
       </div>
     </div>

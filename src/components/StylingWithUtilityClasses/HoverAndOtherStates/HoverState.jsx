@@ -801,7 +801,7 @@ function HoverState() {
       {/* Twenty seven */}
       <div className="flex flex-col w-full items-center gap-2 ">
         <h2 className=" text-[medium] font-bold rounded-full bg-gray-300 px-4">
-          27 :Styling Direct Children with **:
+          27 :Styling all Children with **:
         </h2>
         <div className="flex **:data-origin:text-sky-400 **:data-avatar:w-16 **:data-avatar:h-16 **:data-avatar:rounded-full **:data-avatar:outline-1 **:data-avatar:outline-gray-100 items-center py-3  justify-center flex-row gap-2 bg-gray-800 w-1/2 rounded-[0.4em] outline-1 outline-gray-300">
           <img src={imageTwo} data-avatar alt="" />

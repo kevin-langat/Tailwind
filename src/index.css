@@ -1,5 +1,9 @@
 @import "tailwindcss";
+/* @import "tailwindcss/preflight.css" layer(base); */
+/*  disable automatic source detection using source(none) during importation of tailwind  */
+/* above: specific utilities */
 
+/* @source inline("underline") */
 @theme {
   --breakpoint-xm: 53rem;
   /* --breakpoint-xl:initial; --> removing a default breakpoint  */
@@ -10,6 +14,8 @@
   --font-popins: Poppins, sans-serif;
     --breakpoint-alg: 72rem;
     --tab-size-github: 8;
+    --text-vsm: 0.8em;
+      --aspect-retro: 4/3;
 
 }
 @utility tab-* {
@@ -77,20 +83,46 @@
   gap: 0.4em;
 } */
 
+/* using functions  */
+
+.my-element {
+  color: --alpha(var(--color-gray-700)/50%);
+}
+
+/* using --spacing() */
+.my-elementTwo {
+  margin: --spacing(4);
+}
 
 body {
   margin: 0;
+  
 }
 
+@layer components {
 .resizable {
   resize: horizontal;
   overflow: hidden;
-  border: 1px dashed #e80e0e;
-  min-width: 300px;
+  border: 2px solid rgb(91, 91, 252);
+    min-width: 300px;
     max-width: 900px;
   
     @media(prefers-color-scheme: dark) {
       background-color: rgb(30, 29, 29);
   
     }
+                                }
+                
+                                .resizableVid {
+                                  resize: horizontal;
+                                  overflow: hidden;
+                                  border: 1px solid rgb(91, 91, 252);
+                
+                                  max-width: 900px;
+                
+                                  @media(prefers-color-scheme: dark) {
+                                    background-color: rgb(30, 29, 29);
+                
+                                  }
+                                }
 }

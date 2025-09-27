@@ -1,9 +1,12 @@
 @import "tailwindcss";
+/* to use attribute data-theme attribute override the dark variant with attribute selctor: */
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+/* to use dark class to apply dark mode use the custom selector: @custom-variant dark (&:where(.dark, .dark *))  */
 /* @import "tailwindcss/preflight.css" layer(base); */
 /*  disable automatic source detection using source(none) during importation of tailwind  */
 /* above: specific utilities */
-
 /* @source inline("underline") */
+
 @theme {
   --breakpoint-xm: 53rem;
   /* --breakpoint-xl:initial; --> removing a default breakpoint  */
@@ -12,12 +15,13 @@
   --container--xl: 82rem;
   --color-mint-500: oklch(0.72 0.11 178);
   --font-popins: Poppins, sans-serif;
-    --breakpoint-alg: 72rem;
+  --breakpoint-alg: 72rem;
     --tab-size-github: 8;
     --text-vsm: 0.8em;
-      --aspect-retro: 4/3;
+    --aspect-retro: 4/3;
 
 }
+
 @utility tab-* {
   tab-size: --value((--tab-size-*))
 }
@@ -25,6 +29,7 @@
 @utility content-auto {
   content-visibilty: auto;
 }
+
 /* @utility scrollbar-hide {
   &::-webkit-scrollbar {
     display: none;
@@ -68,7 +73,7 @@
     box-shadow: var((--shadow-full));
   }
 }
-/* @custom-variant dark (&:where(.dark, .dark *)) */
+
 :root {
   font-family: cursive;
   line-height: 1.5;
@@ -76,7 +81,9 @@
   flex-direction: column;
 
 
+
 }
+
 /* .test2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -96,33 +103,33 @@
 
 body {
   margin: 0;
-  
+
 }
 
 @layer components {
-.resizable {
-  resize: horizontal;
-  overflow: hidden;
-  border: 2px solid rgb(91, 91, 252);
+  .resizable {
+      resize: horizontal;
+      overflow: hidden;
+      border: 2px solid rgb(91, 91, 252);
     min-width: 300px;
     max-width: 900px;
-  
+
     @media(prefers-color-scheme: dark) {
       background-color: rgb(30, 29, 29);
-  
+
     }
-                                }
-                
-                                .resizableVid {
-                                  resize: horizontal;
-                                  overflow: hidden;
-                                  border: 1px solid rgb(91, 91, 252);
-                
-                                  max-width: 900px;
-                
-                                  @media(prefers-color-scheme: dark) {
-                                    background-color: rgb(30, 29, 29);
-                
-                                  }
-                                }
+    }
+  
+    .resizableVid {
+      resize: horizontal;
+      overflow: hidden;
+      border: 1px solid rgb(91, 91, 252);
+  
+      max-width: 900px;
+  
+      @media(prefers-color-scheme: dark) {
+        background-color: rgb(30, 29, 29);
+  
+      }
+    }
 }

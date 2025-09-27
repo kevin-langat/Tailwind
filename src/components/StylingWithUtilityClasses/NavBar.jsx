@@ -25,7 +25,7 @@ function NavBar() {
     <div className=" flex flex-row h-full relative w-full">
       <div className=" w-full shadow px-4 h-12 flex flex-row items-center justify-between">
         <img src={image} alt="react" />
-        <div className=" hidden group md:flex lg:w-1/2 sm:w-3/4 font-light h-3/4 rounded-full px-3 bg-gray-200 *:py-0.5 text-[0.77em]  flex-row  items-center justify-around *:hover:underline decoration-1 decoration-blue-500 *:hover:text-blue-600">
+        <div className=" hidden group md:flex lg:w-1/2 sm:w-3/4 font-light h-3/4 rounded-full px-3  bg-gray-200 *:py-0.5 text-[0.77em]  flex-row  items-center justify-around *:hover:underline decoration-1 decoration-blue-500 *:hover:text-blue-600">
           <Link
             className={` ${
               location.pathname.endsWith('hover-state')
@@ -92,9 +92,9 @@ function NavBar() {
       <div
         className={` ${
           sideBar ? 'flex' : 'hidden'
-        } sideBar flex-col gap-3 pl-4 py-3  absolute bg-gray-900 outline-1 rounded-tl-[0.5em] rounded-bl-[0.5em] outline-gray-400 w-3/4 sm:w-1/2 md:w-1/3 lg:1/4 right-0 h-[100vh]`}
+        } sideBar flex-col gap-3 pl-4 py-3  absolute bg-gray-900 outline-1 rounded-tl-[0.5em] rounded-bl-[0.5em] outline-gray-400 w-3/5 sm:w-1/2 md:w-1/3 lg:1/4 right-0 h-[100vh] max-sm:text-vsm`}
       >
-        <div className="sideBar flex flex-row items-center w-full h-6 rounded-2xl justify-between px-0">
+        <div className="sideBar flex flex-row items-center w-full h-6 rounded-2xl justify-between pr-2">
           <h2 className="sideBar  text-orange-500 rounded-full underline">
             Core Concepts{' '}
           </h2>
@@ -125,7 +125,9 @@ function NavBar() {
           Functions and Directives{' '}
         </Link>
         <hr className=" w-full text-gray-500" />
-        <h2 className=" text-orange-500 rounded-full underline">Layout</h2>
+        <h2 className=" sideBar text-orange-500 rounded-full underline">
+          Layout
+        </h2>
         <Link
           onClick={() => setSideBar(false)}
           className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
@@ -138,7 +140,42 @@ function NavBar() {
           className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
           to={'/columns'}
         >
-          Colums
+          Columns
+        </Link>
+        <Link
+          onClick={() => setSideBar(false)}
+          className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+          to={'/break-after'}
+        >
+          Break After
+        </Link>
+        <Link
+          onClick={() => setSideBar(false)}
+          className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+          to={'/break-before'}
+        >
+          Break Before
+        </Link>
+        <Link
+          onClick={() => setSideBar(false)}
+          className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+          to={'/box-decoration-break'}
+        >
+          Box Decoration Break
+        </Link>
+        <Link
+          onClick={() => setSideBar(false)}
+          className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+          to={'/box-sizing'}
+        >
+          Box Sizing
+        </Link>
+        <Link
+          onClick={() => setSideBar(false)}
+          className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+          to={'/display'}
+        >
+          Display
         </Link>
       </div>
     </div>

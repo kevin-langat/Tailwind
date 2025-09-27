@@ -11,6 +11,12 @@ import DetectingClasses from './components/StylingWithUtilityClasses/DetectingCl
 import FunctionsAndDirectives from './components/StylingWithUtilityClasses/FunctionsAndDirectives/FunctionsAndDirectives';
 import AspectRatio from './components/StylingWithUtilityClasses/AspectRatio/AspectRatio';
 import Columns from './components/StylingWithUtilityClasses/Columns/Columns';
+import BreakAfter from './components/StylingWithUtilityClasses/BreakAfter/BreakAfter';
+
+import BreakBefore from './components/StylingWithUtilityClasses/BreakBefore/BreakBefore';
+import BoxDecorationBreak from './components/StylingWithUtilityClasses/BoxDecorationBreak/BoxDecorationBreak';
+import BoxSizing from './components/StylingWithUtilityClasses/BoxSizing/BoxSizing';
+import Display from './components/StylingWithUtilityClasses/Display/Display';
 
 function App() {
   const location = useLocation();
@@ -39,6 +45,11 @@ function App() {
         />
         <Route path="aspect-ratio" element={<AspectRatio />} />
         <Route path="columns" element={<Columns />} />
+        <Route path="break-after" element={<BreakAfter />} />
+        <Route path="break-before" element={<BreakBefore />} />
+        <Route path="box-decoration-break" element={<BoxDecorationBreak />} />
+        <Route path="box-sizing" element={<BoxSizing />} />
+        <Route path="display" element={<Display />} />
       </Route>
     </Routes>
   );

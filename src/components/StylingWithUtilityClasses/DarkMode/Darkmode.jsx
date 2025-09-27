@@ -2,20 +2,8 @@ import { PenBoxIcon } from 'lucide-react';
 import { useEffect } from 'react';
 
 function Darkmode() {
-  useEffect(() => {
-    let x = document.documentElement.classList.toggle(
-      'dark',
-      localStorage.theme === 'dark' ||
-        (!('theme' in localStorage) &&
-          window.matchMedia('prefers-color-scheme'))
-    );
-    console.log(
-      !('theme' in localStorage) && window.matchMedia('prefers-color-scheme')
-    );
-    console.log(document.documentElement);
-  }, []);
   return (
-    <div className=" flex flex-col items-center gap-8 w-full">
+    <div className=" flex flex-col items-center justify-center gap-8 w-full">
       <h2 className=" text-2xl underline font-bold">Dark Mode</h2>
 
       <div className=" flex w-3/5 flex-col items-center gap-2">
@@ -31,6 +19,15 @@ function Darkmode() {
           </h2>
         </div>
       </div>
+      <h2 className="text-vsm max-md:w-11/12  w-1/2">
+        To use data attribute instead of class make sure you override the dark
+        variant with attribute selector:
+        <br />{' '}
+        <span className="rounded-full bg-sky-500/30 text-sky-800 py-0.5 px-2">
+          @custom-variant dark (&:where([data-theme=dark], [data-theme=dark]
+          *));
+        </span>
+      </h2>
     </div>
   );
 }

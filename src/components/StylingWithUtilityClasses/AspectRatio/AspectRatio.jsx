@@ -62,7 +62,7 @@ function AspectRatio() {
         Responsive design
       </h2>
       <div className=" group flex flex-col items-center gap-1 w-full">
-        <h2 className="w-1/2 text-vsm group-has-hover:text-indigo-500 text-gray-800">
+        <h2 className="w-1/2 text-vsm group-has-hover:text-indigo-500 text-gray-800 ">
           {' '}
           Prefix an `aspect-ratio` utility with a breakpoint variant like 'md:'
           to only apply utility at a breakpoint
@@ -70,7 +70,7 @@ function AspectRatio() {
         <div className="resizableVid w-1/2 flex flex-col items-center justify-center bg-gray-800 rounded-[0.5em] min-w-50 max-w-150 max-h-60 ">
           <img
             src={imageTwo}
-            className=" md:aspect-square object-cover "
+            className="md:aspect-square object-cover "
             alt=""
           />
         </div>

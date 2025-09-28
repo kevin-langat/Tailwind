@@ -34,7 +34,7 @@ function NavBar() {
             } focus:bg-sky-600/30 focus:outline-1 rounded-full px-2 `}
             to="/hover-state"
           >
-            Hover $ states
+            Hover & states
           </Link>
           <Link
             className={` ${
@@ -176,6 +176,13 @@ function NavBar() {
           to={'/display'}
         >
           Display
+        </Link>
+        <Link
+          onClick={() => setSideBar(false)}
+          className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+          to={'/float'}
+        >
+          Float
         </Link>
       </div>
     </div>

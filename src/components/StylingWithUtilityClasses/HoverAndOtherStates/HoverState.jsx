@@ -781,7 +781,7 @@ function HoverState() {
       {/* Twenty six */}
       <div className="flex flex-col w-full items-center gap-2 ">
         <h2 className=" text-[medium] font-bold rounded-full bg-gray-300 px-4">
-          26 :Styling Direct Children with :*
+          26 :Styling Direct Children with *:
         </h2>
         <div className=" py-4 w-1/2 bg-gray-800 rounded-[0.4em] items-center flex flex-col ">
           <ul className="  *:text-sky-300 *:outline-1 *:outline-gray-500 *:bg-sky-800/40 *:rounded-full *:px-3 *:w-11/12  w-11/12 items-center place-items-center justify-center h-full  grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 ">

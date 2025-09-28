@@ -17,6 +17,7 @@ import BreakBefore from './components/StylingWithUtilityClasses/BreakBefore/Brea
 import BoxDecorationBreak from './components/StylingWithUtilityClasses/BoxDecorationBreak/BoxDecorationBreak';
 import BoxSizing from './components/StylingWithUtilityClasses/BoxSizing/BoxSizing';
 import Display from './components/StylingWithUtilityClasses/Display/Display';
+import Float from './components/StylingWithUtilityClasses/Float/Float';
 
 function App() {
   const location = useLocation();
@@ -50,6 +51,7 @@ function App() {
         <Route path="box-decoration-break" element={<BoxDecorationBreak />} />
         <Route path="box-sizing" element={<BoxSizing />} />
         <Route path="display" element={<Display />} />
+        <Route path="float" element={<Float />} />
       </Route>
     </Routes>
   );

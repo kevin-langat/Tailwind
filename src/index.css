@@ -30,11 +30,11 @@
   content-visibilty: auto;
 }
 
-/* @utility scrollbar-hide {
+@utility scrollbar-hide {
   &::-webkit-scrollbar {
     display: none;
   }
-} */
+}
 
 /* using variants */
 .prefDark {

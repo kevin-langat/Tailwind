@@ -103,87 +103,131 @@ function NavBar() {
             className="cursor-pointer w-5 h-5 hover:outline-1 hover:outline-gray-600 hover:bg-gray-700/30 rounded-full text-gray-200"
           />
         </div>
-        <Link
-          onClick={() => setSideBar(false)}
-          className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
-          to={'/custom-styles'}
-        >
-          Adding custom styles
-        </Link>
-        <Link
-          onClick={() => setSideBar(false)}
-          className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
-          to={'/detecting-classes'}
-        >
-          Detecting Classes In Source Files
-        </Link>
-        <Link
-          onClick={() => setSideBar(false)}
-          className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
-          to={'/functions-directives'}
-        >
-          Functions and Directives{' '}
-        </Link>
-        <hr className=" w-full text-gray-500" />
-        <h2 className=" sideBar text-orange-500 rounded-full underline">
-          Layout
-        </h2>
-        <Link
-          onClick={() => setSideBar(false)}
-          className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
-          to={'/aspect-ratio'}
-        >
-          Aspect Ratio
-        </Link>
-        <Link
-          onClick={() => setSideBar(false)}
-          className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
-          to={'/columns'}
-        >
-          Columns
-        </Link>
-        <Link
-          onClick={() => setSideBar(false)}
-          className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
-          to={'/break-after'}
-        >
-          Break After
-        </Link>
-        <Link
-          onClick={() => setSideBar(false)}
-          className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
-          to={'/break-before'}
-        >
-          Break Before
-        </Link>
-        <Link
-          onClick={() => setSideBar(false)}
-          className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
-          to={'/box-decoration-break'}
-        >
-          Box Decoration Break
-        </Link>
-        <Link
-          onClick={() => setSideBar(false)}
-          className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
-          to={'/box-sizing'}
-        >
-          Box Sizing
-        </Link>
-        <Link
-          onClick={() => setSideBar(false)}
-          className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
-          to={'/display'}
-        >
-          Display
-        </Link>
-        <Link
-          onClick={() => setSideBar(false)}
-          className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
-          to={'/float'}
-        >
-          Float
-        </Link>
+        <div className=" flex flex-col gap-1 overflow-y-scroll scrollbar-hide">
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/custom-styles'}
+          >
+            Adding custom styles
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/detecting-classes'}
+          >
+            Detecting Classes In Source Files
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/functions-directives'}
+          >
+            Functions and Directives{' '}
+          </Link>
+          <hr className=" w-full text-gray-500" />
+          <h2 className=" sideBar text-orange-500 rounded-full underline">
+            Layout
+          </h2>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/aspect-ratio'}
+          >
+            Aspect Ratio
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/columns'}
+          >
+            Columns
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/break-after'}
+          >
+            Break After
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/break-before'}
+          >
+            Break Before
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/box-decoration-break'}
+          >
+            Box Decoration Break
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/box-sizing'}
+          >
+            Box Sizing
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/display'}
+          >
+            Display
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/float'}
+          >
+            Float
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/clear'}
+          >
+            Clear
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/isolate'}
+          >
+            Isolation
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/object-fit'}
+          >
+            Object Fit
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/object-position'}
+          >
+            Object Position
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/overflow'}
+          >
+            Overflow
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/overscroll-behaviour'}
+          >
+            Overscroll Behaviour
+          </Link>
+        </div>
       </div>
     </div>
   );

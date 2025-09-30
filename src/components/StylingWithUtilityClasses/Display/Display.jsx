@@ -119,7 +119,7 @@ function Display() {
         </h2>
         <p className="w-1/2 p-2 bg-gray-800 **:text-gray-300 rounded-[0.4em]  text-gray-300">
           Today i spent most of the day researching way to take advantage of the
-          fact that bottles can be returned for 10 cents in Kericho, but only
+          fact that bottles can be returned for 10 cents in Kericho, but only 5
           cents here in Nairobi.
           <span className=" inline-flex items-baseline mr-1">
             <img

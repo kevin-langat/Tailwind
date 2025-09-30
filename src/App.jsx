@@ -18,6 +18,12 @@ import BoxDecorationBreak from './components/StylingWithUtilityClasses/BoxDecora
 import BoxSizing from './components/StylingWithUtilityClasses/BoxSizing/BoxSizing';
 import Display from './components/StylingWithUtilityClasses/Display/Display';
 import Float from './components/StylingWithUtilityClasses/Float/Float';
+import Clear from './components/StylingWithUtilityClasses/Clear/Clear';
+import Isolation from './components/StylingWithUtilityClasses/Isolation/Isolation';
+import Objectfit from './components/StylingWithUtilityClasses/Object-Fit/Object-fit';
+import ObjectPosition from './components/StylingWithUtilityClasses/ObjectPosition/ObjectPosition';
+import Overflow from './components/StylingWithUtilityClasses/Overflow/Overflow';
+import OverscrollBehaviour from './components/StylingWithUtilityClasses/OverScroll/OverscrollBehaviour';
 
 function App() {
   const location = useLocation();
@@ -52,6 +58,12 @@ function App() {
         <Route path="box-sizing" element={<BoxSizing />} />
         <Route path="display" element={<Display />} />
         <Route path="float" element={<Float />} />
+        <Route path="clear" element={<Clear />} />
+        <Route path="isolate" element={<Isolation />} />
+        <Route path="object-fit" element={<Objectfit />} />
+        <Route path="object-position" element={<ObjectPosition />} />
+        <Route path="overflow" element={<Overflow />} />
+        <Route path="overscroll-behaviour" element={<OverscrollBehaviour />} />
       </Route>
     </Routes>
   );

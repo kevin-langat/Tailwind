@@ -6,6 +6,8 @@ import { useEffect, useState } from 'react';
 function NavBar() {
   const [sideBar, setSideBar] = useState(false);
 
+  function handleOnScroll(e) {}
+
   window.addEventListener('click', (e) => {
     if (e.target.classList.contains('sideBar')) {
     } else {
@@ -103,7 +105,10 @@ function NavBar() {
             className="cursor-pointer w-5 h-5 hover:outline-1 hover:outline-gray-600 hover:bg-gray-700/30 rounded-full text-gray-200"
           />
         </div>
-        <div className=" flex flex-col gap-1 overflow-y-scroll scrollbar-hide">
+        <div
+          onScroll={handleOnScroll}
+          className=" flex flex-col gap-1 overflow-y-scroll "
+        >
           <Link
             onClick={() => setSideBar(false)}
             className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
@@ -226,6 +231,20 @@ function NavBar() {
             to={'/overscroll-behaviour'}
           >
             Overscroll Behaviour
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/position'}
+          >
+            Position
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/top-right-bottom-left'}
+          >
+            Top/Right/Bottom/Left
           </Link>
         </div>
       </div>

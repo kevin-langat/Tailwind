@@ -45,10 +45,6 @@ function Overflow() {
         <h2>overflow-y:scroll;</h2>
         <h2>overflow-x-scroll</h2>
         <h2>overflow-x:scroll;</h2>
-        <h2>object-bottom-left</h2>
-        <h2>object-position:bottom left;</h2>
-        <h2>object-bottom</h2>
-        <h2>object-position:bottom;</h2>
       </div>
       <div className=" gap-2 flex flex-col w-1/2 items-center justify-center ">
         <h2 className="underline">

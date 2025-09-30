@@ -24,6 +24,8 @@ import Objectfit from './components/StylingWithUtilityClasses/Object-Fit/Object-
 import ObjectPosition from './components/StylingWithUtilityClasses/ObjectPosition/ObjectPosition';
 import Overflow from './components/StylingWithUtilityClasses/Overflow/Overflow';
 import OverscrollBehaviour from './components/StylingWithUtilityClasses/OverScroll/OverscrollBehaviour';
+import Position from './components/StylingWithUtilityClasses/Position/Position';
+import TopRightBottomLeft from './components/StylingWithUtilityClasses/Top,Right,Bottom,Left/TopRightBottomLeft';
 
 function App() {
   const location = useLocation();
@@ -64,6 +66,8 @@ function App() {
         <Route path="object-position" element={<ObjectPosition />} />
         <Route path="overflow" element={<Overflow />} />
         <Route path="overscroll-behaviour" element={<OverscrollBehaviour />} />
+        <Route path="position" element={<Position />} />
+        <Route path="top-right-bottom-left" element={<TopRightBottomLeft />} />
       </Route>
     </Routes>
   );

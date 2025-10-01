@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import image from '../../assets/react.svg';
+import image from '../../assets/Tailwind.png';
 import { ArrowUpRight, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
@@ -24,9 +24,9 @@ function NavBar() {
   }, [sideBar]);
 
   return (
-    <div className=" flex flex-row h-full relative w-full">
-      <div className=" w-full shadow px-4 h-12 flex flex-row items-center justify-between">
-        <img src={image} alt="react" />
+    <div className="relative flex flex-row h-full  w-full">
+      <div className=" fixed z-50 bg-white w-full shadow px-4 h-12 flex flex-row items-center justify-between">
+        <img src={image} className=" w-14 h-3/4 animate-pulse" alt="react" />
         <div className=" hidden group md:flex lg:w-1/2 sm:w-3/4 font-light h-3/4 rounded-full px-3  bg-gray-200 *:py-0.5 text-[0.77em]  flex-row  items-center justify-around *:hover:underline decoration-1 decoration-blue-500 *:hover:text-blue-600">
           <Link
             className={` ${
@@ -94,7 +94,7 @@ function NavBar() {
       <div
         className={` ${
           sideBar ? 'flex' : 'hidden'
-        } sideBar flex-col gap-3 pl-4 py-3  absolute bg-gray-900 outline-1 rounded-tl-[0.5em] rounded-bl-[0.5em] outline-gray-400 w-3/5 sm:w-1/2 md:w-1/3 lg:1/4 right-0 h-[100vh] max-sm:text-vsm`}
+        } sideBar z-50 flex-col gap-3 pl-4 py-3  absolute bg-gray-900 outline-1 rounded-tl-[0.5em] rounded-bl-[0.5em] outline-gray-400 w-3/5 sm:w-1/2 md:w-1/3 lg:1/4 right-0 h-[100vh] max-sm:text-vsm`}
       >
         <div className="sideBar flex flex-row items-center w-full h-6 rounded-2xl justify-between pr-2">
           <h2 className="sideBar  text-orange-500 rounded-full underline">

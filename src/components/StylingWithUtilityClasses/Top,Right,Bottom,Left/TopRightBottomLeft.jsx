@@ -92,7 +92,7 @@ function TopRightBottomLeft() {
       <div className=" flex gap-4 flex-col items-center justify-center w-full">
         <h2 className="underline">Use negative values</h2>
         <h2 className="w-1/2 text-vsm">
-          To use the neagtive values, prefix the class with a dash to convert it
+          To use the negative values, prefix the class with a dash to convert it
           to a neagtive value
         </h2>
 

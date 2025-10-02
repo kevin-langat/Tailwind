@@ -25,7 +25,7 @@ function NavBar() {
 
   return (
     <div className="relative flex flex-row h-full  w-full">
-      <div className=" fixed z-50 bg-white w-full shadow px-4 h-12 flex flex-row items-center justify-between">
+      <div className=" z-50 bg-white w-full shadow px-4 h-12 flex flex-row items-center justify-between">
         <img src={image} className=" w-14 h-3/4 animate-pulse" alt="react" />
         <div className=" hidden group md:flex lg:w-1/2 sm:w-3/4 font-light h-3/4 rounded-full px-3  bg-gray-200 *:py-0.5 text-[0.77em]  flex-row  items-center justify-around *:hover:underline decoration-1 decoration-blue-500 *:hover:text-blue-600">
           <Link
@@ -245,6 +245,13 @@ function NavBar() {
             to={'/top-right-bottom-left'}
           >
             Top/Right/Bottom/Left
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/visibility'}
+          >
+            Visibility{' '}
           </Link>
         </div>
       </div>

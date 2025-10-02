@@ -26,6 +26,7 @@ import Overflow from './components/StylingWithUtilityClasses/Overflow/Overflow';
 import OverscrollBehaviour from './components/StylingWithUtilityClasses/OverScroll/OverscrollBehaviour';
 import Position from './components/StylingWithUtilityClasses/Position/Position';
 import TopRightBottomLeft from './components/StylingWithUtilityClasses/Top,Right,Bottom,Left/TopRightBottomLeft';
+import Visibility from './components/StylingWithUtilityClasses/Visibility/Visibility';
 
 function App() {
   const location = useLocation();
@@ -68,6 +69,7 @@ function App() {
         <Route path="overscroll-behaviour" element={<OverscrollBehaviour />} />
         <Route path="position" element={<Position />} />
         <Route path="top-right-bottom-left" element={<TopRightBottomLeft />} />
+        <Route path="visibility" element={<Visibility />} />
       </Route>
     </Routes>
   );

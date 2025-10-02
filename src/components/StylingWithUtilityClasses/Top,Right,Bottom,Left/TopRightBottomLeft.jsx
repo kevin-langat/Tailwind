@@ -1,6 +1,6 @@
 function TopRightBottomLeft() {
   return (
-    <div className=" w-full flex flex-col items-center justify-center gap-4 mb-4">
+    <div className=" mt-13 w-full flex flex-col items-center justify-center gap-4 mb-4">
       <h2 className=" text-[medium] font-bold rounded-full bg-sky-600/30 outline-1 outline-sky-500  px-4">
         top/right/bottom/left
       </h2>
@@ -98,6 +98,50 @@ function TopRightBottomLeft() {
 
         <div className=" relative w-35  h-30 bg-gray-800 rounded-[0.4em]">
           <div className=" absolute w-8 h-8 bg-linear-to-r from-indigo-500 to-emerald-500 rounded-[0.2em] -top-4 -left-4"></div>
+        </div>
+      </div>
+      {/* use logical properties */}
+      <div className=" flex gap-4 flex-col items-center justify-center w-full">
+        <h2 className="underline">Use logical properties</h2>
+        <h2 className="w-1/2 text-vsm">
+          Use 'start-{'<number>'}' or 'end-{'<number>'}' utilities like
+          'start-0' and 'end-4' to set the 'inset-inline-start' and
+          'inset-inline-end' logical properties, which map to either right or
+          left side based on the text direction:{' '}
+        </h2>
+
+        <div className="flex flex-row items-center justify-center gap-40 w-1/2">
+          {/* ltr */}
+          <div
+            dir="ltr"
+            className=" relative w-35  h-30 bg-gray-800 rounded-[0.4em]"
+          >
+            <div className=" absolute w-8 h-8 bg-linear-to-r from-indigo-500 to-emerald-500 rounded-[0.2em] start-0 top-0"></div>
+          </div>
+          {/* rtl */}
+          <div
+            dir="rtl"
+            className=" relative w-35  h-30 bg-gray-800 rounded-[0.4em]"
+          >
+            <div className=" absolute w-8 h-8 bg-linear-to-r from-indigo-500 to-emerald-500 rounded-[0.2em] start-0 top-0"></div>
+          </div>
+        </div>
+        <div className="flex flex-row items-center justify-center gap-50 w-1/2">
+          <h2>Left to Right</h2>
+          <h2>Right to left</h2>
+        </div>
+      </div>
+
+      {/* using a custom value */}
+      <div className=" flex gap-4 flex-col items-center justify-center w-full">
+        <h2 className="underline">Use a custom value</h2>
+        <h2 className="w-1/2 text-vsm">
+          Use utilities like {'inset-[<value>]'}' to set the position based on a
+          completely custom value
+        </h2>
+
+        <div className=" relative w-35  h-30 bg-gray-800 rounded-[0.4em]">
+          <div className=" absolute bg-linear-to-r from-indigo-500 to-emerald-500 rounded-[0.2em] inset-[3px]"></div>
         </div>
       </div>
     </div>

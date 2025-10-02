@@ -94,21 +94,23 @@ function NavBar() {
       <div
         className={` ${
           sideBar ? 'flex' : 'hidden'
-        } sideBar z-50 flex-col gap-3 pl-4 py-3  absolute bg-gray-900 outline-1 rounded-tl-[0.5em] rounded-bl-[0.5em] outline-gray-400 w-3/5 sm:w-1/2 md:w-1/3 lg:1/4 right-0 h-[100vh] max-sm:text-vsm`}
+        } sideBar z-50 flex-col gap-1 pl-4 py-3  absolute bg-gray-900 outline-1 rounded-tl-[0.5em] rounded-bl-[0.5em] outline-gray-400 w-3/5 sm:w-1/2 md:w-1/3 lg:1/4 right-0 h-[100vh] max-sm:text-vsm`}
       >
-        <div className="sideBar flex flex-row items-center w-full h-6 rounded-2xl justify-between pr-2">
+        <div className=" w-[96%] h-6 flex flex-col items-end justify-end ">
+          {' '}
+          <X
+            onClick={() => setSideBar(false)}
+            className="cursor-pointer  h-5 hover:outline-1 hover:outline-gray-600 hover:bg-gray-700/30 rounded-full text-gray-200"
+          />
+        </div>
+
+        <div
+          onScroll={handleOnScroll}
+          className="flex flex-col gap-1 overflow-y-scroll "
+        >
           <h2 className="sideBar  text-orange-500 rounded-full underline">
             Core Concepts{' '}
           </h2>
-          <X
-            onClick={() => setSideBar(false)}
-            className="cursor-pointer w-5 h-5 hover:outline-1 hover:outline-gray-600 hover:bg-gray-700/30 rounded-full text-gray-200"
-          />
-        </div>
-        <div
-          onScroll={handleOnScroll}
-          className=" flex flex-col gap-1 overflow-y-scroll "
-        >
           <Link
             onClick={() => setSideBar(false)}
             className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
@@ -252,6 +254,45 @@ function NavBar() {
             to={'/visibility'}
           >
             Visibility{' '}
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/z-index'}
+          >
+            Z-Index{' '}
+          </Link>
+
+          <h2 className="sideBar  text-orange-500 rounded-full underline">
+            FlexBox & Grid{' '}
+          </h2>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/flex-basis'}
+          >
+            Flex-Basis{' '}
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/flex-direction'}
+          >
+            Flex-Direction
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/flex-wrap'}
+          >
+            Flex-Wrap
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/flex'}
+          >
+            Flex
           </Link>
         </div>
       </div>

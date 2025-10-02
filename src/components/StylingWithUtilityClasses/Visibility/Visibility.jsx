@@ -2,7 +2,7 @@ import React from 'react';
 
 function Visibility() {
   return (
-    <div className=" mt-13 w-full flex flex-col items-center justify-center gap-4 mb-4">
+    <div className=" w-full flex flex-col items-center justify-center gap-4 mb-4">
       <h2 className=" text-[medium] font-bold rounded-full bg-sky-600/30 outline-1 outline-sky-500  px-4">
         Visibilty{' '}
       </h2>

@@ -27,6 +27,11 @@ import OverscrollBehaviour from './components/StylingWithUtilityClasses/OverScro
 import Position from './components/StylingWithUtilityClasses/Position/Position';
 import TopRightBottomLeft from './components/StylingWithUtilityClasses/Top,Right,Bottom,Left/TopRightBottomLeft';
 import Visibility from './components/StylingWithUtilityClasses/Visibility/Visibility';
+import ZIndex from './components/StylingWithUtilityClasses/Z-index/Z-Index';
+import FlexBasis from './components/StylingWithUtilityClasses/FlexBasis/FlexBasis';
+import FlexDirection from './components/StylingWithUtilityClasses/FlexDirection/FlexDirection';
+import FlexWrap from './components/StylingWithUtilityClasses/FlexWrap/FlexWrap';
+import Flex from './components/StylingWithUtilityClasses/Flex/Flex';
 
 function App() {
   const location = useLocation();
@@ -70,6 +75,11 @@ function App() {
         <Route path="position" element={<Position />} />
         <Route path="top-right-bottom-left" element={<TopRightBottomLeft />} />
         <Route path="visibility" element={<Visibility />} />
+        <Route path="z-index" element={<ZIndex />} />
+        <Route path="flex-basis" element={<FlexBasis />} />
+        <Route path="flex-direction" element={<FlexDirection />} />
+        <Route path="flex-wrap" element={<FlexWrap />} />
+        <Route path="flex" element={<Flex />} />
       </Route>
     </Routes>
   );

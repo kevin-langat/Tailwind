@@ -106,6 +106,26 @@ body {
   margin: 0;
 
 }
+::-webkit-scrollbar {
+  background: none;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(94, 94, 94);
+  width: 10px;
+  border-radius: 0.5em;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  background: none;
+  width: 7px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: rgb(249, 247, 247);
+  border-radius: 10px;
+}
 
 @layer components {
   .resizable {
@@ -120,9 +140,11 @@ body {
 
     }
     }
+
   
     .resizableVid {
       resize: horizontal;
+      
       overflow: hidden;
       border: 1px solid rgb(91, 91, 252);
   

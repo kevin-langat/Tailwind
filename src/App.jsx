@@ -36,6 +36,10 @@ import FlexGrow from './components/StylingWithUtilityClasses/FlexGrow/FlexGrow';
 import FlexShrink from './components/StylingWithUtilityClasses/FlexShrink/FlexShrink';
 import Order from './components/StylingWithUtilityClasses/Order/Order';
 import GridTemplateColumns from './components/StylingWithUtilityClasses/GridTemplateColumns/GridTemplateColumns';
+import GridColumns from './components/StylingWithUtilityClasses/GridColumn/GridColumns';
+import GridTemplateRows from './components/StylingWithUtilityClasses/GridTemplateRows/GridTemplateRows';
+import GridRow from './components/StylingWithUtilityClasses/GridRow/GridRow';
+import GridAutoFlow from './components/StylingWithUtilityClasses/GridAutoFlow/GridAutoFlow';
 
 function App() {
   const location = useLocation();
@@ -88,6 +92,10 @@ function App() {
         <Route path="flex-shrink" element={<FlexShrink />} />
         <Route path="order" element={<Order />} />
         <Route path="grid-template-columns" element={<GridTemplateColumns />} />
+        <Route path="grid-columns" element={<GridColumns />} />
+        <Route path="grid-template-rows" element={<GridTemplateRows />} />
+        <Route path="grid-rows" element={<GridRow />} />
+        <Route path="grid-auto-flow" element={<GridAutoFlow />} />
       </Route>
     </Routes>
   );

@@ -322,6 +322,34 @@ function NavBar() {
           >
             Grid Template Columns
           </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/grid-columns'}
+          >
+            Grid Columns
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/grid-template-rows'}
+          >
+            Grid Template Rows
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/grid-rows'}
+          >
+            Grid Rows
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/grid-auto-flow'}
+          >
+            Grid Auto Flow
+          </Link>
         </div>
       </div>
     </div>

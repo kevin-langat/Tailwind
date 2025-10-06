@@ -81,7 +81,7 @@ function GridTemplateRows() {
           05
         </span>
         <div className="grid-rows-subgrid grid row-span-3 ">
-          <span className="bg-pink-600 row-start-2 rounded-[0.3em] w-full flex flex-col items-center">
+          <span className="bg-pink-600 row-start-3 rounded-[0.3em] w-full flex flex-col items-center">
             06
           </span>
         </div>

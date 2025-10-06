@@ -350,6 +350,20 @@ function NavBar() {
           >
             Grid Auto Flow
           </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/grid-auto-columns'}
+          >
+            Grid Auto Columns
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/gap'}
+          >
+            Gap
+          </Link>
         </div>
       </div>
     </div>

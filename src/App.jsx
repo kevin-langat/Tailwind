@@ -40,6 +40,8 @@ import GridColumns from './components/StylingWithUtilityClasses/GridColumn/GridC
 import GridTemplateRows from './components/StylingWithUtilityClasses/GridTemplateRows/GridTemplateRows';
 import GridRow from './components/StylingWithUtilityClasses/GridRow/GridRow';
 import GridAutoFlow from './components/StylingWithUtilityClasses/GridAutoFlow/GridAutoFlow';
+import GridAutoColumns from './components/StylingWithUtilityClasses/GridAutoFlow/GridAutoColumns';
+import Gap from './components/StylingWithUtilityClasses/Gap/Gap';
 
 function App() {
   const location = useLocation();
@@ -96,6 +98,8 @@ function App() {
         <Route path="grid-template-rows" element={<GridTemplateRows />} />
         <Route path="grid-rows" element={<GridRow />} />
         <Route path="grid-auto-flow" element={<GridAutoFlow />} />
+        <Route path="grid-auto-columns" element={<GridAutoColumns />} />
+        <Route path="gap" element={<Gap />} />
       </Route>
     </Routes>
   );

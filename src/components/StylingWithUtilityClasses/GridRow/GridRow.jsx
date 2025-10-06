@@ -6,7 +6,7 @@ function GridRow() {
       </h2>
       <h2 className=" text-vsm">
         Utilities for controlling how the elements are sized and placed across
-        grid roWS.
+        grid rows.
       </h2>
       <div className=" grid grid-cols-2 place-items-center flex-col gap-1.5 py-2  bg-gray-800 w-3/4 sm:w-1/2 *:even:text-indigo-400/70 *:text-vsm *:odd:text-gray-300 *:nth-1:underline *:nth-1:text-orange-400 *:nth-2:text-orange-400 *:nth-2:underline rounded-[0.4em]">
         <h2>Class</h2>
@@ -51,20 +51,14 @@ function GridRow() {
         <span className="bg-indigo-600 rounded-[0.3em] w-full flex flex-col items-center">
           05
         </span>
-        <span className="bg-indigo-600 rounded-[0.3em] w-full flex flex-col items-center">
+        <span className=" bg-pink-600 justify-center row-span-3 rounded-[0.3em] w-full flex flex-col items-center">
           06
-        </span>
-        <span className="bg-indigo-600 rounded-[0.3em] w-full flex flex-col items-center">
-          07
-        </span>
-        <span className="bg-indigo-600 rounded-[0.3em] w-full flex flex-col items-center">
-          08
         </span>
       </div>
 
-      {/* columns-start */}
-      <h2 className="undeline">Starting and ending lines</h2>
-      <h2 className="text-vsm">
+      {/* starring or ending lines */}
+      <h2 className="underline">Starting and ending lines</h2>
+      <h2 className="w-1/2 text-vsm">
         Use 'row-start-{'<number>'}' or 'row-end-{'<number>'}'utilities like
         'row-start-2' and 'row-end-2' to make an elelement start or end at the
         nth grid line:
@@ -86,23 +80,25 @@ function GridRow() {
         <span className="bg-indigo-600 rounded-[0.3em] w-full flex flex-col items-center">
           04
         </span>
-        <span className="bg-pink-600 row-span-4  rounded-[0.3em] w-full flex flex-col items-center">
+        <span className="bg-indigo-600 rounded-[0.3em] w-full flex flex-col items-center">
           05
         </span>
+
         <span className="bg-indigo-600 rounded-[0.3em] w-full flex flex-col items-center">
           06
         </span>
         <span className="bg-indigo-600 rounded-[0.3em] w-full flex flex-col items-center">
           07
         </span>
-        <span className="bg-indigo-600 rounded-[0.3em] w-full flex flex-col items-center">
+
+        <span className="bg-pink-600 justify-center row-span-4  rounded-[0.3em] w-full flex flex-col row-start-2 items-center">
           08
         </span>
       </div>
 
       {/* using a custom value */}
       <h2 className="undeline">Using a custom value</h2>
-      <h2 className="text-vsm">
+      <h2 className="w-1/2 text-vsm">
         Use utilities like 'row-{'[<value>]'}', 'row-span-{'[<value>]'}
         ','row-start-{'[<value>]'}' and 'row-end-{'[<value>]'}' to set the grid
         column size and location based on a completely custom value:
@@ -123,7 +119,7 @@ function GridRow() {
         <span className="bg-indigo-600 rounded-[0.3em] w-full flex flex-col items-center">
           04
         </span>
-        <span className="bg-pink-600 justify-center row-[1_/_span_12] rounded-[0.3em] w-full flex flex-col items-center">
+        <span className="bg-pink-600 justify-center row-[1_/_span_3] rounded-[0.3em] w-full flex flex-col items-center">
           05
         </span>
         <span className="bg-indigo-600 rounded-[0.3em] w-full flex flex-col items-center">

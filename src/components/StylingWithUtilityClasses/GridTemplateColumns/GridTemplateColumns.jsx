@@ -80,7 +80,7 @@ function GridTemplateColumns() {
           05
         </span>
         <div className="col-span-3 grid grid-cols-subgrid gap-4">
-          <span className="bg-indigo-600 rounded-[0.3em] w-full flex flex-col items-center col-start-3">
+          <span className="bg-indigo-600 rounded-[0.3em] w-full flex flex-col items-center col-start-2">
             06
           </span>
         </div>

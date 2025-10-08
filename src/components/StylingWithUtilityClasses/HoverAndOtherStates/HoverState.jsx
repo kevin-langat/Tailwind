@@ -719,7 +719,7 @@ function HoverState() {
         </h2>
         <div className="portrait:outline-1 portrait:outline-red-600 landscape:flex flex-row items-center justify-center gap-4 py-2 px-6 bg-gray-800 w-1/2 rounded-[0.3em] ">
           <article className="print:hidden text-gray-200">
-            <h1>My Secret Pizza Recipe</h1>
+            <h1>My Secret Ugali Recipe</h1>
             <p>This recipe is a secret, and must not be shared with anyone</p>
           </article>
           <div className="text-gray-200 hidden print:block">

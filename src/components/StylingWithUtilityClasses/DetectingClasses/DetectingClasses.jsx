@@ -63,20 +63,6 @@ function DetectingClasses() {
               </strong>
             </h2>
           </div>
-          <div className="w-1/2 flex flex-col items-center bg-gray-800 outline-1 outline-sky-400 border-l-4 border-green-500 rounded-[0.4em] py-2 px-2">
-            <h2 className=" text-gray-300 flex flex-col gap-3 *:w-1/2">
-              Use `@source(none)` to completely disable automatic source
-              detection if you want tp register all of your sources register
-              source paths relative to the stylesheet e.g. <br />{' '}
-              <strong className=" bg-gray-600/20 rounded-[0.3em] outline-1 outline-green-400/60 text-sm font-light text-sky-300/70 px-1">
-                {' '}
-                @import "tailwindcss" source(none) <br /> @source "../admin"{' '}
-                <br />
-                @source "../shared"
-              </strong>
-            </h2>
-            <br />
-          </div>
         </div>
 
         <div className=" flex flex-col items-center gap-2 w-full">

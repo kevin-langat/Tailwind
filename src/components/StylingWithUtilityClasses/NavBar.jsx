@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import image from '../../assets/Tailwind.png';
-import { ArrowUpRight, X } from 'lucide-react';
+import { ArrowLeft, ArrowUpRight, PanelLeft, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 function NavBar() {
@@ -87,7 +87,7 @@ function NavBar() {
         >
           <h2 className="sideBar text-sm"> All Documentation</h2>
           <h2>
-            <ArrowUpRight className="sideBar outline-1 outline-gray-400 rounded-full text-black  bg-sky-400 w-6 h-6" />
+            <PanelLeft className="sideBar outline-1 outline-gray-400 rounded-full text-black p-1  bg-gray-200 w-6 h-6" />
           </h2>
         </button>
       </div>
@@ -363,6 +363,41 @@ function NavBar() {
             to={'/gap'}
           >
             Gap
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/justify-content'}
+          >
+            Justify Content
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/justify-items'}
+          >
+            Justify Items
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/justify-self'}
+          >
+            Justify self
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/align-content'}
+          >
+            Align Content
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/align-items'}
+          >
+            Align Items
           </Link>
         </div>
       </div>

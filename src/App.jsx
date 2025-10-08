@@ -42,6 +42,11 @@ import GridRow from './components/StylingWithUtilityClasses/GridRow/GridRow';
 import GridAutoFlow from './components/StylingWithUtilityClasses/GridAutoFlow/GridAutoFlow';
 import GridAutoColumns from './components/StylingWithUtilityClasses/GridAutoFlow/GridAutoColumns';
 import Gap from './components/StylingWithUtilityClasses/Gap/Gap';
+import JustifyContent from './components/StylingWithUtilityClasses/JustifyContent/JustifyContent';
+import JustifyItems from './components/StylingWithUtilityClasses/Justify-items/JustifyItems';
+import JustifySelf from './components/StylingWithUtilityClasses/JustifySelf/JustifySelf';
+import AlignContent from './components/StylingWithUtilityClasses/AlignContent/AlignContent';
+import ALignItems from './components/StylingWithUtilityClasses/AlignItems/ALignItems';
 
 function App() {
   const location = useLocation();
@@ -100,6 +105,11 @@ function App() {
         <Route path="grid-auto-flow" element={<GridAutoFlow />} />
         <Route path="grid-auto-columns" element={<GridAutoColumns />} />
         <Route path="gap" element={<Gap />} />
+        <Route path="justify-content" element={<JustifyContent />} />
+        <Route path="justify-items" element={<JustifyItems />} />
+        <Route path="justify-self" element={<JustifySelf />} />
+        <Route path="align-content" element={<AlignContent />} />
+        <Route path="align-items" element={<ALignItems />} />
       </Route>
     </Routes>
   );

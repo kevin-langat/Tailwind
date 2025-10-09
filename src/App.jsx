@@ -47,6 +47,12 @@ import JustifyItems from './components/StylingWithUtilityClasses/Justify-items/J
 import JustifySelf from './components/StylingWithUtilityClasses/JustifySelf/JustifySelf';
 import AlignContent from './components/StylingWithUtilityClasses/AlignContent/AlignContent';
 import ALignItems from './components/StylingWithUtilityClasses/AlignItems/ALignItems';
+import AlignSelf from './components/StylingWithUtilityClasses/AlignSelf/AlignSelf';
+import PlaceContent from './components/StylingWithUtilityClasses/PlaceContent/PlaceContent';
+import PlaceItems from './components/StylingWithUtilityClasses/PlaceItems/PlaceItems';
+import PlaceSelf from './components/StylingWithUtilityClasses/PlaceSelf/PlaceSelf';
+import Padding from './components/StylingWithUtilityClasses/Padding/Padding';
+import Margin from './components/StylingWithUtilityClasses/Margin/Margin';
 
 function App() {
   const location = useLocation();
@@ -110,6 +116,12 @@ function App() {
         <Route path="justify-self" element={<JustifySelf />} />
         <Route path="align-content" element={<AlignContent />} />
         <Route path="align-items" element={<ALignItems />} />
+        <Route path="align-self" element={<AlignSelf />} />
+        <Route path="place-content" element={<PlaceContent />} />
+        <Route path="place-items" element={<PlaceItems />} />
+        <Route path="place-self" element={<PlaceSelf />} />
+        <Route path="padding" element={<Padding />} />
+        <Route path="margin" element={<Margin />} />
       </Route>
     </Routes>
   );

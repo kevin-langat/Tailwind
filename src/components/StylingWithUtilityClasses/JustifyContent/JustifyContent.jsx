@@ -55,7 +55,7 @@ function JustifyContent() {
       <h2 className="underline">Center</h2>
       <h2 className="w-1/2 text-vsm">
         Use 'Justify-center' and 'Justify-center-safe' utlity to justify items
-        along the center of the mcontainers's main axis:
+        along the center of the containers's main axis:
       </h2>
       <div className=" resizableVid bg-gray-400/30 rounded-[0.4em] w-[80%] flex flex-col items-center justify-center gap-1">
         <div
@@ -183,7 +183,7 @@ function JustifyContent() {
         Use 'Justify-evenly' utlity to justify items along the container's main
         axis such that there is an equal amount of space each around each item,
         but also accounting for the doubling of the space you would see between
-        each each item when using 'justify-around'
+        each item when using 'justify-around'
       </h2>
       <div
         className=" w-1/2
@@ -220,7 +220,7 @@ function JustifyContent() {
         </span>
       </div>
       {/* normal */}
-      <h2 className="underline">normall</h2>
+      <h2 className="underline">normal</h2>
       <h2 className="w-1/2 text-vsm">
         Use 'Justify-normal' utility to pack content items in their default
         position as if no 'justify-content' was set:

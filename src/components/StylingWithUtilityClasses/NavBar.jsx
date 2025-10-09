@@ -399,6 +399,53 @@ function NavBar() {
           >
             Align Items
           </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/align-self'}
+          >
+            Align Self
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/place-content'}
+          >
+            Place Content
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/place-items'}
+          >
+            Place Items
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/place-self'}
+          >
+            Place Self
+          </Link>
+          {/* header */}
+          <h2 className="sideBar  text-orange-500 rounded-full underline">
+            Spacing
+          </h2>
+
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/padding'}
+          >
+            Padding
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/margin'}
+          >
+            Margin
+          </Link>
         </div>
       </div>
     </div>

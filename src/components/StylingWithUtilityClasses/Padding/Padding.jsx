@@ -60,7 +60,7 @@ function Padding() {
           </div>
           <div className=" h-20 pl-2 flex flex-col items-center justify-center content-center w-24 bg-gray-700 outline-1 outline-green-500 rounded-[0.4em]">
             <h2 className=" w-full rounded-[0.4em] h-full bg-indigo-500 items-center place-content-center content-center flex flex-col">
-              p-8
+              pl-8
             </h2>
           </div>
         </div>
@@ -105,6 +105,9 @@ function Padding() {
           </h2>
         </div>
       </div>
+
+      {/* Using logical props */}
+
       <div className=" w-full flex flex-col items-center justify-center gap-2 ">
         <h2 className="underline">Using logical properties</h2>
         <h2 className=" text-vsm w-1/2">
@@ -116,14 +119,14 @@ function Padding() {
         <div className=" flex flex-row gap-8">
           <div dir="ltr" className=" flex flex-col items-center gap-4">
             <h2 className=" text-vsm">left to right</h2>
-            <div className=" pe-8 h-10 flex flex-col items-center justify-center content-center w-30 bg-gray-700 outline-1 outline-green-500 rounded-[0.4em]">
-              <h2 className=" w-full rounded-[0.4em] h-full bg-indigo-500 items-center place-content-center content-center flex flex-col">
-                pe-8
-              </h2>
-            </div>
             <div className=" ps-8 h-10 flex flex-col items-center justify-center content-center w-30 bg-gray-700 outline-1 outline-green-500 rounded-[0.4em]">
               <h2 className=" w-full rounded-[0.4em] h-full bg-indigo-500 items-center place-content-center content-center flex flex-col">
                 ps-8
+              </h2>
+            </div>
+            <div className=" pe-8 h-10 flex flex-col items-center justify-center content-center w-30 bg-gray-700 outline-1 outline-green-500 rounded-[0.4em]">
+              <h2 className=" w-full rounded-[0.4em] h-full bg-indigo-500 items-center place-content-center content-center flex flex-col">
+                pe-8
               </h2>
             </div>
           </div>

@@ -100,18 +100,18 @@ function PlaceItems() {
       </h2>
       <div
         className=" w-1/2 place-items-stretch
-      bg-gray-900 grid *:w-20 grid-cols-2 h-60 *:px-10   *:justify-center gap-0.5 py-2 px-2  rounded-[0.4em]"
+      bg-gray-900 grid grid-cols-2 h-60 *:px-10   *:justify-center gap-3 py-2 px-2  rounded-[0.4em]"
       >
-        <span className="bg-indigo-600  rounded-[0.3em] w-11/12 flex flex-col items-center">
+        <span className="bg-indigo-600  rounded-[0.3em] flex flex-col items-center">
           01
         </span>
-        <span className="bg-indigo-600 w-11/12  rounded-[0.3em] flex flex-col items-center justify-center">
+        <span className="bg-indigo-600  rounded-[0.3em] flex flex-col items-center justify-center">
           02
         </span>
-        <span className="bg-indigo-600  rounded-[0.3em] w-11/12 flex flex-col items-center">
+        <span className="bg-indigo-600  rounded-[0.3em]  flex flex-col items-center">
           03
         </span>
-        <span className="bg-indigo-600  rounded-[0.3em] w-11/12 flex flex-col items-center">
+        <span className="bg-indigo-600  rounded-[0.3em] flex flex-col items-center">
           04
         </span>
       </div>

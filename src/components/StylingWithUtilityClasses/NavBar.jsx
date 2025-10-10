@@ -427,11 +427,11 @@ function NavBar() {
           >
             Place Self
           </Link>
+
           {/* header */}
           <h2 className="sideBar  text-orange-500 rounded-full underline">
             Spacing
           </h2>
-
           <Link
             onClick={() => setSideBar(false)}
             className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
@@ -445,6 +445,25 @@ function NavBar() {
             to={'/margin'}
           >
             Margin
+          </Link>
+
+          {/* header */}
+          <h2 className="sideBar  text-orange-500 rounded-full underline">
+            Sizing
+          </h2>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/width'}
+          >
+            Width
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/min-width'}
+          >
+            Min-Width
           </Link>
         </div>
       </div>

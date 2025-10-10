@@ -58,7 +58,7 @@ function PlaceSelf() {
         <span className="bg-indigo-600 h-12   rounded-[0.3em] flex flex-col items-center">
           01
         </span>
-        <span className="bg-indigo-600  h-6 place-self-start rounded-[0.3em] flex flex-col items-center w-10">
+        <span className="bg-pink-600  h-6 place-self-start rounded-[0.3em] flex flex-col items-center w-10">
           02
         </span>
         <span className="bg-indigo-600 h-12   rounded-[0.3em]  flex flex-col items-center">

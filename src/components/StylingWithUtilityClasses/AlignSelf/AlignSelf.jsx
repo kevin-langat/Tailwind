@@ -141,12 +141,15 @@ function AlignSelf() {
       >
         <span className="bg-indigo-600 h-18 pb-8  self-baseline   rounded-[0.3em] w-11/12 flex flex-col items-center">
           01
+          <hr className="w-full text-gray-300" />
         </span>
         <span className="bg-indigo-600 w-11/12  self-baseline h-12 pt-4 rounded-[0.3em] flex flex-col items-center justify-center">
           02
+          <hr className="w-full text-gray-300" />
         </span>
         <span className="bg-indigo-600 h-16  self-baseline rounded-[0.3em] w-11/12 flex flex-col items-center pb-6">
           03
+          <hr className="w-full text-gray-300" />
         </span>
       </div>
     </div>

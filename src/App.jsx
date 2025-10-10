@@ -53,6 +53,8 @@ import PlaceItems from './components/StylingWithUtilityClasses/PlaceItems/PlaceI
 import PlaceSelf from './components/StylingWithUtilityClasses/PlaceSelf/PlaceSelf';
 import Padding from './components/StylingWithUtilityClasses/Padding/Padding';
 import Margin from './components/StylingWithUtilityClasses/Margin/Margin';
+import Width from './components/StylingWithUtilityClasses/Width/Width';
+import MinWidth from './components/StylingWithUtilityClasses/MinWidth/MinWidth';
 
 function App() {
   const location = useLocation();
@@ -122,6 +124,8 @@ function App() {
         <Route path="place-self" element={<PlaceSelf />} />
         <Route path="padding" element={<Padding />} />
         <Route path="margin" element={<Margin />} />
+        <Route path="width" element={<Width />} />
+        <Route path="min-width" element={<MinWidth />} />
       </Route>
     </Routes>
   );

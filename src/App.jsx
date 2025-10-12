@@ -55,6 +55,10 @@ import Padding from './components/StylingWithUtilityClasses/Padding/Padding';
 import Margin from './components/StylingWithUtilityClasses/Margin/Margin';
 import Width from './components/StylingWithUtilityClasses/Width/Width';
 import MinWidth from './components/StylingWithUtilityClasses/MinWidth/MinWidth';
+import MaxWidth from './components/StylingWithUtilityClasses/MaxWidth/MaxWidth';
+import Height from './components/StylingWithUtilityClasses/Heigth/Heigth';
+import MinHeight from './components/StylingWithUtilityClasses/MinHeight/MinHeight';
+import MaxHeight from './components/StylingWithUtilityClasses/MaxHeight/MaxHeight';
 
 function App() {
   const location = useLocation();
@@ -126,6 +130,10 @@ function App() {
         <Route path="margin" element={<Margin />} />
         <Route path="width" element={<Width />} />
         <Route path="min-width" element={<MinWidth />} />
+        <Route path="max-width" element={<MaxWidth />} />
+        <Route path="height" element={<Height />} />
+        <Route path="min-height" element={<MinHeight />} />
+        <Route path="max-height" element={<MaxHeight />} />
       </Route>
     </Routes>
   );

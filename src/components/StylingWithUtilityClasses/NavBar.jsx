@@ -539,6 +539,34 @@ function NavBar() {
           >
             Font Weight
           </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/font-stretch'}
+          >
+            Font Stretch
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/font-variant-numeric'}
+          >
+            Font Variant Numeric
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/letter-spacing'}
+          >
+            Letter Spacing
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/line-clamp'}
+          >
+            Line Clamp
+          </Link>
         </div>
       </div>
     </div>

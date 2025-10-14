@@ -64,6 +64,10 @@ import FontSize from './components/StylingWithUtilityClasses/FontSize/FontSize';
 import FontSmoothing from './components/StylingWithUtilityClasses/FontSmoothing/FontSmoothing';
 import FontStyle from './components/StylingWithUtilityClasses/FontStyle/FontStyle';
 import FontWeigth from './components/StylingWithUtilityClasses/FontWeigth/FontWeigth';
+import FontStretch from './components/StylingWithUtilityClasses/FontStretch/FontStretch';
+import FontVariantNumeric from './components/StylingWithUtilityClasses/FontVariantNumeric/FontVariantNumeric';
+import LetterSpacing from './components/StylingWithUtilityClasses/LetterSpacing/LetterSpacing';
+import LineClamp from './components/StylingWithUtilityClasses/LineClamp/LineClamp';
 
 function App() {
   const location = useLocation();
@@ -144,6 +148,10 @@ function App() {
         <Route path="font-smoothing" element={<FontSmoothing />} />
         <Route path="font-style" element={<FontStyle />} />
         <Route path="font-weigth" element={<FontWeigth />} />
+        <Route path="font-stretch" element={<FontStretch />} />
+        <Route path="font-variant-numeric" element={<FontVariantNumeric />} />
+        <Route path="letter-spacing" element={<LetterSpacing />} />
+        <Route path="line-clamp" element={<LineClamp />} />
       </Route>
     </Routes>
   );

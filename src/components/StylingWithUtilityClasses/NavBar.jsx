@@ -493,6 +493,52 @@ function NavBar() {
           >
             Max-Height
           </Link>
+          {/* header */}
+          <h2 className="sideBar  text-orange-500 rounded-full underline">
+            Typography
+          </h2>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/font-family'}
+          >
+            font-family
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/font-size'}
+          >
+            font-size
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/font-smoothing'}
+          >
+            Font Smoothing
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/font-style'}
+          >
+            Font Style
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/font-weigth'}
+          >
+            Font Weight
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/font-weigth'}
+          >
+            Font Weight
+          </Link>
         </div>
       </div>
     </div>

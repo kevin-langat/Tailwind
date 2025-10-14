@@ -59,6 +59,11 @@ import MaxWidth from './components/StylingWithUtilityClasses/MaxWidth/MaxWidth';
 import Height from './components/StylingWithUtilityClasses/Heigth/Heigth';
 import MinHeight from './components/StylingWithUtilityClasses/MinHeight/MinHeight';
 import MaxHeight from './components/StylingWithUtilityClasses/MaxHeight/MaxHeight';
+import FontFamily from './components/StylingWithUtilityClasses/FontFamily/FontFamily';
+import FontSize from './components/StylingWithUtilityClasses/FontSize/FontSize';
+import FontSmoothing from './components/StylingWithUtilityClasses/FontSmoothing/FontSmoothing';
+import FontStyle from './components/StylingWithUtilityClasses/FontStyle/FontStyle';
+import FontWeigth from './components/StylingWithUtilityClasses/FontWeigth/FontWeigth';
 
 function App() {
   const location = useLocation();
@@ -134,6 +139,11 @@ function App() {
         <Route path="height" element={<Height />} />
         <Route path="min-height" element={<MinHeight />} />
         <Route path="max-height" element={<MaxHeight />} />
+        <Route path="font-family" element={<FontFamily />} />
+        <Route path="font-size" element={<FontSize />} />
+        <Route path="font-smoothing" element={<FontSmoothing />} />
+        <Route path="font-style" element={<FontStyle />} />
+        <Route path="font-weigth" element={<FontWeigth />} />
       </Route>
     </Routes>
   );

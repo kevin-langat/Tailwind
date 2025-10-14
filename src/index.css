@@ -16,10 +16,16 @@
   --color-mint-500: oklch(0.72 0.11 178);
   --font-popins: Poppins, sans-serif;
   --breakpoint-alg: 72rem;
-    --tab-size-github: 8;
+  --tab-size-github: 8;
     --text-vsm: 0.8em;
-    --aspect-retro: 4/3;
+  --text-tiny: 0.625rem;
+    --text-tiny--line-height: 1.5rem;
+    --text-tiny--letter-spacing: 0.0725rem;
+    --text-tiny--font-weight: 500;
+  --aspect-retro: 4/3;
     --container-4xs: 14rem;
+  --font-display: "Oswald", sans-serif;
+    --font-weight-extrablack: 620;
 
 }
 
@@ -106,6 +112,7 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+
 ::-webkit-scrollbar {
   background: none;
   width: 7px;
@@ -131,7 +138,7 @@ body {
 
 @layer components {
   .resizable {
-      resize: horizontal;
+    resize: horizontal;
       overflow: hidden;
       border: 2px solid rgb(91, 91, 252);
     min-width: 300px;
@@ -143,10 +150,9 @@ body {
     }
     }
 
-  
     .resizableVid {
       resize: horizontal;
-      
+  
       overflow: hidden;
       border: 1px solid rgb(91, 91, 252);
   

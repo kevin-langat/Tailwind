@@ -68,6 +68,9 @@ import FontStretch from './components/StylingWithUtilityClasses/FontStretch/Font
 import FontVariantNumeric from './components/StylingWithUtilityClasses/FontVariantNumeric/FontVariantNumeric';
 import LetterSpacing from './components/StylingWithUtilityClasses/LetterSpacing/LetterSpacing';
 import LineClamp from './components/StylingWithUtilityClasses/LineClamp/LineClamp';
+import LineHeight from './components/StylingWithUtilityClasses/LineHeight/LineHeight';
+import ListStyleImage from './components/StylingWithUtilityClasses/ListStyleImage/ListStyleImage';
+import ListStylePosition from './components/StylingWithUtilityClasses/ListStylePosition/ListStylePosition';
 
 function App() {
   const location = useLocation();
@@ -152,6 +155,9 @@ function App() {
         <Route path="font-variant-numeric" element={<FontVariantNumeric />} />
         <Route path="letter-spacing" element={<LetterSpacing />} />
         <Route path="line-clamp" element={<LineClamp />} />
+        <Route path="line-height" element={<LineHeight />} />
+        <Route path="line-style-image" element={<ListStyleImage />} />
+        <Route path="line-style-position" element={<ListStylePosition />} />
       </Route>
     </Routes>
   );

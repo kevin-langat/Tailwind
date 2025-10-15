@@ -567,6 +567,27 @@ function NavBar() {
           >
             Line Clamp
           </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/line-height'}
+          >
+            Line Height
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/line-style-image'}
+          >
+            List Style Image
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/line-style-position'}
+          >
+            List Style Position
+          </Link>
         </div>
       </div>
     </div>

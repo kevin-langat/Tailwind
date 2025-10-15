@@ -62,7 +62,7 @@ function LineClamp() {
       </div>
 
       {/* Using a custom value*/}
-      <h2 className="underline"> </h2>
+      <h2 className="underline"> Using a custom value </h2>
       <h2 className="w-1/2 text-vsm">
         Use the 'line-clamp-[{'<value>'}]' synatx to set the number of lines
         based on a completely custom value

@@ -588,6 +588,41 @@ function NavBar() {
           >
             List Style Position
           </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/line-style-type'}
+          >
+            List Style Type
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/text-align'}
+          >
+            Text Align
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/color'}
+          >
+            Color
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/text-decoration-line'}
+          >
+            Text Decoration Line
+          </Link>
+          <Link
+            onClick={() => setSideBar(false)}
+            className="hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400"
+            to={'/text-decoration-color'}
+          >
+            Text Decoration Color
+          </Link>
         </div>
       </div>
     </div>

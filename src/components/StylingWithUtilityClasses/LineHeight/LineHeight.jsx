@@ -16,7 +16,7 @@ function LineHeight() {
       <div className=" w-1/2 bg-gray-950 outline-1 outline-gray-600 rounded-[0.4em] flex flex-col text-gray-300 items-center justify-center gap-4 p-3">
         <div className="flex flex-col w-full justify-start gap-0 5">
           <h2 className=" text-sm text-gray-400 text-vsm">text-sm/6</h2>
-          <h2 className=" text-sm/6">
+          <h2 className=" text-justify text-sm/6">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
             doloremque omnis, optio, quia exercitationem labore vel tempora a
             qui mollitia in porro voluptatibus alias laborum. Dolores alias
@@ -27,7 +27,7 @@ function LineHeight() {
         </div>
         <div className="flex flex-col w-full justify-start gap-0 5">
           <h2 className=" text-gray-400 text-vsm">text-sm/7</h2>
-          <h2 className=" text-sm/7">
+          <h2 className=" text-justify text-sm/7">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sunt
             tempora iusto, eveniet dignissimos alias quam aspernatur, odio et
             molestiae repellat labore ducimus tenetur harum neque impedit
@@ -38,7 +38,7 @@ function LineHeight() {
         </div>
         <div className="flex flex-col w-full justify-start gap-0 5">
           <h2 className=" text-gray-400 text-vsm">text-sm/8</h2>
-          <h2 className=" text-sm/8">
+          <h2 className=" text-justify text-sm/8">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
             hic sequi deserunt similique cupiditate recusandae aliquid
             temporibus autem maiores omnis optio cumque voluptatem ex facere,
@@ -57,7 +57,7 @@ function LineHeight() {
       <div className=" w-1/2 bg-gray-950 outline-1 outline-gray-600 rounded-[0.4em] flex flex-col text-gray-300 items-center justify-center gap-4 p-3">
         <div className="flex flex-col w-full justify-start gap-0 5">
           <h2 className=" text-sm text-gray-400 text-vsm">leading-5</h2>
-          <h2 className=" text-sm leading-5">
+          <h2 className=" text-justify text-sm leading-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
             doloremque omnis, optio, quia exercitationem labore vel tempora a
             qui mollitia in porro voluptatibus alias laborum. Dolores alias
@@ -68,7 +68,7 @@ function LineHeight() {
         </div>
         <div className="flex flex-col w-full justify-start gap-0 5">
           <h2 className=" text-gray-400 text-vsm">leading-6</h2>
-          <h2 className=" text-sm leading-6">
+          <h2 className=" text-justify text-sm leading-6">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sunt
             tempora iusto, eveniet dignissimos alias quam aspernatur, odio et
             molestiae repellat labore ducimus tenetur harum neque impedit
@@ -79,7 +79,7 @@ function LineHeight() {
         </div>
         <div className="flex flex-col w-full justify-start gap-0 5">
           <h2 className=" text-gray-400 text-vsm">leading-7</h2>
-          <h2 className=" text-sm leading-7">
+          <h2 className=" text-justify text-sm leading-7">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
             hic sequi deserunt similique cupiditate recusandae aliquid
             temporibus autem maiores omnis optio cumque voluptatem ex facere,

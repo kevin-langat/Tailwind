@@ -5,7 +5,7 @@ function TextDecorationLine() {
         text-decoration-line
       </h2>
       <h2 className=" w-1/2 flex flex-col items-center text-vsm">
-        Utilities for controlling the text color of an element.
+        Utilities for controlling the decoration of a text.
       </h2>
 
       <div className=" w-1/2 bg-gray-950 outline-1 outline-gray-600 rounded-[0.4em] *:bg-gray-800 *:rounded-[0.3em] *:outline-1 *:outline-gray-500/70 *:p-1 flex flex-col text-gray-300 items-center justify-center gap-4 p-5">

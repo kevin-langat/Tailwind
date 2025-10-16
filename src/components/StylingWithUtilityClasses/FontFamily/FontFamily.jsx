@@ -71,9 +71,9 @@ function FontFamily() {
       <div className=" bg-gray-950 outline-1 outline-gray-600 rounded-[0.4em] flex flex-col text-gray-300 items-center justify-center gap-4 p-3">
         <div className="flex flex-col w-full justify-start gap-0 5">
           <h2 className="text-orange-600 text-vsm font-sans ">
-            @theme{'{'} <br />
             {'@import url("https://fonts...")'} <br />
             {'@import "tailwindcss"")'} <br />
+            @theme{'{'} <br />
             {'--font-display: "Roboto", sans-serif'} <br />
             {'}'}
           </h2>

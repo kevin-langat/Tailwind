@@ -71,6 +71,11 @@ import LineClamp from './components/StylingWithUtilityClasses/LineClamp/LineClam
 import LineHeight from './components/StylingWithUtilityClasses/LineHeight/LineHeight';
 import ListStyleImage from './components/StylingWithUtilityClasses/ListStyleImage/ListStyleImage';
 import ListStylePosition from './components/StylingWithUtilityClasses/ListStylePosition/ListStylePosition';
+import ListStyleType from './components/StylingWithUtilityClasses/ListStyleType/ListStyleType';
+import TextAlign from './components/StylingWithUtilityClasses/TextAlign/TextAlign';
+import Color from './components/StylingWithUtilityClasses/Color/Color';
+import TextDecorationLine from './components/StylingWithUtilityClasses/TextDecorationLine/TextDecorationLine';
+import TextDecorationColor from './components/StylingWithUtilityClasses/TextDecorationColor/TextDecorationColor';
 
 function App() {
   const location = useLocation();
@@ -158,6 +163,11 @@ function App() {
         <Route path="line-height" element={<LineHeight />} />
         <Route path="line-style-image" element={<ListStyleImage />} />
         <Route path="line-style-position" element={<ListStylePosition />} />
+        <Route path="line-style-type" element={<ListStyleType />} />
+        <Route path="text-align" element={<TextAlign />} />
+        <Route path="color" element={<Color />} />
+        <Route path="text-decoration-line" element={<TextDecorationLine />} />
+        <Route path="text-decoration-color" element={<TextDecorationColor />} />
       </Route>
     </Routes>
   );

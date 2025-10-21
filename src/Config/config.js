@@ -160,3 +160,16 @@ export const products = [
     name: 'peas',
   },
 ];
+
+const locationsPathNames = [
+  '1,/hover-state',
+  '2,/responsive-design',
+  '3,/dark-mode',
+  '4,/theme-variables',
+  '5,/colors',
+  '6,/custom-styles',
+  '7,/detecting-classes',
+  '8,/functions-directives',
+  '9,/aspect-ratio',
+];
+export { locationsPathNames };

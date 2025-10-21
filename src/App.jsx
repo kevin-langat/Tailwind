@@ -76,6 +76,19 @@ import TextAlign from './components/StylingWithUtilityClasses/TextAlign/TextAlig
 import Color from './components/StylingWithUtilityClasses/Color/Color';
 import TextDecorationLine from './components/StylingWithUtilityClasses/TextDecorationLine/TextDecorationLine';
 import TextDecorationColor from './components/StylingWithUtilityClasses/TextDecorationColor/TextDecorationColor';
+import TextDecorationStyle from './components/StylingWithUtilityClasses/TextDecorationStyle/TextDecorationStyle';
+import TextDecorationThickness from './components/StylingWithUtilityClasses/TextDecorationThickness/TextDecorationThickness';
+import TextUnderlineOffset from './components/StylingWithUtilityClasses/TextUnderlineOffset/TextUnderlineOffset';
+import TextTransform from './components/StylingWithUtilityClasses/TextTransform/TextTransform';
+import TextOverflow from './components/StylingWithUtilityClasses/TextOverflow/TextOverflow';
+import TextWrap from './components/StylingWithUtilityClasses/TextWrap/TextWrap';
+import TextIndent from './components/StylingWithUtilityClasses/TextIndent/TextIndent';
+import VerticalAlign from './components/StylingWithUtilityClasses/VerticalAlign/VerticalAlign';
+import WhiteSpace from './components/StylingWithUtilityClasses/WhiteSpace/WhiteSpace';
+import WordBreak from './components/StylingWithUtilityClasses/WordBreak/WordBreak';
+import OverFlowWrap from './components/StylingWithUtilityClasses/OverFlowWrap/OverFlowWrap';
+import Hyphens from './components/StylingWithUtilityClasses/Hyphens/Hyphens';
+import Content from './components/StylingWithUtilityClasses/Content/Content';
 
 function App() {
   const location = useLocation();
@@ -89,85 +102,100 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<CommonLayout />}>
-        <Route path="hover-state" element={<HoverState />} />
-        <Route path="responsive-design" element={<ResponsiveDesign />} />
-        <Route path="dark-mode" element={<Darkmode />} />
-        <Route path="theme-variables" element={<ThemeVariables />} />
-        <Route path="theme-variables" element={<ThemeVariables />} />
-        <Route path="colors" element={<Colors />} />
-        <Route path="custom-styles" element={<CustomStyles />} />
-        <Route path="detecting-classes" element={<DetectingClasses />} />
+      <Route path='/' element={<CommonLayout />}>
+        <Route path='hover-state' element={<HoverState />} />
+        <Route path='responsive-design' element={<ResponsiveDesign />} />
+        <Route path='dark-mode' element={<Darkmode />} />
+        <Route path='theme-variables' element={<ThemeVariables />} />
+        <Route path='colors' element={<Colors />} />
+        <Route path='custom-styles' element={<CustomStyles />} />
+        <Route path='detecting-classes' element={<DetectingClasses />} />
         <Route
-          path="functions-directives"
+          path='functions-directives'
           element={<FunctionsAndDirectives />}
         />
-        <Route path="aspect-ratio" element={<AspectRatio />} />
-        <Route path="columns" element={<Columns />} />
-        <Route path="break-after" element={<BreakAfter />} />
-        <Route path="break-before" element={<BreakBefore />} />
-        <Route path="box-decoration-break" element={<BoxDecorationBreak />} />
-        <Route path="box-sizing" element={<BoxSizing />} />
-        <Route path="display" element={<Display />} />
-        <Route path="float" element={<Float />} />
-        <Route path="clear" element={<Clear />} />
-        <Route path="isolate" element={<Isolation />} />
-        <Route path="object-fit" element={<Objectfit />} />
-        <Route path="object-position" element={<ObjectPosition />} />
-        <Route path="overflow" element={<Overflow />} />
-        <Route path="overscroll-behaviour" element={<OverscrollBehaviour />} />
-        <Route path="position" element={<Position />} />
-        <Route path="top-right-bottom-left" element={<TopRightBottomLeft />} />
-        <Route path="visibility" element={<Visibility />} />
-        <Route path="z-index" element={<ZIndex />} />
-        <Route path="flex-basis" element={<FlexBasis />} />
-        <Route path="flex-direction" element={<FlexDirection />} />
-        <Route path="flex-wrap" element={<FlexWrap />} />
-        <Route path="flex" element={<Flex />} />
-        <Route path="flex-grow" element={<FlexGrow />} />
-        <Route path="flex-shrink" element={<FlexShrink />} />
-        <Route path="order" element={<Order />} />
-        <Route path="grid-template-columns" element={<GridTemplateColumns />} />
-        <Route path="grid-columns" element={<GridColumns />} />
-        <Route path="grid-template-rows" element={<GridTemplateRows />} />
-        <Route path="grid-rows" element={<GridRow />} />
-        <Route path="grid-auto-flow" element={<GridAutoFlow />} />
-        <Route path="grid-auto-columns" element={<GridAutoColumns />} />
-        <Route path="gap" element={<Gap />} />
-        <Route path="justify-content" element={<JustifyContent />} />
-        <Route path="justify-items" element={<JustifyItems />} />
-        <Route path="justify-self" element={<JustifySelf />} />
-        <Route path="align-content" element={<AlignContent />} />
-        <Route path="align-items" element={<ALignItems />} />
-        <Route path="align-self" element={<AlignSelf />} />
-        <Route path="place-content" element={<PlaceContent />} />
-        <Route path="place-items" element={<PlaceItems />} />
-        <Route path="place-self" element={<PlaceSelf />} />
-        <Route path="padding" element={<Padding />} />
-        <Route path="margin" element={<Margin />} />
-        <Route path="width" element={<Width />} />
-        <Route path="min-width" element={<MinWidth />} />
-        <Route path="max-width" element={<MaxWidth />} />
-        <Route path="height" element={<Height />} />
-        <Route path="min-height" element={<MinHeight />} />
-        <Route path="max-height" element={<MaxHeight />} />
-        <Route path="font-family" element={<FontFamily />} />
-        <Route path="font-size" element={<FontSize />} />
-        <Route path="font-smoothing" element={<FontSmoothing />} />
-        <Route path="font-style" element={<FontStyle />} />
-        <Route path="font-weigth" element={<FontWeigth />} />
-        <Route path="font-stretch" element={<FontStretch />} />
-        <Route path="font-variant-numeric" element={<FontVariantNumeric />} />
-        <Route path="letter-spacing" element={<LetterSpacing />} />
-        <Route path="line-clamp" element={<LineClamp />} />
-        <Route path="line-height" element={<LineHeight />} />
-        <Route path="line-style-image" element={<ListStyleImage />} />
-        <Route path="line-style-position" element={<ListStylePosition />} />
-        <Route path="line-style-type" element={<ListStyleType />} />
-        <Route path="text-align" element={<TextAlign />} />
-        <Route path="color" element={<Color />} />
-        <Route path="text-decoration-line" element={<TextDecorationLine />} />
-        <Route path="text-decoration-color" element={<TextDecorationColor />} />
+        <Route path='aspect-ratio' element={<AspectRatio />} />
+        <Route path='columns' element={<Columns />} />
+        <Route path='break-after' element={<BreakAfter />} />
+        <Route path='break-before' element={<BreakBefore />} />
+        <Route path='box-decoration-break' element={<BoxDecorationBreak />} />
+        <Route path='box-sizing' element={<BoxSizing />} />
+        <Route path='display' element={<Display />} />
+        <Route path='float' element={<Float />} />
+        <Route path='clear' element={<Clear />} />
+        <Route path='isolate' element={<Isolation />} />
+        <Route path='object-fit' element={<Objectfit />} />
+        <Route path='object-position' element={<ObjectPosition />} />
+        <Route path='overflow' element={<Overflow />} />
+        <Route path='overscroll-behaviour' element={<OverscrollBehaviour />} />
+        <Route path='position' element={<Position />} />
+        <Route path='top-right-bottom-left' element={<TopRightBottomLeft />} />
+        <Route path='visibility' element={<Visibility />} />
+        <Route path='z-index' element={<ZIndex />} />
+        <Route path='flex-basis' element={<FlexBasis />} />
+        <Route path='flex-direction' element={<FlexDirection />} />
+        <Route path='flex-wrap' element={<FlexWrap />} />
+        <Route path='flex' element={<Flex />} />
+        <Route path='flex-grow' element={<FlexGrow />} />
+        <Route path='flex-shrink' element={<FlexShrink />} />
+        <Route path='order' element={<Order />} />
+        <Route path='grid-template-columns' element={<GridTemplateColumns />} />
+        <Route path='grid-columns' element={<GridColumns />} />
+        <Route path='grid-template-rows' element={<GridTemplateRows />} />
+        <Route path='grid-rows' element={<GridRow />} />
+        <Route path='grid-auto-flow' element={<GridAutoFlow />} />
+        <Route path='grid-auto-columns' element={<GridAutoColumns />} />
+        <Route path='gap' element={<Gap />} />
+        <Route path='justify-content' element={<JustifyContent />} />
+        <Route path='justify-items' element={<JustifyItems />} />
+        <Route path='justify-self' element={<JustifySelf />} />
+        <Route path='align-content' element={<AlignContent />} />
+        <Route path='align-items' element={<ALignItems />} />
+        <Route path='align-self' element={<AlignSelf />} />
+        <Route path='place-content' element={<PlaceContent />} />
+        <Route path='place-items' element={<PlaceItems />} />
+        <Route path='place-self' element={<PlaceSelf />} />
+        <Route path='padding' element={<Padding />} />
+        <Route path='margin' element={<Margin />} />
+        <Route path='width' element={<Width />} />
+        <Route path='min-width' element={<MinWidth />} />
+        <Route path='max-width' element={<MaxWidth />} />
+        <Route path='height' element={<Height />} />
+        <Route path='min-height' element={<MinHeight />} />
+        <Route path='max-height' element={<MaxHeight />} />
+        <Route path='font-family' element={<FontFamily />} />
+        <Route path='font-size' element={<FontSize />} />
+        <Route path='font-smoothing' element={<FontSmoothing />} />
+        <Route path='font-style' element={<FontStyle />} />
+        <Route path='font-weigth' element={<FontWeigth />} />
+        <Route path='font-stretch' element={<FontStretch />} />
+        <Route path='font-variant-numeric' element={<FontVariantNumeric />} />
+        <Route path='letter-spacing' element={<LetterSpacing />} />
+        <Route path='line-clamp' element={<LineClamp />} />
+        <Route path='line-height' element={<LineHeight />} />
+        <Route path='line-style-image' element={<ListStyleImage />} />
+        <Route path='line-style-position' element={<ListStylePosition />} />
+        <Route path='line-style-type' element={<ListStyleType />} />
+        <Route path='text-align' element={<TextAlign />} />
+        <Route path='color' element={<Color />} />
+        <Route path='text-decoration-line' element={<TextDecorationLine />} />
+        <Route path='text-decoration-color' element={<TextDecorationColor />} />
+        <Route path='text-decoration-style' element={<TextDecorationStyle />} />
+        <Route
+          path='text-decoration-thickness'
+          element={<TextDecorationThickness />}
+        />
+        <Route path='text-underline-offset' element={<TextUnderlineOffset />} />
+        <Route path='text-transform' element={<TextTransform />} />
+        <Route path='text-overflow' element={<TextOverflow />} />
+        <Route path='text-wrap' element={<TextWrap />} />
+        <Route path='text-indent' element={<TextIndent />} />
+        <Route path='vertical-align' element={<VerticalAlign />} />
+        <Route path='white-space' element={<WhiteSpace />} />
+        <Route path='word-break' element={<WordBreak />} />
+        <Route path='overflow-wrap' element={<OverFlowWrap />} />
+        <Route path='hyphens' element={<Hyphens />} />
+        <Route path='content' element={<Content />} />
       </Route>
     </Routes>
   );

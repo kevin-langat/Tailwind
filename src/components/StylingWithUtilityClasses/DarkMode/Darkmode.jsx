@@ -1,7 +1,10 @@
 import { PenBoxIcon } from 'lucide-react';
-import { useEffect } from 'react';
+import { globalState } from '../../../Global/GlobalContext';
+import { useContext } from 'react';
 
 function Darkmode() {
+  const { moveToNextTopic } = useContext(globalState);
+
   return (
     <div className=" flex flex-col items-center justify-center gap-8 w-full">
       <h2 className=" text-2xl underline font-bold">Dark Mode</h2>
@@ -28,6 +31,12 @@ function Darkmode() {
           *));
         </span>
       </h2>
+      <button
+        onClick={moveToNextTopic}
+        className="bg-gray-800 px-4 rounded-full text-gray-300"
+      >
+        Next
+      </button>
     </div>
   );
 }

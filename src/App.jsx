@@ -89,6 +89,7 @@ import WordBreak from './components/StylingWithUtilityClasses/WordBreak/WordBrea
 import OverFlowWrap from './components/StylingWithUtilityClasses/OverFlowWrap/OverFlowWrap';
 import Hyphens from './components/StylingWithUtilityClasses/Hyphens/Hyphens';
 import Content from './components/StylingWithUtilityClasses/Content/Content';
+import BackgroundAttachment from './components/StylingWithUtilityClasses/BackgroundAttachment/BackgroundAttachment';
 
 function App() {
   const location = useLocation();
@@ -196,6 +197,10 @@ function App() {
         <Route path='overflow-wrap' element={<OverFlowWrap />} />
         <Route path='hyphens' element={<Hyphens />} />
         <Route path='content' element={<Content />} />
+        <Route
+          path='background-attachment'
+          element={<BackgroundAttachment />}
+        />
       </Route>
     </Routes>
   );

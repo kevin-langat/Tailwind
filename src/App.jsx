@@ -90,6 +90,7 @@ import OverFlowWrap from './components/StylingWithUtilityClasses/OverFlowWrap/Ov
 import Hyphens from './components/StylingWithUtilityClasses/Hyphens/Hyphens';
 import Content from './components/StylingWithUtilityClasses/Content/Content';
 import BackgroundAttachment from './components/StylingWithUtilityClasses/BackgroundAttachment/BackgroundAttachment';
+import BackgroundClip from './components/StylingWithUtilityClasses/BackgroundClip/BackgroundClip';
 
 function App() {
   const location = useLocation();
@@ -201,6 +202,7 @@ function App() {
           path='background-attachment'
           element={<BackgroundAttachment />}
         />
+        <Route path='background-clip' element={<BackgroundClip />} />
       </Route>
     </Routes>
   );

@@ -700,8 +700,12 @@ function NavBar() {
             Backgrounds
           </h2>
           <NavBarHelper
-            topicURL={'/Background-attachment'}
+            topicURL={'/background-attachment'}
             topicName={'Background Attachment'}
+          />
+          <NavBarHelper
+            topicURL={'/background-clip'}
+            topicName={'Background Clip'}
           />
         </div>
       </div>

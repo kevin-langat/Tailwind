@@ -29,6 +29,7 @@
   --font-weight-extrablack: 620;
   --tracking-1: 0.1em;
     --tracking-2: 0.025em;
+    --color-dark-blue: #0004ff;
 
 }
 
@@ -93,6 +94,7 @@
 
 
 
+
 }
 
 /* .test2 {
@@ -110,6 +112,7 @@
 /* using --spacing() */
 .my-elementTwo {
   margin: --spacing(4);
+  color: #ffc400;
 }
 
 body {

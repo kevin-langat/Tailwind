@@ -91,6 +91,9 @@ import Hyphens from './components/StylingWithUtilityClasses/Hyphens/Hyphens';
 import Content from './components/StylingWithUtilityClasses/Content/Content';
 import BackgroundAttachment from './components/StylingWithUtilityClasses/BackgroundAttachment/BackgroundAttachment';
 import BackgroundClip from './components/StylingWithUtilityClasses/BackgroundClip/BackgroundClip';
+import BackgroundColor from './components/StylingWithUtilityClasses/BackgroundColor/BackgroundColor';
+import BackgroundImage from './components/StylingWithUtilityClasses/BackgroundImage/BackgroundImage';
+import BackgroundOrigin from './components/StylingWithUtilityClasses/BackgroundOrigin/BackgroundOrigin';
 
 function App() {
   const location = useLocation();
@@ -203,6 +206,9 @@ function App() {
           element={<BackgroundAttachment />}
         />
         <Route path='background-clip' element={<BackgroundClip />} />
+        <Route path='background-color' element={<BackgroundColor />} />
+        <Route path='background-image' element={<BackgroundImage />} />
+        <Route path='background-origin' element={<BackgroundOrigin />} />
       </Route>
     </Routes>
   );

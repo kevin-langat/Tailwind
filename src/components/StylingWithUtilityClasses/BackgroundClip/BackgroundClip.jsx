@@ -19,12 +19,12 @@ function BackgroundClip() {
       <h2 className='underline text-vsm'>bg-clip-padding</h2>
       <div className=' w-20 h-20 border-dashed rounded-[0.3em] border-4 bg-clip-padding bg-sky-500 p-3'></div>
 
-      <h2 className='underline text-vsm'>bg-clip-padding</h2>
+      <h2 className='underline text-vsm'>bg-clip-content</h2>
       <div className=' w-20 h-20 border-dashed rounded-[0.3em] border-4 bg-clip-content bg-sky-500 p-3'></div>
 
       <h2 className='underline'>Cropping to text</h2>
 
-      <div className=' w-60 h-20 text-4xl border-dashed text-transparent rounded-[0.3em] border-4 bg-clip-text bg-linear-to-r from-pink-500 to via-violet-600 p-3'>
+      <div className=' w-60 h-20 text-4xl border-dashed text-transparent rounded-[0.3em] border-4 bg-clip-text bg-linear-[170deg,indigo_30%,orange_60%,blue_90%,teal] font-bold font-sans p-3'>
         Hello world
       </div>
     </div>

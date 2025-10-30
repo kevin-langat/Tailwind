@@ -521,13 +521,7 @@ function NavBar() {
           >
             Font Style
           </Link>
-          <Link
-            onClick={() => setSideBar(false)}
-            className='hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400'
-            to={'/font-weigth'}
-          >
-            Font Weight
-          </Link>
+
           <Link
             onClick={() => setSideBar(false)}
             className='hover:text-sky-600 hover:underline active:text-orange-400 text-gray-400'
@@ -706,6 +700,18 @@ function NavBar() {
           <NavBarHelper
             topicURL={'/background-clip'}
             topicName={'Background Clip'}
+          />
+          <NavBarHelper
+            topicURL={'/background-color'}
+            topicName={'Background Color'}
+          />
+          <NavBarHelper
+            topicURL={'/background-image'}
+            topicName={'Background Image'}
+          />
+          <NavBarHelper
+            topicURL={'/background-origin'}
+            topicName={'Background Origin'}
           />
         </div>
       </div>

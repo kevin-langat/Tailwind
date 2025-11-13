@@ -94,6 +94,34 @@ import BackgroundClip from './components/StylingWithUtilityClasses/BackgroundCli
 import BackgroundColor from './components/StylingWithUtilityClasses/BackgroundColor/BackgroundColor';
 import BackgroundImage from './components/StylingWithUtilityClasses/BackgroundImage/BackgroundImage';
 import BackgroundOrigin from './components/StylingWithUtilityClasses/BackgroundOrigin/BackgroundOrigin';
+import BackgroundPosition from './components/StylingWithUtilityClasses/BackgroundPosition/BackgroundPosition';
+import BackgroundRepeat from './components/StylingWithUtilityClasses/BackgroundRepeat/BackgroundRepeat';
+import BackgroundSize from './components/StylingWithUtilityClasses/BackgroundSize/BackgroundSize';
+import BorderRadius from './components/StylingWithUtilityClasses/BorderRadius/BorderRadius';
+import BorderWidth from './components/StylingWithUtilityClasses/BorderWidth/BorderWidth';
+import BorderColor from './components/StylingWithUtilityClasses/BorderColor/BorderColor';
+import BorderStyle from './components/StylingWithUtilityClasses/BorderStyle/BorderStyle';
+import OutlineWidth from './components/StylingWithUtilityClasses/OutlineWidth/OutlineWidth';
+import OutlineColor from './components/StylingWithUtilityClasses/OultineColor/OutlineColor';
+import OutlineStyle from './components/StylingWithUtilityClasses/OutlineStyle/OutlineStyle';
+import OutlineOffset from './components/StylingWithUtilityClasses/OutlineOffset/OutlineOffset';
+import BoxShadow from './components/StylingWithUtilityClasses/BoxShadow/BoxShadow';
+import TextShadow from './components/StylingWithUtilityClasses/TextShadow/TextShadow';
+import Opacity from './components/StylingWithUtilityClasses/Opacity/Opacity';
+import MixBlendMode from './components/StylingWithUtilityClasses/MixBlendMode/MixBlendMode';
+import BackgroundBlendMode from './components/StylingWithUtilityClasses/BackgroundBlendMode/BackgroundBlendMode';
+import MaskClip from './components/StylingWithUtilityClasses/MaskClip/MaskClip';
+import MaskComposite from './components/StylingWithUtilityClasses/MaskComposite/MaskComposite';
+import MaskImage from './components/StylingWithUtilityClasses/MaskImage/MaskImage';
+import MaskMode from './components/StylingWithUtilityClasses/MaskMode/MaskMode';
+import MaskOrigin from './components/StylingWithUtilityClasses/MaskOrigin/MaskOrigin';
+import MaskPosition from './components/StylingWithUtilityClasses/MaskPosition/MaskPosition';
+import MaskRepeat from './components/StylingWithUtilityClasses/MaskRepeat/MaskRepeat';
+import MaskSize from './components/StylingWithUtilityClasses/MaskSize/MaskSize';
+import MaskType from './components/StylingWithUtilityClasses/MaskType/MaskType';
+import Filter from './components/StylingWithUtilityClasses/Filter/Filter';
+import FilterBrightness from './components/StylingWithUtilityClasses/Brightness/FilterBrightness';
+import FilterContrast from './components/StylingWithUtilityClasses/Contrast/FilterContrast';
 
 function App() {
   const location = useLocation();
@@ -209,6 +237,35 @@ function App() {
         <Route path='background-color' element={<BackgroundColor />} />
         <Route path='background-image' element={<BackgroundImage />} />
         <Route path='background-origin' element={<BackgroundOrigin />} />
+        <Route path='background-position' element={<BackgroundPosition />} />
+        <Route path='background-repeat' element={<BackgroundRepeat />} />
+        <Route path='background-size' element={<BackgroundSize />} />
+        <Route path='border-radius' element={<BorderRadius />} />
+        <Route path='border-width' element={<BorderWidth />} />
+        <Route path='border-color' element={<BorderColor />} />
+        <Route path='border-style' element={<BorderStyle />} />
+        <Route path='outline-width' element={<OutlineWidth />} />
+        <Route path='border-style' element={<BorderStyle />} />
+        <Route path='outline-color' element={<OutlineColor />} />
+        <Route path='outline-style' element={<OutlineStyle />} />
+        <Route path='outline-offset' element={<OutlineOffset />} />
+        <Route path='box-shadow' element={<BoxShadow />} />
+        <Route path='text-shadow' element={<TextShadow />} />
+        <Route path='opacity' element={<Opacity />} />
+        <Route path='mix-blend-mode' element={<MixBlendMode />} />
+        <Route path='background-blend-mode' element={<BackgroundBlendMode />} />
+        <Route path='mask-clip' element={<MaskClip />} />
+        <Route path='mask-composite' element={<MaskComposite />} />
+        <Route path='mask-image' element={<MaskImage />} />
+        <Route path='mask-mode' element={<MaskMode />} />
+        <Route path='mask-origin' element={<MaskOrigin />} />
+        <Route path='mask-position' element={<MaskPosition />} />
+        <Route path='mask-repeat' element={<MaskRepeat />} />
+        <Route path='mask-size' element={<MaskSize />} />
+        <Route path='mask-type' element={<MaskType />} />
+        <Route path='filter' element={<Filter />} />
+        <Route path='filter-brightness' element={<FilterBrightness />} />
+        <Route path='filter-contrast' element={<FilterContrast />} />
       </Route>
     </Routes>
   );

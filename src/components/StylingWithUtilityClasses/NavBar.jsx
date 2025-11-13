@@ -25,7 +25,7 @@ function NavBar() {
   return (
     <div className='relative flex flex-row h-full  w-full'>
       <div className=' z-50 bg-white w-full shadow px-4 h-12 flex flex-row items-center justify-between'>
-        <img src={image} className=' w-10 h-1/2 animate-bounce' alt='react' />
+        <img src={image} className=' w-10 h-1/2 ' alt='react' />
         <div className=' hidden group md:flex lg:w-1/2 sm:w-3/4 font-light h-3/4 rounded-full px-3  bg-gray-200 *:py-0.5 text-[0.77em]  flex-row  items-center justify-around *:hover:underline decoration-1 decoration-blue-500 *:hover:text-blue-600'>
           <Link
             className={` ${
@@ -93,7 +93,7 @@ function NavBar() {
       <div
         className={` ${
           sideBar ? 'flex' : 'hidden'
-        } sideBar z-50 flex-col gap-1 pl-4 py-3  absolute bg-gray-900 outline-1 rounded-tl-[0.5em] rounded-bl-[0.5em] outline-gray-400 w-3/5 sm:w-1/2 md:w-1/3 lg:1/4 right-0 h-[100vh] max-sm:text-vsm`}
+        } sideBar z-50 flex-col gap-1 pl-4 py-3  absolute bg-gray-900 outline-1 rounded-tl-[0.5em] rounded-bl-[0.5em] outline-gray-400 w-3/5 sm:w-1/2 md:w-[28%] lg:1/5 right-0 h-[100vh] max-sm:text-vsm`}
       >
         <div className=' w-[96%] h-6 flex flex-col items-end justify-end '>
           {' '}
@@ -712,6 +712,88 @@ function NavBar() {
           <NavBarHelper
             topicURL={'/background-origin'}
             topicName={'Background Origin'}
+          />
+          <NavBarHelper
+            topicURL={'/background-position'}
+            topicName={'Background Position'}
+          />
+          <NavBarHelper
+            topicURL={'/background-repeat'}
+            topicName={'Background Repeat'}
+          />
+          <NavBarHelper
+            topicURL={'/background-size'}
+            topicName={'Background Size'}
+          />
+          {/* header */}
+          <h2 className='sideBar  text-orange-500 rounded-full underline'>
+            Borders
+          </h2>
+          <NavBarHelper
+            topicURL={'/border-radius'}
+            topicName={'Border Radius'}
+          />
+          <NavBarHelper topicURL={'/border-width'} topicName={'Border Width'} />
+          <NavBarHelper topicURL={'/border-color'} topicName={'Border Color'} />
+          <NavBarHelper topicURL={'/border-style'} topicName={'Border Style'} />
+          <NavBarHelper
+            topicURL={'/outline-width'}
+            topicName={'Outline Width'}
+          />
+          <NavBarHelper
+            topicURL={'/outline-color'}
+            topicName={'Outline Color'}
+          />
+          <NavBarHelper
+            topicURL={'/outline-style'}
+            topicName={'Outline Style'}
+          />
+          <NavBarHelper
+            topicURL={'/outline-offset'}
+            topicName={'Outline Offset'}
+          />
+          {/* header */}
+          <h2 className='sideBar  text-orange-500 rounded-full underline'>
+            Effects
+          </h2>
+          <NavBarHelper topicURL={'/box-shadow'} topicName={'Box Shadow'} />
+          <NavBarHelper topicURL={'/text-shadow'} topicName={'Text Shadow'} />
+          <NavBarHelper topicURL={'/opacity'} topicName={'Opacity'} />
+          <NavBarHelper
+            topicURL={'/mix-blend-mode'}
+            topicName={'Mix Blend Mode'}
+          />
+          <NavBarHelper
+            topicURL={'/background-blend-mode'}
+            topicName={'Background Blend Mode'}
+          />
+          <NavBarHelper topicURL={'/mask-clip'} topicName={'Mask Clip'} />
+          <NavBarHelper
+            topicURL={'/mask-composite'}
+            topicName={'Mask Composite'}
+          />
+          <NavBarHelper topicURL={'/mask-image'} topicName={'Mask Image'} />
+          <NavBarHelper topicURL={'/mask-mode'} topicName={'Mask Mode'} />
+          <NavBarHelper topicURL={'/mask-origin'} topicName={'Mask Origin'} />
+          <NavBarHelper
+            topicURL={'/mask-position'}
+            topicName={'Mask Position'}
+          />
+          <NavBarHelper topicURL={'/mask-repeat'} topicName={'Mask Repeat'} />
+          <NavBarHelper topicURL={'/mask-size'} topicName={'Mask Size'} />
+          <NavBarHelper topicURL={'/mask-type'} topicName={'Mask Type'} />
+          {/* header */}
+          <h2 className='sideBar  text-orange-500 rounded-full underline'>
+            Filters{' '}
+          </h2>
+          <NavBarHelper topicURL={'/filter'} topicName={'Filter'} />
+          <NavBarHelper
+            topicURL={'/filter-brightness'}
+            topicName={'Filter: Brightness'}
+          />
+          <NavBarHelper
+            topicURL={'/filter-contrast'}
+            topicName={'Filter: Contrast'}
           />
         </div>
       </div>

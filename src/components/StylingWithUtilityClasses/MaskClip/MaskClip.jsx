@@ -15,16 +15,20 @@ function MaskClip() {
       </h2>
       <div className=' w-1/2 py-3 bg-gray-700 outline-1 outline-gray-400 rounded-[0.4em] flex flex-row justify-around items-center'>
         <div className=' flex flex-col items-center gap-2 '>
-          <h2 className='text-vsm text-gray-300'>bg-blend-multiply</h2>
-          <div className=' w-30 h-30 border-3 p-1.5 bg-gray-300 bg-cover border-dashed border-orange-600 mask-clip-border mask-center bg-[url(/Images/scribble.png)] bg-center mask-[url(Images/abstract.png)] '></div>
+          <h2 className='text-vsm text-gray-300'>mask-clip-border</h2>
+          <div className=' w-30 h-30 border-3 p-1.5 bg-gray-300 bg-cover border-dashed border-orange-600 [mask-clip:border-box] [-webkit-mask-clip:border-box] [mask-image:url(/Images/abstract.png)] [-webkit-mask-image:url(/Images/abstract.png)] [mask-repeat:no-repeat] [-webkit-mask-repeat:no-repeat] [mask-size:cover] [-webkit-mask-size:cover] bg-[url(/Images/scribble.png)] bg-center '></div>
         </div>
         <div className=' flex flex-col items-center gap-2 '>
-          <h2 className='text-vsm text-gray-300'>bg-blend-soft-light</h2>
-          <div className=' w-30 h-30 border-3 p-1.5 bg-gray-300 bg-cover border-dashed border-orange-600 mask-clip-padding mask-center bg-[url(/Images/abstract.png)] bg-center mask-[url(Images/scribble.png)]  '></div>
+          <h2 className='text-vsm text-gray-300'>mask-clip-padding</h2>
+          <div className=' w-30 h-30 border-3 p-1.5 bg-gray-300 bg-cover border-dashed border-orange-600 [mask-clip:padding-box] [-webkit-mask-clip:padding-box] [mask-image:url(/Images/scribble.png)] [-webkit-mask-image:url(/Images/scribble.png)] [mask-repeat:no-repeat] [-webkit-mask-repeat:no-repeat] [mask-size:cover] [-webkit-mask-size:cover] bg-[url(/Images/abstract.png)] bg-center  '></div>
         </div>
         <div className=' flex flex-col items-center gap-2 '>
-          <h2 className='text-vsm text-gray-300'>bg-blend-overlay</h2>
-          <div className=' w-30 h-30 border-4 p-1.5 bg-gray-300 bg-cover border-dashed border-orange-600  mask-[url(Images/scribble.png)] mask-clip-content  bg-[url(/Images/abstract.png)] '></div>
+          <h2 className='text-vsm text-gray-300'>mask-clip-content</h2>
+          <div className=' w-30 h-30 border-4 p-1.5 bg-gray-300 bg-cover border-dashed border-orange-600 [mask-image:url(/Images/scribble.png)] [-webkit-mask-image:url(/Images/scribble.png)] [mask-clip:content-box] [-webkit-mask-clip:content-box] [mask-repeat:no-repeat] [-webkit-mask-repeat:no-repeat]  [mask-size:cover] [-webkit-mask-size:cover] bg-[url(/Images/abstract.png)] '></div>
+        </div>
+        <div className=' flex flex-col items-center gap-2 '>
+          <h2 className='text-vsm text-gray-300'>mask-clip-stroke</h2>
+          <div className=' w-30 h-30 border-4 p-1.5 bg-gray-300 bg-cover border-dashed border-orange-600 [mask-image:url(/Images/scribble.png)] [-webkit-mask-image:url(/Images/scribble.png)] [mask-clip:stroke-box] [-webkit-mask-clip:stroke-box] [mask-repeat:no-repeat] [-webkit-mask-repeat:no-repeat] [mask-size:cover] [-webkit-mask-size:cover] bg-[url(/Images/abstract.png)] '></div>
         </div>
       </div>
     </div>

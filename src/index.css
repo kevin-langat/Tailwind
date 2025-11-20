@@ -33,6 +33,7 @@
     --radius-5xl: 3rem;
       --shadow-3xl: 0 35px 35px rgba(0, 0, 0, 0.25);
       --text-shadow-3xl: 0 35px 35px rgb(0, 0, 0 / 0.25);
+        --drop-shadow-4xl: 0 35px 35px rgba(0, 0, 0, 0.25);
 
 }
 

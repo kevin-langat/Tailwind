@@ -120,8 +120,12 @@ import MaskRepeat from './components/StylingWithUtilityClasses/MaskRepeat/MaskRe
 import MaskSize from './components/StylingWithUtilityClasses/MaskSize/MaskSize';
 import MaskType from './components/StylingWithUtilityClasses/MaskType/MaskType';
 import Filter from './components/StylingWithUtilityClasses/Filter/Filter';
-import FilterBrightness from './components/StylingWithUtilityClasses/Brightness/FilterBrightness';
-import FilterContrast from './components/StylingWithUtilityClasses/Contrast/FilterContrast';
+import FilterBrightness from './components/StylingWithUtilityClasses/Filter/FilterBrightness';
+import FilterContrast from './components/StylingWithUtilityClasses/Filter/FilterContrast';
+import FilterDropShadow from './components/StylingWithUtilityClasses/Filter/FilterDropShadow';
+import FilterGrayscale from './components/StylingWithUtilityClasses/Filter/FilterGrayscale';
+import HueRotate from './components/StylingWithUtilityClasses/Filter/HueRotate';
+import Invert from './components/StylingWithUtilityClasses/Filter/Invert';
 
 function App() {
   const location = useLocation();
@@ -266,6 +270,10 @@ function App() {
         <Route path='filter' element={<Filter />} />
         <Route path='filter-brightness' element={<FilterBrightness />} />
         <Route path='filter-contrast' element={<FilterContrast />} />
+        <Route path='filter-drop-shadow' element={<FilterDropShadow />} />
+        <Route path='filter-grayscale' element={<FilterGrayscale />} />
+        <Route path='hue-rotate' element={<HueRotate />} />
+        <Route path='invert' element={<Invert />} />
       </Route>
     </Routes>
   );

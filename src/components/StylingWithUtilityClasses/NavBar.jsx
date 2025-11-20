@@ -795,6 +795,19 @@ function NavBar() {
             topicURL={'/filter-contrast'}
             topicName={'Filter: Contrast'}
           />
+          <NavBarHelper
+            topicURL={'/filter-drop-shadow'}
+            topicName={'Filter: Drop-Shadow'}
+          />
+          <NavBarHelper
+            topicURL={'/filter-grayscale'}
+            topicName={'Filter: Grayscale'}
+          />
+          <NavBarHelper
+            topicURL={'/hue-rotate'}
+            topicName={'Filter: Hue-Rotate'}
+          />
+          <NavBarHelper topicURL={'/invert'} topicName={'Filter: Invert'} />
         </div>
       </div>
     </div>

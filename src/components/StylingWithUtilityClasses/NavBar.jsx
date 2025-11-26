@@ -23,7 +23,7 @@ function NavBar() {
   }, [sideBar]);
 
   return (
-    <div className='relative flex flex-row h-full  w-full'>
+    <div className='relative transition duration-1000 ease-in flex flex-row h-full  w-full'>
       <div className=' z-50 bg-white w-full shadow px-4 h-12 flex flex-row items-center justify-between'>
         <img src={image} className=' w-10 h-1/2 ' alt='react' />
         <div className=' hidden group md:flex lg:w-1/2 sm:w-3/4 font-light h-3/4 rounded-full px-3  bg-gray-200 *:py-0.5 text-[0.77em]  flex-row  items-center justify-around *:hover:underline decoration-1 decoration-blue-500 *:hover:text-blue-600'>
@@ -84,7 +84,7 @@ function NavBar() {
           onClick={() => setSideBar(true)}
           className='sideBar group cursor-pointer bg-orange-700 h-3/5  py-4 flex flex-row items-center justify-center px-2 gap-2 text-white  outline-gray-200 shadow-8xl rounded-full shadow-black'
         >
-          <h2 className='sideBar text-sm'> All Documentation</h2>
+          <h2 className='sideBar text-sm'> All Docs</h2>
           <h2>
             <PanelLeft className='sideBar outline-1 outline-gray-400 rounded-full text-black p-1  bg-gray-200 w-6 h-6' />
           </h2>
@@ -92,10 +92,10 @@ function NavBar() {
       </div>
       <div
         className={` ${
-          sideBar ? 'flex' : 'hidden'
-        } sideBar z-50 flex-col gap-1 pl-4 py-3  absolute bg-gray-900 outline-1 rounded-tl-[0.5em] rounded-bl-[0.5em] outline-gray-400 w-3/5 sm:w-1/2 md:w-[28%] lg:1/5 right-0 h-[100vh] max-sm:text-vsm`}
+          sideBar ? 'mr-0.5 flex' : '-mr-[26%] hidden'
+        } duration-200 transition ease-in sideBar z-50 flex-col gap-1 pl-4  py-3  absolute shadow-2xl shadow-black bg-gray-900 outline-1 rounded-[0.5em] outline-gray-400 w-3/5 sm:w-1/2 md:w-[24%] lg:1/5 right-2 h-[100vh] max-sm:text-vsm`}
       >
-        <div className=' w-[96%] h-6 flex flex-col items-end justify-end '>
+        <div className=' bg-linear-to-br from-sky-400/50 to-green-500/70 w-[73.5] rounded-t-[0.5em]  -ml-4 -mt-3  h-6 flex flex-col items-end justify-end '>
           {' '}
           <X
             onClick={() => setSideBar(false)}
@@ -808,6 +808,57 @@ function NavBar() {
             topicName={'Filter: Hue-Rotate'}
           />
           <NavBarHelper topicURL={'/invert'} topicName={'Filter: Invert'} />
+          <NavBarHelper topicURL={'/saturate'} topicName={'Filter: Saturate'} />
+          <NavBarHelper topicURL={'/sepia'} topicName={'Filter: Sepia'} />
+          <NavBarHelper
+            topicURL={'/backdrop-filter'}
+            topicName={'Backdrop-Filter'}
+          />
+          <NavBarHelper
+            topicURL={'/backdrop-blur'}
+            topicName={'Backdrop-Blur'}
+          />
+          <NavBarHelper
+            topicURL={'/backdrop-brightness'}
+            topicName={'Backdrop-Brightness'}
+          />
+          <NavBarHelper
+            topicURL={'/backdrop-contrast'}
+            topicName={'Backdrop-Contrast'}
+          />
+          <NavBarHelper
+            topicURL={'/backdrop-grayscale'}
+            topicName={'Backdrop-GrayScale'}
+          />
+
+          <NavBarHelper
+            topicURL={'/backdrop-hue-rotate'}
+            topicName={'Backdrop-Hue Rotate'}
+          />
+          <NavBarHelper
+            topicURL={'/backdrop-invert'}
+            topicName={'Backdrop Invert'}
+          />
+          <NavBarHelper
+            topicURL={'/backdrop-opacity'}
+            topicName={'Backdrop Opacity'}
+          />
+          <NavBarHelper
+            topicURL={'/backdrop-saturate'}
+            topicName={'Backdrop Saturate'}
+          />
+          <NavBarHelper
+            topicURL={'/backdrop-sepia'}
+            topicName={'Backdrop Sepia'}
+          />
+          {/* header */}
+          <h2 className='sideBar  text-orange-500 rounded-full underline'>
+            Tables
+          </h2>
+          <NavBarHelper
+            topicURL={'/border-collapse'}
+            topicName={'Border Collapse'}
+          />
         </div>
       </div>
     </div>

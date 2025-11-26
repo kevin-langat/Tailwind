@@ -126,6 +126,20 @@ import FilterDropShadow from './components/StylingWithUtilityClasses/Filter/Filt
 import FilterGrayscale from './components/StylingWithUtilityClasses/Filter/FilterGrayscale';
 import HueRotate from './components/StylingWithUtilityClasses/Filter/HueRotate';
 import Invert from './components/StylingWithUtilityClasses/Filter/Invert';
+import Saturate from './components/StylingWithUtilityClasses/Filter/Saturate';
+import NotFoundPage from './components/NotFoundPage/NotFoundPage';
+import Sepia from './components/StylingWithUtilityClasses/Filter/Sepia';
+import BackDropFilter from './components/StylingWithUtilityClasses/BackdropFilter/BackDrop-Filter';
+import Blur from './components/StylingWithUtilityClasses/BackdropFilter/Blur';
+import Brightness from './components/StylingWithUtilityClasses/BackdropFilter/Brightness';
+import Contrast from './components/StylingWithUtilityClasses/BackdropFilter/Contrast';
+import GrayScale from './components/StylingWithUtilityClasses/BackdropFilter/GrayScale';
+import BackDropHueRotate from './components/StylingWithUtilityClasses/BackdropFilter/HueRotate';
+import BackDropInvert from './components/StylingWithUtilityClasses/BackdropFilter/BackDropInvert';
+import BackDropOpacity from './components/StylingWithUtilityClasses/BackdropFilter/BackDropOpacity';
+import BackDropSaturate from './components/StylingWithUtilityClasses/BackdropFilter/BackDropSaturate';
+import BackDropSepia from './components/StylingWithUtilityClasses/BackdropFilter/BackDropSepia';
+import BorderCollapse from './components/StylingWithUtilityClasses/Tables/BorderCollapse';
 
 function App() {
   const location = useLocation();
@@ -140,6 +154,7 @@ function App() {
   return (
     <Routes>
       <Route path='/' element={<CommonLayout />}>
+        <Route path='*' element={<NotFoundPage />} />
         <Route path='hover-state' element={<HoverState />} />
         <Route path='responsive-design' element={<ResponsiveDesign />} />
         <Route path='dark-mode' element={<Darkmode />} />
@@ -274,6 +289,19 @@ function App() {
         <Route path='filter-grayscale' element={<FilterGrayscale />} />
         <Route path='hue-rotate' element={<HueRotate />} />
         <Route path='invert' element={<Invert />} />
+        <Route path='saturate' element={<Saturate />} />
+        <Route path='sepia' element={<Sepia />} />
+        <Route path='backdrop-filter' element={<BackDropFilter />} />
+        <Route path='backdrop-blur' element={<Blur />} />
+        <Route path='backdrop-brightness' element={<Brightness />} />
+        <Route path='backdrop-contrast' element={<Contrast />} />
+        <Route path='backdrop-grayscale' element={<GrayScale />} />
+        <Route path='backdrop-hue-rotate' element={<BackDropHueRotate />} />
+        <Route path='backdrop-invert' element={<BackDropInvert />} />
+        <Route path='backdrop-opacity' element={<BackDropOpacity />} />
+        <Route path='backdrop-saturate' element={<BackDropSaturate />} />
+        <Route path='backdrop-sepia' element={<BackDropSepia />} />
+        <Route path='border-collapse' element={<BorderCollapse />} />
       </Route>
     </Routes>
   );

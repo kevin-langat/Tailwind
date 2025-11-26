@@ -140,6 +140,12 @@ import BackDropOpacity from './components/StylingWithUtilityClasses/BackdropFilt
 import BackDropSaturate from './components/StylingWithUtilityClasses/BackdropFilter/BackDropSaturate';
 import BackDropSepia from './components/StylingWithUtilityClasses/BackdropFilter/BackDropSepia';
 import BorderCollapse from './components/StylingWithUtilityClasses/Tables/BorderCollapse';
+import BorderSpacing from './components/StylingWithUtilityClasses/Tables/BorderSpacing';
+import TableLayout from './components/StylingWithUtilityClasses/Tables/TableLayout';
+import CaptionSide from './components/StylingWithUtilityClasses/Tables/CaptionSide';
+
+import TransitionProperty from './components/StylingWithUtilityClasses/TransistionsAndAnimation/TransistionProperty';
+import TransitionBehavior from './components/StylingWithUtilityClasses/TransistionsAndAnimation/TransitionBehavior';
 
 function App() {
   const location = useLocation();
@@ -302,6 +308,11 @@ function App() {
         <Route path='backdrop-saturate' element={<BackDropSaturate />} />
         <Route path='backdrop-sepia' element={<BackDropSepia />} />
         <Route path='border-collapse' element={<BorderCollapse />} />
+        <Route path='border-spacing' element={<BorderSpacing />} />
+        <Route path='table-layout' element={<TableLayout />} />
+        <Route path='caption-side' element={<CaptionSide />} />
+        <Route path='transition-property' element={<TransitionProperty />} />
+        <Route path='transition-behavior' element={<TransitionBehavior />} />
       </Route>
     </Routes>
   );

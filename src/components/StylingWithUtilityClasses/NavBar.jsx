@@ -859,6 +859,24 @@ function NavBar() {
             topicURL={'/border-collapse'}
             topicName={'Border Collapse'}
           />
+          <NavBarHelper
+            topicURL={'/border-spacing'}
+            topicName={'Border Spacing'}
+          />
+          <NavBarHelper topicURL={'/table-layout'} topicName={'Table Layout'} />
+          <NavBarHelper topicURL={'/caption-side'} topicName={'Caption Side'} />
+          {/* header */}
+          <h2 className='sideBar  text-orange-500 rounded-full underline'>
+            Transistions & Animation
+          </h2>
+          <NavBarHelper
+            topicURL={'/transition-property'}
+            topicName={'Transition Property'}
+          />
+          <NavBarHelper
+            topicURL={'/transition-behavior'}
+            topicName={'Transition Behavior'}
+          />
         </div>
       </div>
     </div>

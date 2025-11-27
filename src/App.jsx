@@ -146,6 +146,11 @@ import CaptionSide from './components/StylingWithUtilityClasses/Tables/CaptionSi
 
 import TransitionProperty from './components/StylingWithUtilityClasses/TransistionsAndAnimation/TransistionProperty';
 import TransitionBehavior from './components/StylingWithUtilityClasses/TransistionsAndAnimation/TransitionBehavior';
+import TransitionDuration from './components/StylingWithUtilityClasses/TransistionsAndAnimation/Transitionduration';
+import TransitionTimingFunction from './components/StylingWithUtilityClasses/TransistionsAndAnimation/TransitionTimingFunction';
+import TransitionDelay from './components/StylingWithUtilityClasses/TransistionsAndAnimation/TransitionDelay';
+import Animation from './components/StylingWithUtilityClasses/TransistionsAndAnimation/Animation';
+import BackfaceVisibility from './components/StylingWithUtilityClasses/Transforms/BackfaceVisibility';
 
 function App() {
   const location = useLocation();
@@ -313,6 +318,14 @@ function App() {
         <Route path='caption-side' element={<CaptionSide />} />
         <Route path='transition-property' element={<TransitionProperty />} />
         <Route path='transition-behavior' element={<TransitionBehavior />} />
+        <Route path='transition-duration' element={<TransitionDuration />} />
+        <Route
+          path='transition-timing-function'
+          element={<TransitionTimingFunction />}
+        />
+        <Route path='transition-delay' element={<TransitionDelay />} />
+        <Route path='animation' element={<Animation />} />
+        <Route path='backface-visibility' element={<BackfaceVisibility />} />
       </Route>
     </Routes>
   );

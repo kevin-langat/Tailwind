@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import image from '../../assets/Tailwind.png';
 import { ArrowLeft, ArrowUpRight, PanelLeft, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
@@ -6,7 +6,7 @@ import NavBarHelper from '../../Config/NavBarHelper';
 
 function NavBar() {
   const [sideBar, setSideBar] = useState(false);
-
+  const navigateTo = useNavigate();
   window.addEventListener('click', (e) => {
     if (e.target.classList.contains('sideBar')) {
     } else {
@@ -25,7 +25,12 @@ function NavBar() {
   return (
     <div className='relative transition duration-1000 ease-in flex flex-row h-full  w-full'>
       <div className=' z-50 bg-white w-full shadow px-4 h-12 flex flex-row items-center justify-between'>
-        <img src={image} className=' w-10 h-1/2 ' alt='react' />
+        <img
+          src={image}
+          onClick={() => navigateTo('/hover-state')}
+          className=' w-8 hover:scale-110 transition duration-300 ease-in-out h-[40%] '
+          alt='react'
+        />
         <div className=' hidden group md:flex lg:w-1/2 sm:w-3/4 font-light h-3/4 rounded-full px-3  bg-gray-200 *:py-0.5 text-[0.77em]  flex-row  items-center justify-around *:hover:underline decoration-1 decoration-blue-500 *:hover:text-blue-600'>
           <Link
             className={` ${
@@ -876,6 +881,28 @@ function NavBar() {
           <NavBarHelper
             topicURL={'/transition-behavior'}
             topicName={'Transition Behavior'}
+          />
+          <NavBarHelper
+            topicURL={'/transition-duration'}
+            topicName={'Transition Duration'}
+          />
+          <NavBarHelper
+            topicURL={'/transition-timing-function'}
+            topicName={'Transition Timing Function'}
+          />
+          <NavBarHelper
+            topicURL={'/transition-delay'}
+            topicName={'Transition Delay'}
+          />
+          <NavBarHelper topicURL={'/animation'} topicName={'Animation'} />
+
+          {/* header */}
+          <h2 className='sideBar  text-orange-500 rounded-full underline'>
+            Transforms
+          </h2>
+          <NavBarHelper
+            topicURL={'/backface-visibility'}
+            topicName={'Backface Visibility'}
           />
         </div>
       </div>

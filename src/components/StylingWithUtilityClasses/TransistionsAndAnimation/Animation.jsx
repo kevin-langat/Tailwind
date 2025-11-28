@@ -67,7 +67,7 @@ function Animation() {
         </div>
       </div>
       {/* Adding a bounce animation */}
-      <h2 className='underline'>Adding a ping animation</h2>
+      <h2 className='underline'>Adding a bounce animation</h2>
       <h2 className='text-vsm w-1/2'>
         Use the animate-bounce utility to make an element bounce up and
         down—useful for things like "scroll down" indicators:

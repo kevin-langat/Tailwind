@@ -1,11 +1,15 @@
 import { Link, useNavigate } from 'react-router-dom';
 import image from '../../assets/Tailwind.png';
-import { ArrowLeft, ArrowUpRight, PanelLeft, X } from 'lucide-react';
+import { ArrowLeft, ArrowRight, PanelLeft, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import NavBarHelper from '../../Config/NavBarHelper';
+import { navigationPaths } from '../../Config/config';
 
 function NavBar() {
   const [sideBar, setSideBar] = useState(false);
+  const [prevBtnState, setPrevBtnState] = useState(Boolean);
+  const [nextBtnState, setNextBtnState] = useState(Boolean);
+
   const navigateTo = useNavigate();
   window.addEventListener('click', (e) => {
     if (e.target.classList.contains('sideBar')) {
@@ -21,6 +25,26 @@ function NavBar() {
       document.documentElement.style.overflow = 'scroll';
     }
   }, [sideBar]);
+  let currentLocation = navigationPaths.indexOf(location.pathname) + 1;
+  let currentLocationPrev = navigationPaths.indexOf(location.pathname) - 1;
+
+  function navigateNextPage() {
+    if (currentLocation < navigationPaths.length) {
+      setPrevBtnState(false);
+      navigateTo(navigationPaths[currentLocation + 1]);
+    } else {
+      setNextBtnState(true);
+    }
+  }
+  function navigatePreviousPage() {
+    if (currentLocationPrev <= navigationPaths.length) {
+      navigateTo(navigationPaths[currentLocationPrev - 1]);
+      setNextBtnState(false);
+      console.log('stel', currentLocation, navigationPaths.length);
+    } else {
+      setPrevBtnState(true);
+    }
+  }
 
   return (
     <div className='relative transition duration-1000 ease-in flex flex-row h-full  w-full'>
@@ -31,7 +55,7 @@ function NavBar() {
           className=' w-8 hover:scale-110 transition duration-300 ease-in-out h-[40%] '
           alt='react'
         />
-        <div className=' hidden group md:flex lg:w-1/2 sm:w-3/4 font-light h-3/4 rounded-full px-3  bg-gray-200 *:py-0.5 text-[0.77em]  flex-row  items-center justify-around *:hover:underline decoration-1 decoration-blue-500 *:hover:text-blue-600'>
+        <div className=' hidden group md:flex lg:w-1/2 sm:w-3/4 font-light h-3/4 px-3  bg-gray-100 *:py-0.5 text-[0.77em] mask-r-from-95% mask-r-to-100% mask-l-from-95% mask-l-to-100%  flex-row  items-center justify-around *:hover:underline decoration-1 decoration-blue-500 *:hover:text-blue-600'>
           <Link
             className={` ${
               location.pathname.endsWith('hover-state')
@@ -86,6 +110,23 @@ function NavBar() {
           </Link>
         </div>
         <button
+          onClick={navigatePreviousPage}
+          disabled={prevBtnState}
+          className=' hidden disabled:bg-gray-400  disabled:opacity-40 shadow shadow-gray-800 px-2 outline-1 cursor-pointer group outline-gray-400/90 bg-orange-600 top-[90vh]  flex-row items-center justify-center gap-4 z-50 left-20 fixed rounded-full h-7'
+        >
+          <ArrowLeft className='bg-gray-800 rounded-full ease-in-out duration-300 group-hover:-translate-x-1 h-6 w-6 text-gray-100 p-0.5' />
+          <h2 className='text-vsm group-hover:text-blue-600'>Hover State</h2>
+        </button>
+        <button
+          onClick={navigateNextPage}
+          disabled={nextBtnState}
+          className=' hidden group disabled:bg-gray-400 disabled:opacity-40 shadow shadow-gray-800 px-2 outline-1 cursor-pointer group outline-gray-400/90 bg-orange-600 top-[90vh]  flex-row items-center justify-center gap-4 z-50 right-20 fixed rounded-full h-7'
+        >
+          <h2 className='text-vsm group-hover:text-blue-600'>Hue Rotate</h2>
+          <ArrowRight className='bg-gray-800 group-disabled:hover:translate-x-0 rounded-full ease-in-out duration-300 group-hover:translate-x-1 h-6 w-6 text-gray-100 p-0.5' />
+        </button>
+
+        <button
           onClick={() => setSideBar(true)}
           className='sideBar group cursor-pointer bg-orange-700 h-3/5  py-4 flex flex-row items-center justify-center px-2 gap-2 text-white  outline-gray-200 shadow-8xl rounded-full shadow-black'
         >
@@ -98,7 +139,7 @@ function NavBar() {
       <div
         className={` ${
           sideBar ? 'mr-0.5 flex' : '-mr-[26%] hidden'
-        } duration-200 transition ease-in sideBar z-50 flex-col gap-1 pl-4  py-3  absolute shadow-2xl shadow-black bg-gray-900 outline-1 rounded-[0.5em] outline-gray-400 w-3/5 sm:w-1/2 md:w-[24%] lg:1/5 right-2 h-[100vh] max-sm:text-vsm`}
+        } duration-200 transition ease-in sideBar z-50 flex-col gap-1 pl-4  py-3  absolute shadow-2xl shadow-black bg-gray-950 outline-1 rounded-[0.5em] outline-gray-400 w-3/5 sm:w-1/2 md:w-[24%] lg:1/5 right-2 h-[100vh] max-sm:text-vsm`}
       >
         <div className=' bg-linear-to-br from-sky-400/50 to-green-500/70 w-[73.5] rounded-t-[0.5em]  -ml-4 -mt-3  h-6 flex flex-col items-end justify-end '>
           {' '}
@@ -904,6 +945,30 @@ function NavBar() {
             topicURL={'/backface-visibility'}
             topicName={'Backface Visibility'}
           />
+          <NavBarHelper topicURL={'/perspective'} topicName={'Perspective'} />
+          <NavBarHelper
+            topicURL={'/perspective-origin'}
+            topicName={'Perspective Origin'}
+          />
+          <NavBarHelper topicURL={'/rotate'} topicName={'Rotate'} />
+          <NavBarHelper topicURL={'/scale'} topicName={'Scale'} />
+          <NavBarHelper topicURL={'/skew'} topicName={'Skew'} />
+          <NavBarHelper topicURL={'/transform'} topicName={'Transform'} />
+          <NavBarHelper
+            topicURL={'/transform-origin'}
+            topicName={'Tranform Origin'}
+          />
+          <NavBarHelper
+            topicURL={'/transform-style'}
+            topicName={'Tranform Style'}
+          />
+          <NavBarHelper topicURL={'/translate'} topicName={'Translate'} />
+
+          {/* header */}
+          <h2 className='sideBar  text-orange-500 rounded-full underline'>
+            Interactivity
+          </h2>
+          <NavBarHelper topicURL={'/accent-color'} topicName={'Accent Color'} />
         </div>
       </div>
     </div>

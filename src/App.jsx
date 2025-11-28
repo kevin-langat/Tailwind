@@ -151,6 +151,16 @@ import TransitionTimingFunction from './components/StylingWithUtilityClasses/Tra
 import TransitionDelay from './components/StylingWithUtilityClasses/TransistionsAndAnimation/TransitionDelay';
 import Animation from './components/StylingWithUtilityClasses/TransistionsAndAnimation/Animation';
 import BackfaceVisibility from './components/StylingWithUtilityClasses/Transforms/BackfaceVisibility';
+import Perspective from './components/StylingWithUtilityClasses/Transforms/Perspective';
+import PerspectiveOrigin from './components/StylingWithUtilityClasses/Transforms/PerspectiveOrigin';
+import Rotate from './components/StylingWithUtilityClasses/Transforms/Rotate';
+import Scale from './components/StylingWithUtilityClasses/Transforms/Scale';
+import Skew from './components/StylingWithUtilityClasses/Transforms/Skew';
+import Transform from './components/StylingWithUtilityClasses/Transforms/Transform';
+import TranformOrigin from './components/StylingWithUtilityClasses/Transforms/TranformOrigin';
+import TransformStyle from './components/StylingWithUtilityClasses/Transforms/TransformStyle';
+import Translate from './components/StylingWithUtilityClasses/Transforms/Translate';
+import AccentColor from './components/StylingWithUtilityClasses/Interactivity/AccentColor';
 
 function App() {
   const location = useLocation();
@@ -326,6 +336,16 @@ function App() {
         <Route path='transition-delay' element={<TransitionDelay />} />
         <Route path='animation' element={<Animation />} />
         <Route path='backface-visibility' element={<BackfaceVisibility />} />
+        <Route path='perspective' element={<Perspective />} />
+        <Route path='perspective-origin' element={<PerspectiveOrigin />} />
+        <Route path='rotate' element={<Rotate />} />
+        <Route path='scale' element={<Scale />} />
+        <Route path='skew' element={<Skew />} />
+        <Route path='transform' element={<Transform />} />
+        <Route path='transform-origin' element={<TranformOrigin />} />
+        <Route path='transform-style' element={<TransformStyle />} />
+        <Route path='translate' element={<Translate />} />
+        <Route path='accent-color' element={<AccentColor />} />
       </Route>
     </Routes>
   );

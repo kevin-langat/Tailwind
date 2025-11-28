@@ -173,3 +173,16 @@ const locationsPathNames = [
   '9,/aspect-ratio',
 ];
 export { locationsPathNames };
+export const navigationPaths = [
+  '/hover-state',
+  '/responsive-design',
+  '/dark-mode',
+  '/theme-variables',
+  '/colors',
+  '/custom-styles',
+  '/detecting-classes',
+  '/functions-directives',
+  '/aspect-ratio',
+  '/columns',
+  '/break-after',
+];

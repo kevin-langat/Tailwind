@@ -969,6 +969,32 @@ function NavBar() {
             Interactivity
           </h2>
           <NavBarHelper topicURL={'/accent-color'} topicName={'Accent Color'} />
+          <NavBarHelper topicURL={'/appearance'} topicName={'Appearance'} />
+          <NavBarHelper topicURL={'/caret-color'} topicName={'Caret Color'} />
+          <NavBarHelper topicURL={'/color-scheme'} topicName={'Color Scheme'} />
+          <NavBarHelper topicURL={'/cursor'} topicName={'Cursor'} />
+          <NavBarHelper topicURL={'/field-sizing'} topicName={'Field Sizing'} />
+          <NavBarHelper
+            topicURL={'/pointer-events'}
+            topicName={'Pointer Events'}
+          />
+          <NavBarHelper topicURL={'/resize'} topicName={'Resize'} />
+          <NavBarHelper
+            topicURL={'/scroll-behavior'}
+            topicName={'Scroll Behavior'}
+          />
+          <NavBarHelper
+            topicURL={'/scroll-margin'}
+            topicName={'Scroll Margin'}
+          />
+          <NavBarHelper
+            topicURL={'/scroll-padding'}
+            topicName={'Scroll Padding'}
+          />
+          <NavBarHelper
+            topicURL={'/scroll-snap-align'}
+            topicName={'Scroll Snap Align'}
+          />
         </div>
       </div>
     </div>

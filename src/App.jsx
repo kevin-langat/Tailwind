@@ -161,6 +161,17 @@ import TranformOrigin from './components/StylingWithUtilityClasses/Transforms/Tr
 import TransformStyle from './components/StylingWithUtilityClasses/Transforms/TransformStyle';
 import Translate from './components/StylingWithUtilityClasses/Transforms/Translate';
 import AccentColor from './components/StylingWithUtilityClasses/Interactivity/AccentColor';
+import Appearance from './components/StylingWithUtilityClasses/Interactivity/Appearance';
+import CaretColor from './components/StylingWithUtilityClasses/Interactivity/CaretColor';
+import ColorScheme from './components/StylingWithUtilityClasses/Interactivity/ColorScheme';
+import Cursor from './components/StylingWithUtilityClasses/Interactivity/Cursor';
+import FieldSizing from './components/StylingWithUtilityClasses/Interactivity/FieldSizing';
+import PointerEvents from './components/StylingWithUtilityClasses/Interactivity/PointerEvents';
+import Resize from './components/StylingWithUtilityClasses/Interactivity/Resize';
+import ScrollBehavior from './components/StylingWithUtilityClasses/Interactivity/ScrollBehavior';
+import ScrollMargin from './components/StylingWithUtilityClasses/Interactivity/ScrollMargin';
+import ScrollPadding from './components/StylingWithUtilityClasses/Interactivity/ScrollPadding';
+import ScrollSnapAlign from './components/StylingWithUtilityClasses/Interactivity/ScrollSnapAlign';
 
 function App() {
   const location = useLocation();
@@ -346,6 +357,17 @@ function App() {
         <Route path='transform-style' element={<TransformStyle />} />
         <Route path='translate' element={<Translate />} />
         <Route path='accent-color' element={<AccentColor />} />
+        <Route path='appearance' element={<Appearance />} />
+        <Route path='caret-color' element={<CaretColor />} />
+        <Route path='color-scheme' element={<ColorScheme />} />
+        <Route path='cursor' element={<Cursor />} />
+        <Route path='field-sizing' element={<FieldSizing />} />
+        <Route path='pointer-events' element={<PointerEvents />} />
+        <Route path='resize' element={<Resize />} />
+        <Route path='scroll-behavior' element={<ScrollBehavior />} />
+        <Route path='scroll-margin' element={<ScrollMargin />} />
+        <Route path='scroll-padding' element={<ScrollPadding />} />
+        <Route path='scroll-snap-align' element={<ScrollSnapAlign />} />
       </Route>
     </Routes>
   );

@@ -16,9 +16,9 @@ function FilterDropShadow() {
       <div className='w-1/2 outline-1 outline-gray-400/20  bg-gray-50 h-30 rounded-[0.3em] flex items-center flex-row justify-around'>
         <div className=' flex  flex-col items-center justify-around'>
           <h2 className='text-vsm'>drop-shadow-md</h2>
-          <div class='filter drop-shadow-md/50'>
+          <div className='filter drop-shadow-md/50'>
             <svg
-              class='h-16 w-16 text-sky-600'
+              className='h-16 w-16 text-sky-600'
               fill='currentColor'
               viewBox='0 0 20 20'
             >
@@ -33,9 +33,9 @@ function FilterDropShadow() {
 
         <div className=' flex  flex-col items-center justify-around'>
           <h2 className='text-vsm'>drop-shadow-lg</h2>
-          <div class='filter drop-shadow-lg/50'>
+          <div className='filter drop-shadow-lg/50'>
             <svg
-              class='h-16 w-16 text-sky-600'
+              className='h-16 w-16 text-sky-600'
               fill='currentColor'
               viewBox='0 0 20 20'
             >
@@ -49,9 +49,9 @@ function FilterDropShadow() {
         </div>
         <div className=' flex  flex-col items-center justify-around'>
           <h2 className='text-vsm'>drop-shadow-xl</h2>
-          <div class='filter drop-shadow-xl/50'>
+          <div className='filter drop-shadow-xl/50'>
             <svg
-              class='h-16 w-16 text-sky-600'
+              className='h-16 w-16 text-sky-600'
               fill='currentColor'
               viewBox='0 0 20 20'
             >
@@ -72,9 +72,9 @@ function FilterDropShadow() {
       <div className='w-1/2 outline-1 outline-gray-400/20  bg-gray-50 h-30 rounded-[0.3em] flex items-center flex-row justify-around'>
         <div className=' flex  flex-col items-center justify-around'>
           <h2 className='text-vsm'>drop-shadow-xl</h2>
-          <div class='filter drop-shadow-xl'>
+          <div className='filter drop-shadow-xl'>
             <svg
-              class='h-16 w-16 text-sky-600'
+              className='h-16 w-16 text-sky-600'
               fill='currentColor'
               viewBox='0 0 20 20'
             >
@@ -89,9 +89,9 @@ function FilterDropShadow() {
 
         <div className=' flex  flex-col items-center justify-around'>
           <h2 className='text-vsm'>drop-shadow-xl/25</h2>
-          <div class='filter drop-shadow-xl/25'>
+          <div className='filter drop-shadow-xl/25'>
             <svg
-              class='h-16 w-16 text-sky-600'
+              className='h-16 w-16 text-sky-600'
               fill='currentColor'
               viewBox='0 0 20 20'
             >
@@ -105,9 +105,9 @@ function FilterDropShadow() {
         </div>
         <div className=' flex  flex-col items-center justify-around'>
           <h2 className='text-vsm'>drop-shadow-xl/50</h2>
-          <div class='filter drop-shadow-xl/50'>
+          <div className='filter drop-shadow-xl/50'>
             <svg
-              class='h-16 w-16 text-sky-600'
+              className='h-16 w-16 text-sky-600'
               fill='currentColor'
               viewBox='0 0 20 20'
             >
@@ -133,9 +133,9 @@ function FilterDropShadow() {
       <div className='w-1/2 outline-1 outline-gray-400/20 text-gray-100  bg-gray-800 h-30 rounded-[0.3em] flex items-center flex-row justify-around'>
         <div className=' flex  flex-col items-center justify-around'>
           <h2 className='text-vsm'>drop-shadow-green-500</h2>
-          <div class='filter drop-shadow-xl drop-shadow-green-500'>
+          <div className='filter drop-shadow-xl drop-shadow-green-500'>
             <svg
-              class='h-16 w-16 text-sky-600'
+              className='h-16 w-16 text-sky-600'
               fill='currentColor'
               viewBox='0 0 20 20'
             >
@@ -150,9 +150,9 @@ function FilterDropShadow() {
 
         <div className=' flex  flex-col items-center justify-around'>
           <h2 className='text-vsm'>drop-shadow-fuchsia-500</h2>
-          <div class='filter drop-shadow-xl/25 drop-shadow-fuchsia-500'>
+          <div className='filter drop-shadow-xl/25 drop-shadow-fuchsia-500'>
             <svg
-              class='h-16 w-16 text-sky-600'
+              className='h-16 w-16 text-sky-600'
               fill='currentColor'
               viewBox='0 0 20 20'
             >
@@ -175,9 +175,9 @@ function FilterDropShadow() {
           <h2 className='text-vsm @md/parent:after:content-["-none"] after:content-["-xl"]'>
             drop-shadow
           </h2>
-          <div class='filter drop-shadow-xl @md/parent:drop-shadow-none drop-shadow-green-500'>
+          <div className='filter drop-shadow-xl @md/parent:drop-shadow-none drop-shadow-green-500'>
             <svg
-              class='h-16 w-16 text-sky-600'
+              className='h-16 w-16 text-sky-600'
               fill='currentColor'
               viewBox='0 0 20 20'
             >

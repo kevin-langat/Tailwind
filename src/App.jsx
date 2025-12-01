@@ -177,6 +177,10 @@ import ScrollSnapType from './components/StylingWithUtilityClasses/Interactivity
 import TouchAction from './components/StylingWithUtilityClasses/Interactivity/TouchAction';
 import UserSelect from './components/StylingWithUtilityClasses/Interactivity/UserSelect';
 import WillChange from './components/StylingWithUtilityClasses/Interactivity/WillChange';
+import Fill from './components/StylingWithUtilityClasses/Svg/Fill';
+import Stroke from './components/StylingWithUtilityClasses/Svg/Stroke';
+import StrokeWidth from './components/StylingWithUtilityClasses/Svg/StrokeWidth';
+import ForcedColorAdjust from './components/StylingWithUtilityClasses/ForcedColorAdjust/ForcedColorAdjust';
 
 function App() {
   const location = useLocation();
@@ -378,6 +382,10 @@ function App() {
         <Route path='touch-action' element={<TouchAction />} />
         <Route path='user-select' element={<UserSelect />} />
         <Route path='will-change' element={<WillChange />} />
+        <Route path='fill' element={<Fill />} />
+        <Route path='stroke' element={<Stroke />} />
+        <Route path='stroke-width' element={<StrokeWidth />} />
+        <Route path='forced-color-adjust' element={<ForcedColorAdjust />} />
       </Route>
     </Routes>
   );

@@ -1038,6 +1038,21 @@ function NavBar() {
           <NavBarHelper topicURL={'/touch-action'} topicName={'Touch Action'} />
           <NavBarHelper topicURL={'/user-select'} topicName={'User Select'} />
           <NavBarHelper topicURL={'/will-change'} topicName={'Will Change'} />
+          {/* header */}
+          <h2 className='sideBar  text-orange-500 rounded-full underline'>
+            SVG
+          </h2>
+          <NavBarHelper topicURL={'/fill'} topicName={'Fill'} />
+          <NavBarHelper topicURL={'/stroke'} topicName={'Stroke'} />
+          <NavBarHelper topicURL={'/stroke-width'} topicName={'Stroke Width'} />
+          {/* header */}
+          <h2 className='sideBar  text-orange-500 rounded-full underline'>
+            Accessibility
+          </h2>
+          <NavBarHelper
+            topicURL={'/forced-color-adjust'}
+            topicName={'Forced Color Adjust'}
+          />
         </div>
       </div>
     </div>

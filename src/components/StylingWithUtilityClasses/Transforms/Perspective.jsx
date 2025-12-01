@@ -17,85 +17,85 @@ function Perspective() {
       </h2>
       <div className='w-1/2 outline-1  place-items-center outline-gray-400 bg-gray-800 rounded-[0.3em] flex flex-col justify-around gap-10   text-gray-300 py-12 '>
         <label htmlFor='check1'>perspective-dramatic</label>
-        <div class='perspective-dramatic  w-22 h-22'>
-          <div class='relative w-full h-full [transform-style:preserve-3d] animate-spin-3d [transform:rotateX(45deg)_rotateY(45deg)]'>
-            <div class='absolute w-full h-full bg-blue-500/70 border-4 border-blue-800 text-white flex items-center justify-center text-4xl [transform:translateZ(3rem)]   '>
+        <div className='perspective-dramatic  w-22 h-22'>
+          <div className='relative w-full h-full [transform-style:preserve-3d] animate-spin-3d [transform:rotateX(45deg)_rotateY(45deg)]'>
+            <div className='absolute w-full h-full bg-blue-500/70 border-4 border-blue-800 text-white flex items-center justify-center text-4xl [transform:translateZ(3rem)]   '>
               1
             </div>
 
-            <div class='absolute    w-full h-full bg-red-500/70 border-4 border-red-800 text-white flex items-center justify-center text-4xl [transform:rotateY(180deg)_translateZ(3rem)]'>
+            <div className='absolute    w-full h-full bg-red-500/70 border-4 border-red-800 text-white flex items-center justify-center text-4xl [transform:rotateY(180deg)_translateZ(3rem)]'>
               2
             </div>
 
-            <div class='absolute w-full h-full bg-green-500/70 border-4 border-green-800 text-white flex items-center justify-center text-4xl [transform:rotateY(90deg)_translateZ(3rem)]   '>
+            <div className='absolute w-full h-full bg-green-500/70 border-4 border-green-800 text-white flex items-center justify-center text-4xl [transform:rotateY(90deg)_translateZ(3rem)]   '>
               3
             </div>
 
-            <div class='absolute w-full h-full bg-yellow-500/70 border-4 border-yellow-800 text-black flex items-center justify-center text-4xl [transform:rotateY(-90deg)_translateZ(3rem)]   '>
+            <div className='absolute w-full h-full bg-yellow-500/70 border-4 border-yellow-800 text-black flex items-center justify-center text-4xl [transform:rotateY(-90deg)_translateZ(3rem)]   '>
               4
             </div>
 
-            <div class='absolute w-full h-full bg-purple-500/70 border-4 border-purple-800 text-white flex items-center justify-center text-4xl [transform:rotateX(90deg)_translateZ(3rem)]   '>
+            <div className='absolute w-full h-full bg-purple-500/70 border-4 border-purple-800 text-white flex items-center justify-center text-4xl [transform:rotateX(90deg)_translateZ(3rem)]   '>
               5
             </div>
 
-            <div class='absolute w-full h-full bg-pink-500/70 border-4 border-pink-800 text-white flex items-center justify-center text-4xl [transform:rotateX(-90deg)_translateZ(3rem)]   '>
+            <div className='absolute w-full h-full bg-pink-500/70 border-4 border-pink-800 text-white flex items-center justify-center text-4xl [transform:rotateX(-90deg)_translateZ(3rem)]   '>
               6
             </div>
           </div>
         </div>
         <label htmlFor='check1'>perspective-normal</label>
-        <div class='perspective-normal w-22 h-22'>
-          <div class='relative w-full h-full [transform-style:preserve-3d] animate-spin-3d [transform:rotateX(45deg)_rotateY(45deg)]'>
-            <div class='absolute w-full h-full bg-blue-500/70 border-4 border-blue-800 text-white flex items-center justify-center text-4xl [transform:translateZ(3rem)]   '>
+        <div className='perspective-normal w-22 h-22'>
+          <div className='relative w-full h-full [transform-style:preserve-3d] animate-spin-3d [transform:rotateX(45deg)_rotateY(45deg)]'>
+            <div className='absolute w-full h-full bg-blue-500/70 border-4 border-blue-800 text-white flex items-center justify-center text-4xl [transform:translateZ(3rem)]   '>
               1
             </div>
 
-            <div class='absolute    w-full h-full bg-red-500/70 border-4 border-red-800 text-white flex items-center justify-center text-4xl [transform:rotateY(180deg)_translateZ(3rem)]'>
+            <div className='absolute    w-full h-full bg-red-500/70 border-4 border-red-800 text-white flex items-center justify-center text-4xl [transform:rotateY(180deg)_translateZ(3rem)]'>
               2
             </div>
 
-            <div class='absolute w-full h-full bg-green-500/70 border-4 border-green-800 text-white flex items-center justify-center text-4xl [transform:rotateY(90deg)_translateZ(3rem)]   '>
+            <div className='absolute w-full h-full bg-green-500/70 border-4 border-green-800 text-white flex items-center justify-center text-4xl [transform:rotateY(90deg)_translateZ(3rem)]   '>
               3
             </div>
 
-            <div class='absolute w-full h-full bg-yellow-500/70 border-4 border-yellow-800 text-black flex items-center justify-center text-4xl [transform:rotateY(-90deg)_translateZ(3rem)]   '>
+            <div className='absolute w-full h-full bg-yellow-500/70 border-4 border-yellow-800 text-black flex items-center justify-center text-4xl [transform:rotateY(-90deg)_translateZ(3rem)]   '>
               4
             </div>
 
-            <div class='absolute w-full h-full bg-purple-500/70 border-4 border-purple-800 text-white flex items-center justify-center text-4xl [transform:rotateX(90deg)_translateZ(3rem)]   '>
+            <div className='absolute w-full h-full bg-purple-500/70 border-4 border-purple-800 text-white flex items-center justify-center text-4xl [transform:rotateX(90deg)_translateZ(3rem)]   '>
               5
             </div>
 
-            <div class='absolute w-full h-full bg-pink-500/70 border-4 border-pink-800 text-white flex items-center justify-center text-4xl [transform:rotateX(-90deg)_translateZ(3rem)]   '>
+            <div className='absolute w-full h-full bg-pink-500/70 border-4 border-pink-800 text-white flex items-center justify-center text-4xl [transform:rotateX(-90deg)_translateZ(3rem)]   '>
               6
             </div>
           </div>
         </div>
         <label htmlFor='check1'>perspective-midrange</label>
-        <div class='perspective-midrange w-22 h-22'>
-          <div class='relative w-full h-full [transform-style:preserve-3d] animate-spin-3d [transform:rotateX(45deg)_rotateY(45deg)]'>
-            <div class='absolute w-full h-full bg-blue-500/70 border-4 border-blue-800 text-white flex items-center justify-center text-4xl [transform:translateZ(3rem)]   '>
+        <div classNameName='perspective-midrange w-22 h-22'>
+          <div classNameName='relative w-full h-full [transform-style:preserve-3d] animate-spin-3d [transform:rotateX(45deg)_rotateY(45deg)]'>
+            <div className='absolute w-full h-full bg-blue-500/70 border-4 border-blue-800 text-white flex items-center justify-center text-4xl [transform:translateZ(3rem)]   '>
               1
             </div>
 
-            <div class='absolute    w-full h-full bg-red-500/70 border-4 border-red-800 text-white flex items-center justify-center text-4xl [transform:rotateY(180deg)_translateZ(3rem)]'>
+            <div classNameName='absolute    w-full h-full bg-red-500/70 border-4 border-red-800 text-white flex items-center justify-center text-4xl [transform:rotateY(180deg)_translateZ(3rem)]'>
               2
             </div>
 
-            <div class='absolute w-full h-full bg-green-500/70 border-4 border-green-800 text-white flex items-center justify-center text-4xl [transform:rotateY(90deg)_translateZ(3rem)]   '>
+            <div classNameName='absolute w-full h-full bg-green-500/70 border-4 border-green-800 text-white flex items-center justify-center text-4xl [transform:rotateY(90deg)_translateZ(3rem)]   '>
               3
             </div>
 
-            <div class='absolute w-full h-full bg-yellow-500/70 border-4 border-yellow-800 text-black flex items-center justify-center text-4xl [transform:rotateY(-90deg)_translateZ(3rem)]   '>
+            <div classNameName='absolute w-full h-full bg-yellow-500/70 border-4 border-yellow-800 text-black flex items-center justify-center text-4xl [transform:rotateY(-90deg)_translateZ(3rem)]   '>
               4
             </div>
 
-            <div class='absolute w-full h-full bg-purple-500/70 border-4 border-purple-800 text-white flex items-center justify-center text-4xl [transform:rotateX(90deg)_translateZ(3rem)]   '>
+            <div className='absolute w-full h-full bg-purple-500/70 border-4 border-purple-800 text-white flex items-center justify-center text-4xl [transform:rotateX(90deg)_translateZ(3rem)]   '>
               5
             </div>
 
-            <div class='absolute w-full h-full bg-pink-500/70 border-4 border-pink-800 text-white flex items-center justify-center text-4xl [transform:rotateX(-90deg)_translateZ(3rem)]   '>
+            <div classNameName='absolute w-full h-full bg-pink-500/70 border-4 border-pink-800 text-white flex items-center justify-center text-4xl [transform:rotateX(-90deg)_translateZ(3rem)]   '>
               6
             </div>
           </div>
@@ -109,29 +109,29 @@ function Perspective() {
       </h2>
       <div className='w-1/2 outline-1  place-items-center outline-gray-400 bg-gray-800 rounded-[0.3em] flex flex-col justify-around gap-10   text-gray-300 py-12 '>
         <label htmlFor='check1'>perspective-none</label>
-        <div class='perspective-none  w-22 h-22'>
-          <div class='relative w-full h-full [transform-style:preserve-3d] animate-spin-3d [transform:rotateX(45deg)_rotateY(45deg)]'>
-            <div class='absolute w-full h-full bg-blue-500/70 border-4 border-blue-800 text-white flex items-center justify-center text-4xl [transform:translateZ(3rem)]   '>
+        <div classNameName='perspective-none  w-22 h-22'>
+          <div className='relative w-full h-full [transform-style:preserve-3d] animate-spin-3d [transform:rotateX(45deg)_rotateY(45deg)]'>
+            <div className='absolute w-full h-full bg-blue-500/70 border-4 border-blue-800 text-white flex items-center justify-center text-4xl [transform:translateZ(3rem)]   '>
               1
             </div>
 
-            <div class='absolute    w-full h-full bg-red-500/70 border-4 border-red-800 text-white flex items-center justify-center text-4xl [transform:rotateY(180deg)_translateZ(3rem)]'>
+            <div className='absolute    w-full h-full bg-red-500/70 border-4 border-red-800 text-white flex items-center justify-center text-4xl [transform:rotateY(180deg)_translateZ(3rem)]'>
               2
             </div>
 
-            <div class='absolute w-full h-full bg-green-500/70 border-4 border-green-800 text-white flex items-center justify-center text-4xl [transform:rotateY(90deg)_translateZ(3rem)]   '>
+            <div className='absolute w-full h-full bg-green-500/70 border-4 border-green-800 text-white flex items-center justify-center text-4xl [transform:rotateY(90deg)_translateZ(3rem)]   '>
               3
             </div>
 
-            <div class='absolute w-full h-full bg-yellow-500/70 border-4 border-yellow-800 text-black flex items-center justify-center text-4xl [transform:rotateY(-90deg)_translateZ(3rem)]   '>
+            <div className='absolute w-full h-full bg-yellow-500/70 border-4 border-yellow-800 text-black flex items-center justify-center text-4xl [transform:rotateY(-90deg)_translateZ(3rem)]   '>
               4
             </div>
 
-            <div class='absolute w-full h-full bg-purple-500/70 border-4 border-purple-800 text-white flex items-center justify-center text-4xl [transform:rotateX(90deg)_translateZ(3rem)]   '>
+            <div className='absolute w-full h-full bg-purple-500/70 border-4 border-purple-800 text-white flex items-center justify-center text-4xl [transform:rotateX(90deg)_translateZ(3rem)]   '>
               5
             </div>
 
-            <div class='absolute w-full h-full bg-pink-500/70 border-4 border-pink-800 text-white flex items-center justify-center text-4xl [transform:rotateX(-90deg)_translateZ(3rem)]   '>
+            <div className='absolute w-full h-full bg-pink-500/70 border-4 border-pink-800 text-white flex items-center justify-center text-4xl [transform:rotateX(-90deg)_translateZ(3rem)]   '>
               6
             </div>
           </div>
@@ -145,29 +145,29 @@ function Perspective() {
       </h2>
       <div className='w-1/2 outline-1  place-items-center outline-gray-400 bg-gray-800 rounded-[0.3em] flex flex-col justify-around gap-10   text-gray-300 py-12 '>
         <label htmlFor='check1'>perspective-[750px]</label>
-        <div class='perspective-[750px]  w-22 h-22'>
-          <div class='relative w-full h-full [transform-style:preserve-3d] animate-spin-3d [transform:rotateX(45deg)_rotateY(45deg)]'>
-            <div class='absolute w-full h-full bg-blue-500/70 border-4 border-blue-800 text-white flex items-center justify-center text-4xl [transform:translateZ(3rem)]   '>
+        <div classNameNameName='perspective-[750px]  w-22 h-22'>
+          <div classNameName='relative w-full h-full [transform-style:preserve-3d] animate-spin-3d [transform:rotateX(45deg)_rotateY(45deg)]'>
+            <div className='absolute w-full h-full bg-blue-500/70 border-4 border-blue-800 text-white flex items-center justify-center text-4xl [transform:translateZ(3rem)]   '>
               1
             </div>
 
-            <div class='absolute    w-full h-full bg-red-500/70 border-4 border-red-800 text-white flex items-center justify-center text-4xl [transform:rotateY(180deg)_translateZ(3rem)]'>
+            <div className='absolute    w-full h-full bg-red-500/70 border-4 border-red-800 text-white flex items-center justify-center text-4xl [transform:rotateY(180deg)_translateZ(3rem)]'>
               2
             </div>
 
-            <div class='absolute w-full h-full bg-green-500/70 border-4 border-green-800 text-white flex items-center justify-center text-4xl [transform:rotateY(90deg)_translateZ(3rem)]   '>
+            <div className='absolute w-full h-full bg-green-500/70 border-4 border-green-800 text-white flex items-center justify-center text-4xl [transform:rotateY(90deg)_translateZ(3rem)]   '>
               3
             </div>
 
-            <div class='absolute w-full h-full bg-yellow-500/70 border-4 border-yellow-800 text-black flex items-center justify-center text-4xl [transform:rotateY(-90deg)_translateZ(3rem)]   '>
+            <div className='absolute w-full h-full bg-yellow-500/70 border-4 border-yellow-800 text-black flex items-center justify-center text-4xl [transform:rotateY(-90deg)_translateZ(3rem)]   '>
               4
             </div>
 
-            <div class='absolute w-full h-full bg-purple-500/70 border-4 border-purple-800 text-white flex items-center justify-center text-4xl [transform:rotateX(90deg)_translateZ(3rem)]   '>
+            <div className='absolute w-full h-full bg-purple-500/70 border-4 border-purple-800 text-white flex items-center justify-center text-4xl [transform:rotateX(90deg)_translateZ(3rem)]   '>
               5
             </div>
 
-            <div class='absolute w-full h-full bg-pink-500/70 border-4 border-pink-800 text-white flex items-center justify-center text-4xl [transform:rotateX(-90deg)_translateZ(3rem)]   '>
+            <div className='absolute w-full h-full bg-pink-500/70 border-4 border-pink-800 text-white flex items-center justify-center text-4xl [transform:rotateX(-90deg)_translateZ(3rem)]   '>
               6
             </div>
           </div>

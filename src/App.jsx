@@ -172,6 +172,11 @@ import ScrollBehavior from './components/StylingWithUtilityClasses/Interactivity
 import ScrollMargin from './components/StylingWithUtilityClasses/Interactivity/ScrollMargin';
 import ScrollPadding from './components/StylingWithUtilityClasses/Interactivity/ScrollPadding';
 import ScrollSnapAlign from './components/StylingWithUtilityClasses/Interactivity/ScrollSnapAlign';
+import ScrollSnapStop from './components/StylingWithUtilityClasses/Interactivity/ScrollSnapStop';
+import ScrollSnapType from './components/StylingWithUtilityClasses/Interactivity/ScrollSnapType';
+import TouchAction from './components/StylingWithUtilityClasses/Interactivity/TouchAction';
+import UserSelect from './components/StylingWithUtilityClasses/Interactivity/UserSelect';
+import WillChange from './components/StylingWithUtilityClasses/Interactivity/WillChange';
 
 function App() {
   const location = useLocation();
@@ -368,6 +373,11 @@ function App() {
         <Route path='scroll-margin' element={<ScrollMargin />} />
         <Route path='scroll-padding' element={<ScrollPadding />} />
         <Route path='scroll-snap-align' element={<ScrollSnapAlign />} />
+        <Route path='scroll-snap-stop' element={<ScrollSnapStop />} />
+        <Route path='scroll-snap-type' element={<ScrollSnapType />} />
+        <Route path='touch-action' element={<TouchAction />} />
+        <Route path='user-select' element={<UserSelect />} />
+        <Route path='will-change' element={<WillChange />} />
       </Route>
     </Routes>
   );

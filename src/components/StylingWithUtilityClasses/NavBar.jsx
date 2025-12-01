@@ -1,7 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom';
 import image from '../../assets/Tailwind.png';
 import { ArrowLeft, ArrowRight, PanelLeft, X } from 'lucide-react';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import NavBarHelper from '../../Config/NavBarHelper';
 import { navigationPaths } from '../../Config/config';
 
@@ -9,6 +9,28 @@ function NavBar() {
   const [sideBar, setSideBar] = useState(false);
   const [prevBtnState, setPrevBtnState] = useState(Boolean);
   const [nextBtnState, setNextBtnState] = useState(Boolean);
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const sideBarSelect = useRef(null);
+
+  function scrollSideBarToSavedPosition() {
+    const savedScrollPosition = JSON.parse(
+      localStorage.getItem('ScrollPosition')
+    );
+    sideBarSelect.current.scrollTo({
+      top: (savedScrollPosition, 10),
+      behavior: 'smooth',
+    });
+    console.log(savedScrollPosition);
+  }
+  useEffect(() => {
+    const savedScrollPosition = JSON.parse(
+      localStorage.getItem('ScrollPosition')
+    );
+    sideBarSelect.current.scrollTo({
+      top: (savedScrollPosition, 10),
+      behavior: 'smooth',
+    });
+  }, []);
 
   const navigateTo = useNavigate();
   window.addEventListener('click', (e) => {
@@ -44,6 +66,9 @@ function NavBar() {
     } else {
       setPrevBtnState(true);
     }
+  }
+  function handleOnScroll(e) {
+    JSON.stringify(localStorage.setItem('ScrollPosition', e.target.scrollTop));
   }
 
   return (
@@ -127,7 +152,10 @@ function NavBar() {
         </button>
 
         <button
-          onClick={() => setSideBar(true)}
+          onClick={() => {
+            setSideBar(true);
+            scrollSideBarToSavedPosition();
+          }}
           className='sideBar group cursor-pointer bg-orange-700 h-3/5  py-4 flex flex-row items-center justify-center px-2 gap-2 text-white  outline-gray-200 shadow-8xl rounded-full shadow-black'
         >
           <h2 className='sideBar text-sm'> All Docs</h2>
@@ -149,7 +177,11 @@ function NavBar() {
           />
         </div>
 
-        <div className='custom-scroll flex flex-col gap-1 overflow-y-auto '>
+        <div
+          ref={sideBarSelect}
+          onScroll={handleOnScroll}
+          className='custom-scroll flex flex-col gap-1 overflow-y-auto '
+        >
           <h2 className='sideBar  text-orange-500 rounded-full underline'>
             Core Concepts{' '}
           </h2>
@@ -995,6 +1027,17 @@ function NavBar() {
             topicURL={'/scroll-snap-align'}
             topicName={'Scroll Snap Align'}
           />
+          <NavBarHelper
+            topicURL={'/scroll-snap-stop'}
+            topicName={'Scroll Snap Stop'}
+          />
+          <NavBarHelper
+            topicURL={'/scroll-snap-type'}
+            topicName={'Scroll Snap Type'}
+          />
+          <NavBarHelper topicURL={'/touch-action'} topicName={'Touch Action'} />
+          <NavBarHelper topicURL={'/user-select'} topicName={'User Select'} />
+          <NavBarHelper topicURL={'/will-change'} topicName={'Will Change'} />
         </div>
       </div>
     </div>

@@ -370,7 +370,7 @@ function HoverState() {
         </h2>
         <div
           style={{ transitionDuration: '0.5s' }}
-          className='w-1/2 group rounded-2xl bg-gray-800 items-center flex flex-col gap-2 py-4'
+          className='w-1/2 group transform duration-200 delay-75 ease-in-out rounded-2xl bg-gray-800 items-center flex flex-col gap-2 py-4'
         >
           <label className=' text-gray-300 '>Email</label>
           <input
@@ -378,70 +378,11 @@ function HoverState() {
             placeholder='Enter your email'
             className={`peer not-focus:invalid:text-red-500 invalid:text-yellow-500 not-focus:invalid:outline-red-500 pl-4 bg-gray-700 text-gray-300 rounded-2xl placeholder-gray-500 outline-1 outline-gray-600 py-1`}
           />
-          <h2 className='text-red-500 peer:focus:hidden  peer:not-focus:block hidden '>
+          <h2 className='text-red-500 peer-invalid:opacity-100 transform duration-200 ease-out peer-focus:opacity-0 '>
             Please provide a valid email address.
           </h2>
         </div>
       </div>
-
-      {/* eleven  */}
-      {/* <div className="  flex flex-col w-full items-center gap-2">
-        <h2 className=" text-[medium] font-bold rounded-full bg-gray-300 px-4">
-          11 :Differentiating between peers
-        </h2>
-        <div
-          style={{ transitionDuration: '0.5s' }}
-          className="w-1/2 group rounded-2xl bg-gray-800 items-center flex flex-col gap-2 py-4"
-        >
-          <h2 className="text-gray-300">Published Status</h2>
-          <hr className=" text-gray-500 w-11/12" />
-
-          <div className=" rounded-[0.3em] has-checked:bg-gray-700 has-checked:outline-1 outline-gray-400 cursor-pointer flex flex-row items-center w-1/4 gap-2 justify-center">
-            <input
-              checked={draftChecked}
-              onChange={publishDraftChecked}
-              type="radio"
-              id="draft"
-              className="cursor-pointer"
-              name="draftChecked"
-            />
-            <label className="text-gray-300" htmlFor="draft">
-              Draft
-            </label>
-          </div>
-          <div className="rounded-[0.3em] peer has-checked:bg-gray-700 has-checked:outline-1 outline-gray-400 cursor-pointer flex flex-row items-center justify-center w-1/4 gap-1">
-            <input
-              checked={publishedChecked}
-              onChange={publishDraftChecked}
-              type="radio"
-              className="cursor-pointer"
-              id="published"
-              name="publishedChecked"
-            />
-            <label className="text-gray-300" htmlFor="published">
-              Published
-            </label>
-          </div>
-          <h2 className={`${draftChecked ? 'block' : 'hidden'} text-gray-300 `}>
-            This is your drafts
-          </h2>
-          <FolderDown
-            className={`${
-              draftChecked ? 'block' : 'hidden'
-            } stroke-white font-bold w-10 h-10`}
-          />
-          <h2
-            className={`${publishedChecked ? 'block' : 'hidden'} text-gray-300`}
-          >
-            This is your published items
-          </h2>
-          <CloudUpload
-            className={`${
-              publishedChecked ? 'block' : 'hidden'
-            } stroke-white font-bold w-10 h-10`}
-          />
-        </div>
-      </div> */}
 
       {/* eleven */}
       <div className='  flex flex-col w-full items-center gap-2'>
@@ -561,7 +502,7 @@ function HoverState() {
         <h2 className=' text-[medium] font-bold rounded-full bg-gray-300 px-4'>
           16 ::Selection
         </h2>
-        <h2 className=' selection:text-fuchsia-600 selection:bg-teal-500 py-4 px-4 text-[medium] w-1/2 font-light rounded-2xl bg-gray-800 text-gray-400 '>
+        <h2 className=' select-text selection:text-fuchsia-600 selection:bg-teal-500 py-4 px-4 text-[medium] w-1/2 font-light rounded-2xl bg-gray-800 text-gray-400 '>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eligendi,
           sunt nobis dolorem repudiandae soluta, beatae numquam vel incidunt
           odio, totam veritatis inventore nesciunt quisquam perferendis culpa
@@ -660,16 +601,16 @@ function HoverState() {
         <h2 className=' text-[medium] font-bold rounded-full bg-gray-300 px-4'>
           20 :prefers-contrast
         </h2>
-        <div className='contrast-more:bg-gray-200 flex flex-col py-3 gap-1 items-center w-1/2 bg-gray-800 rounded-2xl'>
-          <h2 className=' contrast-more:text-gray-900 text-gray-300'>
+        <div className='contrast-less:bg-gray-900 contrast-more:bg-gray-950 flex flex-col py-3 gap-1 items-center w-1/2 bg-gray-800 rounded-2xl'>
+          <h2 className=' contrast-less:text-gray-500 contrast-more:text-gray-100 text-gray-300'>
             Social Security Number
           </h2>
           <input
             type='text'
             placeholder='ssn'
-            className='pl-4 bg-gray-700 contrast-more:bg-gray-500 contrast-more:outline-gray-900 contrast-more:outline-1 text-gray-300 rounded-full outline-1 outline-gray-300'
+            className='pl-4 bg-gray-700 contrast-more:bg-gray-800  contrast-more:text-gray-50 contrast-more:placeholder:text-gray-100 contrast-more:outline-gray-300 outline-1 contrast-less:outline-gray-700  text-gray-300 rounded-full outline-gray-300'
           />
-          <h2 className='contrast-more:text-gray-950 text-gray-700'>
+          <h2 className='contrast-more:text-gray-100 contrast-less:text-gray-400 text-gray-300'>
             we need this number to steal your money
           </h2>
         </div>
